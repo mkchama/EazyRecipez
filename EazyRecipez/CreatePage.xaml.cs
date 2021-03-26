@@ -52,6 +52,33 @@ namespace EazyRecipez
                 
         }
 
+        private void description_MouseDown(object sender, RoutedEventArgs e)
+        {
+            if (descriptionField.Text.Equals("Enter a description"))
+            {
+                descriptionField.Text = "";
+            }
+
+        }
+
+        private void ingredients_MouseDown(object sender, RoutedEventArgs e)
+        {
+            if (ingredientsField.Text.Equals("Enter the ingredients"))
+            {
+                ingredientsField.Text = "";
+            }
+
+        }
+
+        private void instructions_MouseDown(object sender, RoutedEventArgs e)
+        {
+            if (instructionsField.Text.Equals("Enter recipe steps/instructions"))
+            {
+                instructionsField.Text = "";
+            }
+
+        }
+
         // Lost focus events
         private void recipeName_LostFocus(object sender, RoutedEventArgs e)
         {
@@ -60,6 +87,33 @@ namespace EazyRecipez
                 recipeNameField.Text = "Enter the recipe name";
             }
             
+        }
+
+        private void description_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (descriptionField.Text.Equals(""))
+            {
+                descriptionField.Text = "Enter a description";
+            }
+
+        }
+
+        private void ingredients_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (ingredientsField.Text.Equals(""))
+            {
+                ingredientsField.Text = "Enter the ingredients";
+            }
+
+        }
+
+        private void instructions_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (instructionsField.Text.Equals(""))
+            {
+                instructionsField.Text = "Enter recipe steps/instructions";
+            }
+
         }
 
     }
