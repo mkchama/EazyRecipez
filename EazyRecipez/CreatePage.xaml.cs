@@ -45,7 +45,7 @@ namespace EazyRecipez
         // Mouse down events
         private void recipeName_MouseDown(object sender, RoutedEventArgs e)
         {   
-            if (!recipeNameField.Text.Equals("Enter the recipe name"))
+            if (recipeNameField.Text.Equals("Enter the recipe name"))
             {
                 recipeNameField.Text = "";
             }
