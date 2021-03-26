@@ -19,7 +19,7 @@
                 <ItemsControl Margin="0" HorizontalAlignment="Center">
 
                     <Label x:Name="recipeNameLabel" Content="Recipe Name" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="recipeNameField" Text="Enter the recipe name" TextWrapping="Wrap" Width="270" FontSize="20" Background="White" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="recipeNameField" PreviewMouseDown="recipeName_MouseDown" LostFocus="recipeName_LostFocus" Text="Enter the recipe name" TextWrapping="Wrap" Width="270" FontSize="20" Background="White" HorizontalAlignment="Left"/>
 
                     <Label x:Name="descriptionLabel" Content="Description" FontWeight="Bold" FontSize="20" />
                     <TextBox x:Name="descriptionField" Text="Enter a description" TextWrapping="Wrap" Width="270" FontSize="20" FontWeight="Normal" Height="100" HorizontalAlignment="Left"/>

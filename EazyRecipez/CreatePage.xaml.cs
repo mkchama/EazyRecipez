@@ -25,6 +25,7 @@ namespace EazyRecipez
             InitializeComponent();
         }
 
+        // -------- Page view change events --------
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
@@ -35,6 +36,26 @@ namespace EazyRecipez
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow?.ChangeView(new HomePage());
+        }
+
+
+        // -------- Text field Events --------
+
+
+        // Mouse down events
+        private void recipeName_MouseDown(object sender, RoutedEventArgs e)
+        {
+            recipeNameField.Text = "";
+        }
+
+        // Lost focus events
+        private void recipeName_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (recipeNameField.Text.Equals(""))
+            {
+                recipeNameField.Text = "Enter the recipe name";
+            }
+            
         }
 
     }
