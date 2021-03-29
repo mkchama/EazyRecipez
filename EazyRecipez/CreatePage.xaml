@@ -19,10 +19,10 @@
                 <ItemsControl Margin="0" HorizontalAlignment="Center">
 
                     <Label x:Name="recipeNameLabel" Content="Recipe Name" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="recipeNameField" Text="Enter the recipe name" TextWrapping="Wrap" Width="270" FontSize="20" Background="White" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="recipeNameField" PreviewMouseDown="recipeName_MouseDown" LostFocus="recipeName_LostFocus" Text="Enter the recipe name" TextWrapping="Wrap" Width="270" FontSize="20" Background="White" HorizontalAlignment="Left"/>
 
                     <Label x:Name="descriptionLabel" Content="Description" FontWeight="Bold" FontSize="20" />
-                    <TextBox x:Name="descriptionField" Text="Enter a description" TextWrapping="Wrap" Width="270" FontSize="20" FontWeight="Normal" Height="100" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="descriptionField" PreviewMouseDown="description_MouseDown" LostFocus="description_LostFocus" Text="Enter a description" TextWrapping="Wrap" Width="270" FontSize="20" FontWeight="Normal" Height="100" HorizontalAlignment="Left"/>
                     
                     <Label x:Name="categoryLabel" Content="Category" FontSize="20" FontWeight="Bold"/>
                     <ComboBox x:Name="categoryCombo" Width="270" HorizontalAlignment="Left" Height="25" FontSize="15" VerticalAlignment="Center">
@@ -34,20 +34,34 @@
                     </ComboBox>
                     
                     <Label x:Name="ingredientsLabel" Content="Ingredients" FontSize="20" FontWeight="Bold"/>
-                    <TextBox x:Name="ingredientsField" Text="Enter the ingredients" TextWrapping="Wrap" Width="270" FontSize="20" Height="122" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="ingredientsField" PreviewMouseDown="ingredients_MouseDown" LostFocus="ingredients_LostFocus" Text="Enter the ingredients" TextWrapping="Wrap" Width="270" FontSize="20" Height="122" HorizontalAlignment="Left"/>
                     
                     <Label x:Name="instructionsLabel" Content="Instructions" FontSize="20" FontWeight="Bold"/>
-                    <TextBox x:Name="instructionsField" Text="Enter recipe steps/instructions" TextWrapping="Wrap" Width="270" FontSize="20" Height="160" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="instructionsField" PreviewMouseDown="instructions_MouseDown" LostFocus="instructions_LostFocus" Text="Enter recipe steps/instructions" TextWrapping="Wrap" Width="270" FontSize="20" Height="160" HorizontalAlignment="Left"/>
                     
                     <Label x:Name="timeLabel" Content="Time to Complete" FontSize="20" FontWeight="Bold"/>
+
                     <StackPanel Orientation="Horizontal">
-                        <TextBox x:Name="timeField" TextWrapping="Wrap" Width="79" Height="29" FontSize="20" Text="#"/>
-                        <Separator Width="20" Background="White" />
-                        <ComboBox Width="117" FontSize="15" VerticalAlignment="Center">
-                            <ComboBoxItem x:Name="minutesItem" Content="Minutes" FontSize="15" VerticalAlignment="Center"/>
-                            <ComboBoxItem x:Name="hoursItem" Content="Hours" FontSize="15" VerticalAlignment="Center"/>
+                        <ComboBox x:Name="hoursBox" Width="80">
+                            <ScrollViewer Height="110" VerticalScrollBarVisibility="Hidden">
+                                <ItemsControl Width="72">
+                                    <ComboBoxItem x:Name="boxh0" Content="0 hours" FontSize="15"/>
+                                    <ComboBoxItem x:Name="boxh1" Content="1 hour" FontSize="15"/>
+                                    <ComboBoxItem x:Name="boxh2" Content="2 hours" FontSize="15"/>
+                                    <ComboBoxItem x:Name="boxh3" Content="3 hours" FontSize="15"/>
+                                    <ComboBoxItem x:Name="boxh4" Content="4 hours" FontSize="15"/>
+                                    <ComboBoxItem x:Name="boxh5" Content="5 hours" FontSize="15"/>
+                                    <ComboBoxItem x:Name="boxh6" Content="6 hours" FontSize="15"/>
+                                    <ComboBoxItem x:Name="boxh7" Content="7 hours" FontSize="15"/>
+                                </ItemsControl>
+                            </ScrollViewer>
+                        </ComboBox>
+                        <Separator Width="40" Background="White" />
+                        <ComboBox x:Name="minutesBox" Width="80">
+                            
                         </ComboBox>
                     </StackPanel>
+
                     
                     <Label x:Name="uploadPhotos" Content="Upload Photo(s)" FontSize="20" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal" Width="270" HorizontalAlignment="Center" >
@@ -63,6 +77,8 @@
 
                     </StackPanel>
                     <Separator Width="10" Background="White" />
+
+
 
 
                 </ItemsControl>

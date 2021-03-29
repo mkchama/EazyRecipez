@@ -69,7 +69,7 @@ namespace EazyRecipez
         private void Lunch_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new LunchPage());
+            mainWindow?.ChangeView(new HomePage());
         }
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)

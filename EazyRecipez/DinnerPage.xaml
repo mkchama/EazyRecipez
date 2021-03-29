@@ -31,7 +31,7 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button Margin="10,5,10,5" Grid.Column="2" Content=" Dinner "  Width="Auto" Height="Auto" FontSize="16" Click="Dinner_Click" IsEnabled="False">
+                <Button Margin="10,5,10,5" Grid.Column="2" Content=" Dinner "  Width="Auto" Height="Auto" FontSize="16" Click="Dinner_Click" IsEnabled="True" Opacity="0.6">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="7"/>
