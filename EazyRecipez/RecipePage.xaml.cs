@@ -63,6 +63,15 @@ namespace EazyRecipez
             e.Handled = true;
         }
 
+        private void svPageRight(object sender, RoutedEventArgs e)
+        {
+            sv1.PageRight();
+        }
+        private void svPageLeft(object sender, RoutedEventArgs e)
+        {
+            sv1.PageLeft();
+        }
+
 
     }
 }

@@ -62,7 +62,30 @@
         <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="565" Margin="0,135,0,0" VerticalAlignment="Top" Width="375" >
             <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="350" Height="Auto">
                 <StackPanel Margin="10">
+                    
+                    
                     <Button Click="Recipe_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
+
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="LightBlue" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="#F8F8F8" TargetName="Border" />
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+
                         <StackPanel Orientation="Horizontal">
 
                             <Image Source="Images/icons8-pancake-96.png" Width="Auto"/>

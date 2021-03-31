@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Controls.Primitives;
 
 namespace EazyRecipez
 {
@@ -55,6 +56,15 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new MyRecipesPage());
         }
 
+        private void ListBoxScrollHandler(object sender, MouseWheelEventArgs e)
+        {
+            if (e.Delta > 0)
+                ScrollBar.LineDownCommand.Execute(null, e.OriginalSource as IInputElement);
+            if (e.Delta < 0)
+                ScrollBar.LineUpCommand.Execute(null, e.OriginalSource as IInputElement);
+            e.Handled = true;
+        }
+
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {
             ScrollViewer scrollViewer = (ScrollViewer)sender;
@@ -67,6 +77,15 @@ namespace EazyRecipez
                 scrollViewer.LineLeft();
             }
             e.Handled = true;
+        }
+
+        private void svPageRight(object sender, RoutedEventArgs e)
+        {
+            sv1.PageRight();
+        }
+        private void svPageLeft(object sender, RoutedEventArgs e)
+        {
+            sv1.PageLeft();
         }
     }
 }

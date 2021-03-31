@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace EazyRecipez
     /// </summary>
     public partial class EditPage : Page
     {
+        String content;
         public EditPage()
         {
             InitializeComponent();
@@ -53,5 +55,19 @@ namespace EazyRecipez
             var mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow?.ChangeView(new ProfilePage());
         }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            string writerfile = @"C:\Users\mkchama\rand\file.txt";
+            using (StreamWriter writer = new StreamWriter(writerfile))
+            {
+                writer.WriteLine(this.recipeNameField.Text);
+                writer.WriteLine(this.descriptionField.Text);
+                writer.WriteLine(this.ingredientsField.Text);
+                writer.WriteLine(this.instructionsField.Text);
+            }
+        }
+
+ 
     }
 }
