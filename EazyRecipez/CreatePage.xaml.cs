@@ -43,9 +43,31 @@ namespace EazyRecipez
 
         }
 
+        protected void ButtonGenerate_Click(object sender, RoutedEventArgs e)
+        {
+            var newTextBox = new TextBox();
+            // here set new textbox parameters
+            newTextBox.Name = "newInstruction1";
+            newTextBox.Text = "Add another instruction";
+            newTextBox.FontSize = 20;
+            instructionPanel.Children.Add(newTextBox);
+        }
+
+        protected void ButtonIngredient_Click(object sender, RoutedEventArgs e)
+        {
+            var newTextBox = new TextBox();
+            // here set new textbox parameters
+            newTextBox.Name = "newIngredient";
+            newTextBox.Text = "Add another ingredient";
+            newTextBox.FontSize = 20;
+            ingredientField.Children.Add(newTextBox);
+        }
+
+
+
         private void ingredients_MouseDown(object sender, RoutedEventArgs e)
         {
-            if (ingredientsField.Text.Equals("Enter the ingredients"))
+            if (ingredientsField.Text.Equals("Enter an ingredient"))
             {
                 ingredientsField.Text = "";
             }
@@ -74,7 +96,7 @@ namespace EazyRecipez
         {
             if (ingredientsField.Text.Equals(""))
             {
-                ingredientsField.Text = "Enter the ingredients";
+                ingredientsField.Text = "Enter an ingredient";
             }
 
         }
@@ -83,14 +105,14 @@ namespace EazyRecipez
         {
             if (instructionsField.Text.Equals(""))
             {
-                instructionsField.Text = "Enter recipe steps/instructions";
+                instructionsField.Text = "Enter an instruction";
             }
 
         }
 
         private void instructions_MouseDown(object sender, RoutedEventArgs e)
         {
-            if (instructionsField.Text.Equals("Enter recipe steps/instructions"))
+            if (instructionsField.Text.Equals("Enter an instruction"))
             {
                 instructionsField.Text = "";
             }

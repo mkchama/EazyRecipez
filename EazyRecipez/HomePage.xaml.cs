@@ -91,6 +91,24 @@ namespace EazyRecipez
             e.Handled = true;
         }
 
+        private void search_MouseDown(object sender, RoutedEventArgs e)
+        {
+            if (searchField.Text.Equals("Search for recipes..."))
+            {
+                searchField.Text = "";
+            }
+
+        }
+
+        private void search_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (searchField.Text.Equals(""))
+            {
+                searchField.Text = "Search for recipes...";
+            }
+
+        }
+
 
 
 

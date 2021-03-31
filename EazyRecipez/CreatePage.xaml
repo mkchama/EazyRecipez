@@ -32,12 +32,37 @@
                         <ComboBoxItem x:Name="dessertItem" FontSize="15" Content="Dessert"/>
                         <ComboBoxItem x:Name="appetizerItem" FontSize="15" Content="Appetizer"/>
                     </ComboBox>
-                    
+
                     <Label x:Name="ingredientsLabel" Content="Ingredients" FontSize="20" FontWeight="Bold"/>
-                    <TextBox x:Name="ingredientsField" PreviewMouseDown="ingredients_MouseDown" LostFocus="ingredients_LostFocus" Text="Enter the ingredients" TextWrapping="Wrap" Width="270" FontSize="20" Height="122" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="ingredientsField" PreviewMouseDown="ingredients_MouseDown" LostFocus="ingredients_LostFocus" Text="Enter an ingredient" TextWrapping="Wrap" Width="270" FontSize="20" Height="Auto" HorizontalAlignment="Left"/>
+
+                    <StackPanel x:Name="ingredientField">
+                        
+                    </StackPanel>
+                    <Button x:Name="btnIngredient" Content="Add an ingredient" Click="ButtonIngredient_Click" Height="30"  Width="140" Margin="0,10,0,0">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="7"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
 
                     <Label x:Name="instructionsLabel" Content="Instructions" FontSize="20" FontWeight="Bold"/>
-                    <TextBox x:Name="instructionsField" PreviewMouseDown="instructions_MouseDown" LostFocus="instructions_LostFocus" Text="Enter recipe steps/instructions" TextWrapping="Wrap" Width="270" FontSize="20" Height="160" HorizontalAlignment="Left"/>
+
+
+
+                    <TextBox x:Name="instructionsField" PreviewMouseDown="instructions_MouseDown" LostFocus="instructions_LostFocus" Text="Enter an instruction" TextWrapping="Wrap" Width="270" FontSize="20" Height="Auto" HorizontalAlignment="Left"/>
+                 
+                    <StackPanel x:Name="instructionPanel">
+                        
+                    </StackPanel>
+                    <Button x:Name="btnClickMe" Content="Add a step" Click="ButtonGenerate_Click" Height="30"  Width="80" Margin="0,10,0,0">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="7"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
 
                     <Label x:Name="timeLabel" Content="Time to Complete" FontSize="20" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal">
