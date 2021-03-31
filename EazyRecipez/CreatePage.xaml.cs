@@ -25,6 +25,69 @@ namespace EazyRecipez
             InitializeComponent();
         }
 
+        private void recipeName_MouseDown(object sender, RoutedEventArgs e)
+        {
+            if (recipeNameField.Text.Equals("Enter the recipe name"))
+            {
+                recipeNameField.Text = "";
+            }
+
+        }
+
+        private void description_MouseDown(object sender, RoutedEventArgs e)
+        {
+            if (descriptionField.Text.Equals("Enter a description"))
+            {
+                descriptionField.Text = "";
+            }
+
+        }
+
+        private void ingredients_MouseDown(object sender, RoutedEventArgs e)
+        {
+            if (ingredientsField.Text.Equals("Enter the ingredients"))
+            {
+                ingredientsField.Text = "";
+            }
+
+        }
+
+        private void description_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (descriptionField.Text.Equals(""))
+            {
+                descriptionField.Text = "Enter a description";
+            }
+
+        }
+
+        private void ingredients_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (ingredientsField.Text.Equals(""))
+            {
+                ingredientsField.Text = "Enter the ingredients";
+            }
+
+        }
+
+        private void instructions_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (instructionsField.Text.Equals(""))
+            {
+                instructionsField.Text = "Enter recipe steps/instructions";
+            }
+
+        }
+
+        private void instructions_MouseDown(object sender, RoutedEventArgs e)
+        {
+            if (instructionsField.Text.Equals("Enter recipe steps/instructions"))
+            {
+                instructionsField.Text = "";
+            }
+
+        }
+
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
