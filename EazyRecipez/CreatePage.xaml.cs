@@ -52,6 +52,15 @@ namespace EazyRecipez
 
         }
 
+        private void title_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (recipeNameField.Text.Equals(""))
+            {
+                recipeNameField.Text = "Enter the recipe name";
+            }
+
+        }
+
         private void description_LostFocus(object sender, RoutedEventArgs e)
         {
             if (descriptionField.Text.Equals(""))

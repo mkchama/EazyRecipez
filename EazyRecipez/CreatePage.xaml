@@ -19,15 +19,15 @@
                 <ItemsControl Margin="0" HorizontalAlignment="Center">
 
                     <Label x:Name="recipeNameLabel" Content="Recipe Name" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="recipeNameField" Text="Enter the recipe name" TextWrapping="Wrap" Width="270" FontSize="20" Background="White" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="recipeNameField" PreviewMouseDown="recipeName_MouseDown" LostFocus="title_LostFocus" Text="Enter the recipe name" TextWrapping="Wrap" Width="270" FontSize="20" Background="White" HorizontalAlignment="Left"/>
 
                     <Label x:Name="descriptionLabel" Content="Description" FontWeight="Bold" FontSize="20" />
                     <TextBox x:Name="descriptionField" PreviewMouseDown="description_MouseDown" LostFocus="description_LostFocus" Text="Enter a description" TextWrapping="Wrap" Width="270" FontSize="20" FontWeight="Normal" Height="100" HorizontalAlignment="Left"/>
 
                     <Label x:Name="categoryLabel" Content="Category" FontSize="20" FontWeight="Bold"/>
                     <ComboBox x:Name="categoryCombo" Width="270" HorizontalAlignment="Left" Height="25" FontSize="15" VerticalAlignment="Center">
-                        <ComboBoxItem x:Name="breakfastItem" Content="Breakfast" FontSize="15"/>
-                        <ComboBoxItem x:Name="lunchItem" Content="Lunch" FontSize="15"/>
+                        <ComboBoxItem x:Name="breakfastItem" FontSize="15" Content="Breakfast"/>
+                        <ComboBoxItem x:Name="lunchItem" FontSize="15" Content="Lunch"/>
                         <ComboBoxItem x:Name="dinnerItem" FontSize="15" Content="Dinner"/>
                         <ComboBoxItem x:Name="dessertItem" FontSize="15" Content="Dessert"/>
                         <ComboBoxItem x:Name="appetizerItem" FontSize="15" Content="Appetizer"/>
