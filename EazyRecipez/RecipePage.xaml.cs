@@ -43,6 +43,12 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new ProfilePage());
         }
 
+        private void Instructions_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new InstructionsPage());
+        }
+
         private void BackToPrevPage(object sender, MouseButtonEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
@@ -70,6 +76,24 @@ namespace EazyRecipez
         private void svPageLeft(object sender, RoutedEventArgs e)
         {
             sv1.PageLeft();
+        }
+
+        private void comment_MouseDown(object sender, RoutedEventArgs e)
+        {
+            if (commentsField.Text.Equals("Add a comment..."))
+            {
+                commentsField.Text = "";
+            }
+
+        }
+
+        private void comment_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (commentsField.Text.Equals(""))
+            {
+                commentsField.Text = "Add a comment...";
+            }
+
         }
 
 

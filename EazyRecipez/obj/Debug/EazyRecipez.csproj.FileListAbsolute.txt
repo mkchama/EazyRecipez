@@ -59,3 +59,5 @@ C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\FavoritesPage.g.
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\FavoritesPage.baml
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\MyRecipesPage.g.cs
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\MyRecipesPage.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\InstructionsPage.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\InstructionsPage.baml

@@ -87,5 +87,23 @@ namespace EazyRecipez
         {
             sv1.PageLeft();
         }
+
+        private void comment_MouseDown(object sender, RoutedEventArgs e)
+        {
+            if (commentsField.Text.Equals("Add a comment..."))
+            {
+                commentsField.Text = "";
+            }
+
+        }
+
+        private void comment_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (commentsField.Text.Equals(""))
+            {
+                commentsField.Text = "Add a comment...";
+            }
+
+        }
     }
 }
