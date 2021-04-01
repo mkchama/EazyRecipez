@@ -39,7 +39,7 @@
                     <StackPanel x:Name="ingredientField">
                         
                     </StackPanel>
-                    <Button x:Name="btnIngredient" Content="Add an ingredient" Click="ButtonIngredient_Click" Height="30"  Width="140" Margin="0,10,0,0">
+                    <Button x:Name="btnIngredient" Content="Add an ingredient" Click="ButtonIngredient_Click" Height="30"  Width="120" Margin="0,10,0,0">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="7"/>
@@ -66,7 +66,7 @@
 
                     <Label x:Name="timeLabel" Content="Time to Complete" FontSize="20" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal">
-                        <ComboBox x:Name="hoursBox" Width="80" MaxDropDownHeight="120" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                        <ComboBox x:Name="hoursBox" Width="80" MaxDropDownHeight="100" ScrollViewer.VerticalScrollBarVisibility="Hidden">
                             <ComboBoxItem x:Name="boxh0" Content="0 hours" FontSize="15"/>
                             <ComboBoxItem x:Name="boxh1" Content="1 hour" FontSize="15"/>
                             <ComboBoxItem x:Name="boxh2" Content="2 hours" FontSize="15"/>
@@ -95,7 +95,7 @@
                             <ComboBoxItem x:Name="boxhextra" Content="24+ hours" FontSize="15"/>
                         </ComboBox>
                         <Separator Width="40" Background="White" />
-                        <ComboBox x:Name="minutesBox" Width="100" MaxDropDownHeight="120" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                        <ComboBox x:Name="minutesBox" Width="100" MaxDropDownHeight="100" ScrollViewer.VerticalScrollBarVisibility="Hidden">
                             <ComboBoxItem x:Name="boxm5" Content="5 minutes" FontSize="15"/>
                             <ComboBoxItem x:Name="boxm10" Content="10 minutes" FontSize="15"/>
                             <ComboBoxItem x:Name="boxm15" Content="15 minutes" FontSize="15"/>

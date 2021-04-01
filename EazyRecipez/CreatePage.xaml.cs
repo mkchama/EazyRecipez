@@ -61,6 +61,8 @@ namespace EazyRecipez
             newTextBox.Text = "Add another ingredient";
             newTextBox.FontSize = 20;
             ingredientField.Children.Add(newTextBox);
+            ingredientField.RegisterName(newTextBox.Name, newTextBox.Text);
+            MessageBox.Show();
         }
 
 

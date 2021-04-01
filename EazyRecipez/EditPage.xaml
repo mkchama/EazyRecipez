@@ -88,7 +88,7 @@
                 </Button.Resources>
             </Button>
 
-            <Button x:Name="cancelButton" Content="Cancel" Click="Cancel_Click" HorizontalAlignment="Left" Margin="0,660,20,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
+            <Button x:Name="cancelButton" Click="Cancel" Content="Cancel"  HorizontalAlignment="Left" Margin="0,660,20,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="7"/>
