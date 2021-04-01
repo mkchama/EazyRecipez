@@ -25,7 +25,7 @@ namespace EazyRecipez
             InitializeComponent();
         }
 
-        private void BackToUserRecipe(object sender, MouseButtonEventArgs e)
+        private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow?.ChangeView(new UserRecipePage());

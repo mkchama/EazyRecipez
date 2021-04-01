@@ -11,15 +11,6 @@
 
 
     <Grid Background="White">
-        <StackPanel Orientation="Horizontal">
-            <TextBlock  Height="Auto" TextWrapping="Wrap"  Text="➜" Width="Auto" Margin="25,10,0,0" FontSize="34" MouseLeftButtonUp="BackToUserRecipe">
-
-                <TextBlock.LayoutTransform>
-                    <ScaleTransform ScaleX="-1.0"/>
-                </TextBlock.LayoutTransform>
-
-            </TextBlock>
-        </StackPanel>
         <StackPanel>
             <TextBlock Text="Edit Recipe" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,10,0,0" FontSize="34" FontWeight="Bold"/>
         </StackPanel>
@@ -88,7 +79,7 @@
                 </Button.Resources>
             </Button>
 
-            <Button x:Name="offlineButton" Content="Cancel" HorizontalAlignment="Left" Margin="0,660,20,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
+            <Button x:Name="cancelButton" Content="Cancel" Click="Cancel_Click" HorizontalAlignment="Left" Margin="0,660,20,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="7"/>
