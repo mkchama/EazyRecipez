@@ -66,36 +66,57 @@
 
                     <Label x:Name="timeLabel" Content="Time to Complete" FontSize="20" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal">
-                        <ComboBox x:Name="hoursBox" Width="80">
-                            <ScrollViewer Height="110" VerticalScrollBarVisibility="Hidden">
-                                <ItemsControl Width="72">
-                                    <ComboBoxItem x:Name="boxh0" Content="0 hours" FontSize="15"/>
-                                    <ComboBoxItem x:Name="boxh1" Content="1 hour" FontSize="15"/>
-                                    <ComboBoxItem x:Name="boxh2" Content="2 hours" FontSize="15"/>
-                                    <ComboBoxItem x:Name="boxh3" Content="3 hours" FontSize="15"/>
-                                    <ComboBoxItem x:Name="boxh4" Content="4 hours" FontSize="15"/>
-                                    <ComboBoxItem x:Name="boxh5" Content="5 hours" FontSize="15"/>
-                                    <ComboBoxItem x:Name="boxh6" Content="6 hours" FontSize="15"/>
-                                    <ComboBoxItem x:Name="boxh7" Content="7 hours" FontSize="15"/>
-                                </ItemsControl>
-                            </ScrollViewer>
+                        <ComboBox x:Name="hoursBox" Width="80" MaxDropDownHeight="120" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <ComboBoxItem x:Name="boxh0" Content="0 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh1" Content="1 hour" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh2" Content="2 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh3" Content="3 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh4" Content="4 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh5" Content="5 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh6" Content="6 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh7" Content="7 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh8" Content="8 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh9" Content="9 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh10" Content="10 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh11" Content="11 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh12" Content="12 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh13" Content="13 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh14" Content="14 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh15" Content="15 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh16" Content="16 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh17" Content="17 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh18" Content="18 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh19" Content="19 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh20" Content="20 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh21" Content="21 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh22" Content="22 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh23" Content="23 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh24" Content="24 hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxhextra" Content="24+ hours" FontSize="15"/>
                         </ComboBox>
                         <Separator Width="40" Background="White" />
-                        <ComboBox x:Name="minutesBox" Width="80">
+                        <ComboBox x:Name="minutesBox" Width="100" MaxDropDownHeight="120" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <ComboBoxItem x:Name="boxm5" Content="5 minutes" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm10" Content="10 minutes" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm15" Content="15 minutes" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm20" Content="20 minutes" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm25" Content="25 minutes" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm30" Content="30 minutes" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm35" Content="35 minutes" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm40" Content="40 minutes" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm45" Content="45 minutes" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm50" Content="50 minutes" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm55" Content="55 minutes" FontSize="15"/>
                         </ComboBox>
                     </StackPanel>
                     
                     <Label x:Name="uploadPhotos" Content="Upload Photo(s)" FontSize="20" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal" Width="270" HorizontalAlignment="Center" >
-                        <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFA8A8A8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         <Separator Width="10" Background="White" />
-                        <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFA8A8A8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Button Content="" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         <Separator Width="10" Background="White" />
-                        <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFA8A8A8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        <Separator Width="10" Background="White" />
-                        <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFA8A8A8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        <Separator Width="10" Background="White" />
-                        <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFA8A8A8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Button Content="" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     </StackPanel>
                     <Separator Width="10" Background="White" />
@@ -106,7 +127,7 @@
         </ScrollViewer>
         
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button x:Name="onlineButton" Content="Post" HorizontalAlignment="Left" Margin="0,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
+            <Button x:Name="onlineButton" Content="Post" Click="Online_Click" HorizontalAlignment="Left" Margin="0,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="7"/>
@@ -114,7 +135,7 @@
                 </Button.Resources>
             </Button>
 
-            <Button x:Name="offlineButton" Content="Save Offline" HorizontalAlignment="Left" Margin="0,660,20,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
+            <Button x:Name="offlineButton" Content="Save Offline" Click="Offline_Click" HorizontalAlignment="Left" Margin="0,660,20,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="7"/>
@@ -122,6 +143,30 @@
                 </Button.Resources>
             </Button>
         </StackPanel>
+
+        <Rectangle x:Name="savedOffline" HorizontalAlignment="Left" Height="113" VerticalAlignment="Top" Width="320" Margin="27,315,0,0" Opacity="0.9" Visibility="Hidden">
+            <Rectangle.Fill>
+                <VisualBrush Stretch="None">
+                    <VisualBrush.Visual>
+                        <Border Width="800" Height="200" CornerRadius="50,0,0,0" Background="#FF8B8B8B"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="savedOfflineLabel" Content="Recipe Saved Offline" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,346,0,0" FontSize="30" FontWeight="Bold" Visibility="Hidden"/>
+
+        <Rectangle x:Name="savedOnline" HorizontalAlignment="Left" Height="113" VerticalAlignment="Top" Width="320" Margin="27,315,0,0" Opacity="0.9" Visibility="Hidden">
+            <Rectangle.Fill>
+                <VisualBrush Stretch="None">
+                    <VisualBrush.Visual>
+                        <Border Width="800" Height="200" CornerRadius="50,0,0,0" Background="#FF8B8B8B"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="savedOnlineLabel" Content="Recipe Saved Online" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,346,0,0" FontSize="30" FontWeight="Bold" Visibility="Hidden"/>
+
+
 
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="99"  VerticalAlignment="Bottom" Width="384"/>
         <StackPanel Margin="-5">

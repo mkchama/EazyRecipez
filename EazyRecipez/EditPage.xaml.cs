@@ -27,11 +27,19 @@ namespace EazyRecipez
             InitializeComponent();
         }
 
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new UserRecipePage());
+        }
+
         private void BackToUserRecipe(object sender, MouseButtonEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow?.ChangeView(new UserRecipePage());
         }
+
+
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {

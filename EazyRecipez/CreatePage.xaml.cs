@@ -131,5 +131,19 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new HomePage());
         }
 
+        private void Offline_Click(object sender, RoutedEventArgs e)
+        {
+            savedOffline.Visibility = Visibility.Visible;
+            savedOfflineLabel.Visibility = Visibility.Visible;
+
+        }
+
+        private void Online_Click(object sender, RoutedEventArgs e)
+        {
+            savedOnline.Visibility = Visibility.Visible;
+            savedOnlineLabel.Visibility = Visibility.Visible;
+
+        }
+
     }
 }
