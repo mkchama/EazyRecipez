@@ -1,0 +1,187 @@
+﻿<Page x:Class="EazyRecipez.DessertRecipe2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EazyRecipez"
+      mc:Ignorable="d" 
+      Height="900" Width="390"
+      Title="DessertRecipe2">
+
+    <Grid Background="White">
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock  Height="Auto" TextWrapping="Wrap"  Text="➜" Width="Auto" Margin="25,10,0,0" FontSize="34" MouseLeftButtonUp="BackToDessertPage">
+
+                <TextBlock.LayoutTransform>
+                    <ScaleTransform ScaleX="-1.0"/>
+                </TextBlock.LayoutTransform>
+
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Text="French Macaroon" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,10,0,0" FontSize="25" FontWeight="Bold"/>
+        </StackPanel>
+
+        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="640" Margin="0,55,0,0" VerticalAlignment="Top" Width="375" >
+            <StackPanel>
+
+                <ScrollViewer  Name="sv1" BorderThickness="0" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Margin="100,0,100,0">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Images/dessert2-frenchmacaroon.jpg" Width="175" Height="175"/>
+                            <Image Source="Images/dessert21.jpg" Width="175"/>
+                            <Image Source="Images/dessert22.jpg" Width="175"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                    <Button Height="25" Width="30" Background="White" Click="svPageLeft" Margin="0,0,0,0">
+                        <Image Source = "Images/icons8-arrow-left-100.png" />
+                    </Button>
+                    <Button Height="25" Width="30" Background="White" Click="svPageRight" Margin="10,0,0,0">
+                        <Image Source="Images/icons8-arrow-right-100.png" />
+                    </Button>
+                </StackPanel>
+
+                <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
+                    <StackPanel HorizontalAlignment="Center">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,0,0,0" FontSize="16"><Bold>Category:</Bold> Dessert
+                            </TextBlock>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,0,0,0" FontSize="16"><Bold>Time:</Bold> 1hour20min
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,5,0,0" FontSize="16"><Bold>Author:</Bold> John</TextBlock>
+                            <TextBlock Text="★★☆☆☆ (35)" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,5,0,0" FontSize="16" FontWeight="Bold"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <Label Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
+                <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
+
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock x:Name="subHeaderText" FontSize="14" TextWrapping="Wrap" Foreground="Black" Margin="10">
+                       t’s never a bad time for dessert. Cookies, cake, pie, you name it! But sometimes you need to change it up with something a little fancier: enter macarons. They may seem intimidating but with our easy-to-follow guide, they don’t have to be. And you can customize them!
+                        </TextBlock>
+                    </StackPanel>
+                </Border>
+
+                <Label Content="Ingredients" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
+                <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
+                    <StackPanel>
+                        <TextBlock  TextWrapping="Wrap" FontSize="14" Margin="10">
+                            <Bold>•</Bold> 1 ¾ cups powdered sugar (210 g),
+                            <LineBreak/> <Bold>•</Bold> 1 cup almond flour (95 g), finely ground,
+                            <LineBreak/><Bold>•</Bold> 1 teaspoon salt, divided,
+                            <LineBreak/><Bold>•</Bold> 3 egg whites, at room temperature,
+                            <LineBreak/><Bold>•</Bold> ¼ cup granulated sugar (50 g),
+                            <LineBreak/><Bold>•</Bold> ½ teaspoon vanilla extract,
+                            <LineBreak/><Bold>•</Bold> 2 drops pink gel food coloring,
+                            <LineBreak/><Bold>•</Bold> ½ teaspoon ground cinnamon,
+                            <LineBreak/><Bold>•</Bold> 1 cup unsalted butter (230 g), 2 sticks, at room temperature,
+                            <LineBreak/><Bold>•</Bold> 3 cups powdered sugar (360 g),
+                            <LineBreak/><Bold>•</Bold> 1 teaspoon vanilla extract,
+                            <LineBreak/><Bold>•</Bold> 3 tablespoons heavy cream
+                        </TextBlock>
+                    </StackPanel>
+                </Border>
+
+                <Label Content="Instructions                    ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
+                <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
+                    <StackPanel>
+                        <TextBlock TextWrapping="Wrap" FontSize="14" Margin="10" >
+                            <Bold>1.</Bold> Make the macarons: In the bowl of a food processor, combine the powdered sugar, almond flour, and ½ teaspoon of salt, and process on low speed, until extra fine. Sift the almond flour mixture through a fine-mesh sieve into a large bowl. <LineBreak/>
+                            <Bold>2.</Bold> In a separate large bowl, beat the egg whites and the remaining ½ teaspoon of salt with an electric hand mixer until soft peaks form. Gradually add the granulated sugar until fully incorporated. Continue to beat until stiff peaks form (you should be able to turn the bowl upside down without anything falling out).<LineBreak/>
+                            <Bold>3.</Bold> Add the vanilla and beat until incorporated. Add the food coloring and beat until just combined. <LineBreak/>
+                            <Bold>4.</Bold> Add about ⅓ of the sifted almond flour mixture at a time to the beaten egg whites and use a spatula to gently fold until combined. After the last addition of almond flour, continue to fold slowly until the batter falls into ribbons and you can make a figure 8 while holding the spatula up.<LineBreak/>
+                            <Bold>5.</Bold> Transfer the macaron batter into a piping bag fitted with a round tip.<LineBreak/>
+                            <Bold>6.</Bold> Place 4 dots of the batter in each corner of a rimmed baking sheet, and place a piece of parchment paper over it, using the batter to help adhere the parchment to the baking sheet. <LineBreak/>
+                            <Bold>7.</Bold> Pipe the macarons onto the parchment paper in 1½-inch (3-cm) circles, spacing at least 1-inch (2-cm) apart.<LineBreak/>
+                            <Bold>8.</Bold> Tap the baking sheet on a flat surface 5 times to release any air bubbles.<LineBreak/>
+                            <Bold>9.</Bold>Let the macarons sit at room temperature for 30 minutes to 1 hour, until dry to the touch.<LineBreak/>
+                            <Bold>10.</Bold> Preheat the oven to 300˚F (150˚C).<LineBreak/>
+                            <Bold>11.</Bold> Bake the macarons for 17 minutes, until the feet are well-risen and the macarons don’t stick to the parchment paper.<LineBreak/>
+                            <Bold>12.</Bold> Transfer the macarons to a wire rack to cool completely before filling.<LineBreak/>
+                            <Bold>13.</Bold> Make the buttercream.<LineBreak/>
+                            <Bold>14.</Bold> Transfer the buttercream to a piping bag fitted with a round tip.<LineBreak/>
+                            <Bold>15.</Bold> Add a dollop of buttercream to one macaron shell. Top it with another macaron shell to create a sandwich. Repeat with remaining macaron shells and buttercream.<LineBreak/>
+                            <Bold>16.</Bold> Place in an airtight container for 24 hours to “bloom”.<LineBreak/>
+                            <Bold>17.</Bold> Enjoy! </TextBlock>
+
+                    </StackPanel>
+                </Border>
+
+                <StackPanel Margin="0,10,0,0">
+                    <Label Content="Comments                    ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
+                    <TextBox x:Name="commentsField"  HorizontalAlignment="Center" PreviewMouseDown="comment_MouseDown" LostFocus="comment_LostFocus"  Height="25" Margin="0,0,0,10" FontSize="16" TextWrapping="Wrap" Text="Add a comment..." VerticalAlignment="Top" Width="330" Background="{x:Null}"/>
+                    <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="250" Margin="0,0,0,0" VerticalAlignment="Top" Width="375" >
+                        <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Margin="0,-25,0,0" Source="Images/profilepic1.jpg" Width="30"/>
+                                    <StackPanel>
+                                        <Label Content="User123" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="Delicious and easy to make." Width="210" FontSize="15" FontWeight="Normal"/>
+                                        <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Margin="0,-25,0,0" Source="Images/profilepic2.jpg" Width="30"/>
+                                    <StackPanel>
+                                        <Label Content="User456" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="The best pie i've ever had" Width="210" FontSize="15" FontWeight="Normal"/>
+                                        <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Margin="0,-25,0,0" Source="Images/profilepic3.jpg" Width="30"/>
+                                    <StackPanel>
+                                        <Label Content="User789" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="My kids love it!" Width="210" FontSize="15" FontWeight="Normal"/>
+                                        <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="Auto"/>
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Margin="0,-25,0,0" Source="Images/profilepic4.jpeg" Width="30"/>
+                                    <StackPanel>
+                                        <Label Content="Userabc" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="Fantastic" Width="210" FontSize="15" FontWeight="Normal"/>
+                                        <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="Auto"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </ScrollViewer>
+                </StackPanel>
+            </StackPanel>
+
+        </ScrollViewer>
+
+
+
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="99"  VerticalAlignment="Bottom" Width="384"/>
+        <StackPanel Margin="-5">
+            <Canvas>
+                <Image Source="Images/icons8-plus-50.png" Stretch="Fill" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="170" Canvas.Top="714"/>
+                <Image Source="Images/icons8-user-50.png" Stretch="Fill" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Right="40" Canvas.Top="713" Canvas.Left="312"/>
+                <Image Source="Images/icons8-home-50.png" Stretch="Fill" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center" Canvas.Left="40" Canvas.Top="715"/>
+                <TextBlock HorizontalAlignment="Left" Height="15" Margin="38,744,0,0" TextWrapping="Wrap" Text="Home" VerticalAlignment="Top" Width="36"/>
+                <TextBlock HorizontalAlignment="Left" Height="15" Margin="167,744,0,0" TextWrapping="Wrap" Text="Create" VerticalAlignment="Top" Width="36"/>
+                <TextBlock HorizontalAlignment="Left" Height="15" Margin="310,745,0,0" TextWrapping="Wrap" Text="Profile" VerticalAlignment="Top" Width="36"/>
+                <Button x:Name="HomeButton" Content="Button" HorizontalAlignment="Left" Margin="30,705,0,0" VerticalAlignment="Top" Width="50" Height="50" Opacity="0" Click="Home_Click"/>
+                <Button x:Name="ProfileButton" Content="Button" HorizontalAlignment="Left" Margin="300,705,0,0" VerticalAlignment="Top" Width="50" Height="50" Opacity="0" Click="Profile_Click"/>
+                <Button x:Name="CreateButton" Content="Button" HorizontalAlignment="Left" Margin="160,705,0,0" VerticalAlignment="Top" Width="50" Height="50" Opacity="0" Click="Create_Click"/>
+            </Canvas>
+        </StackPanel>
+
+
+    </Grid>
+</Page>
