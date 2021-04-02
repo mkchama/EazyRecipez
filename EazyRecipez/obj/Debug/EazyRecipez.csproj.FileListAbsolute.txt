@@ -61,3 +61,11 @@ C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\MyRecipesPage.g.
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\MyRecipesPage.baml
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\InstructionsPage.g.cs
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\InstructionsPage.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\DessertRecipe1.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\DessertRecipe2.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\DinnerRecipe1.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\DinnerRecipe2.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\DessertRecipe1.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\DessertRecipe2.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\DinnerRecipe1.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\DinnerRecipe2.baml

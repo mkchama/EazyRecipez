@@ -86,8 +86,20 @@
     <Compile Include="DessertPage.xaml.cs">
       <DependentUpon>DessertPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DessertRecipe1.xaml.cs">
+      <DependentUpon>DessertRecipe1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DessertRecipe2.xaml.cs">
+      <DependentUpon>DessertRecipe2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DinnerPage.xaml.cs">
       <DependentUpon>DinnerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DinnerRecipe1.xaml.cs">
+      <DependentUpon>DinnerRecipe1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DinnerRecipe2.xaml.cs">
+      <DependentUpon>DinnerRecipe2.xaml</DependentUpon>
     </Compile>
     <Compile Include="EditPage.xaml.cs">
       <DependentUpon>EditPage.xaml</DependentUpon>
@@ -134,9 +146,25 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DessertRecipe1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DessertRecipe2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="DinnerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DinnerRecipe1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DinnerRecipe2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="EditPage.xaml">
       <SubType>Designer</SubType>
@@ -278,6 +306,51 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\icons8-speaker-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\banana.jpg" />
+    <Resource Include="Images\biscuits.jpg" />
+    <Resource Include="Images\blt.jpg" />
+    <Resource Include="Images\burrito.jpg" />
+    <Resource Include="Images\ccpasta.jpg" />
+    <Resource Include="Images\cinammon.jpg" />
+    <Resource Include="Images\dessert1-sugarcreampie.jpg" />
+    <Resource Include="Images\dessert11.jpg" />
+    <Resource Include="Images\dessert12.jpg" />
+    <Resource Include="Images\dessert2-frenchmacaroon.jpg" />
+    <Resource Include="Images\dessert21.jpg" />
+    <Resource Include="Images\dessert22.jpg" />
+    <Resource Include="Images\dessert3-cheesecake.jpg" />
+    <Resource Include="Images\dessert4-eggtart.jpg" />
+    <Resource Include="Images\dessert5-oreotruffles.jpg" />
+    <Resource Include="Images\dessert6-banadapudding.jpg" />
+    <Resource Include="Images\dessert7-pumpkincheesecake.jpg" />
+    <Resource Include="Images\dessert8-bostoncreamycake.jpg" />
+    <Resource Include="Images\dessert9-applecrisp.jpg" />
+    <Resource Include="Images\dinner1-lemonsalmon.jpg" />
+    <Resource Include="Images\dinner11.jpg" />
+    <Resource Include="Images\dinner12.jpg" />
+    <Resource Include="Images\dinner2-tunasteak.jpg" />
+    <Resource Include="Images\dinner21.jpg" />
+    <Resource Include="Images\dinner22.jpg" />
+    <Resource Include="Images\dinner3-beefbulgogi.jpg" />
+    <Resource Include="Images\dinner4-avacadosalad.png" />
+    <Resource Include="Images\dinner5-chickencoconut.jpg" />
+    <Resource Include="Images\dinner6-cornchowder.jpg" />
+    <Resource Include="Images\dinner7-shrimptacos.jpg" />
+    <Resource Include="Images\dinner8-italianmeetballs.jpg" />
+    <Resource Include="Images\dinner9-chickenpasta.jpg" />
+    <Resource Include="Images\frenchtoast.jpg" />
+    <Resource Include="Images\Fried-Rice.jpg" />
+    <Resource Include="Images\fries.png" />
+    <Resource Include="Images\ham.jpg" />
+    <Resource Include="Images\jollof.jpg" />
+    <Resource Include="Images\macncheese.jpg" />
+    <Resource Include="Images\omelette.jpg" />
+    <Resource Include="Images\pulledpork.jpg" />
+    <Resource Include="Images\pumpkin.jpg" />
+    <Resource Include="Images\quinoa.png" />
+    <Resource Include="Images\tapioca.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
