@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace EazyRecipez
 {
@@ -22,6 +23,7 @@ namespace EazyRecipez
     public partial class EditPage : Page
     {
         String content;
+        public static string dirParameter = AppDomain.CurrentDomain.BaseDirectory + @"\file.txt";
         public EditPage()
         {
             InitializeComponent();
@@ -68,7 +70,8 @@ namespace EazyRecipez
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            string writerfile = @"C:\Users\mkchama\rand\file.txt";
+
+            string writerfile = dirParameter;
             using (StreamWriter writer = new StreamWriter(writerfile))
             {
                 writer.WriteLine(this.recipeNameField.Text);

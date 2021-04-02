@@ -62,7 +62,7 @@ namespace EazyRecipez
             newTextBox.FontSize = 20;
             ingredientField.Children.Add(newTextBox);
             ingredientField.RegisterName(newTextBox.Name, newTextBox.Text);
-            MessageBox.Show();
+
         }
 
 
