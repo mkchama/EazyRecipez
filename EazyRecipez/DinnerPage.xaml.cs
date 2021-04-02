@@ -86,5 +86,17 @@ namespace EazyRecipez
             }
             e.Handled = true;
         }
+
+        private void DinnerPage1_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new DinnerRecipe1());
+        }
+
+        private void DinnerPage2_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new DinnerRecipe2());
+        }
     }
 }
