@@ -112,7 +112,7 @@
                     
                     <Label x:Name="uploadPhotos" Content="Upload Photo(s)" FontSize="20" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal" Width="270" HorizontalAlignment="Center" >
-                        <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Image_Click"/>
                         <Separator Width="10" Background="White" />
                         <Button Content="" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         <Separator Width="10" Background="White" />

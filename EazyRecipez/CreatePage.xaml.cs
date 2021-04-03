@@ -133,6 +133,12 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new HomePage());
         }
 
+        private void Image_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new ImageGallery());
+        }
+
         private void Offline_Click(object sender, RoutedEventArgs e)
         {
             savedOffline.Visibility = Visibility.Visible;
