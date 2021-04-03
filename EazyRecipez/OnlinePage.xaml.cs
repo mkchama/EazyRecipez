@@ -26,8 +26,31 @@ namespace EazyRecipez
         }
 
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void RecipeName_MouseDown(object sender, RoutedEventArgs e)
         {
+            if (searchBox.Text.Equals("Search for recipes..."))
+            {
+                searchBox.Text = "";
+            }
+
+        }
+        private void RecipeName_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (searchBox.Text.Equals(""))
+            {
+                searchBox.Text = "Search for recipes...";
+            }
+            else
+            {
+                clearButton.Opacity = 100;
+            }
+        }
+
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            searchBox.Text = "Search for recipes...";
+            clearButton.Opacity = 0;
+
 
         }
 

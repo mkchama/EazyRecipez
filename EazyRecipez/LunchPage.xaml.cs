@@ -22,18 +22,54 @@ namespace EazyRecipez
     {
         public LunchPage()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            Loaded += LunchPage_Loaded;
+
+        }
+        void LunchPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (searchBox.Text == "Search for lunch recipes...")
+            {
+                clearButton.Opacity = 0;
+            }
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void RecipeName_MouseDown(object sender, RoutedEventArgs e)
         {
+            if (searchBox.Text.Equals("Search for lunch recipes..."))
+            {
+                searchBox.Text = "";
+            }
 
+        }
+        private void RecipeName_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (searchBox.Text.Equals(""))
+            {
+                searchBox.Text = "Search for lunch recipes...";
+                clearButton.Opacity = 0;
+            }
+            else
+            {
+                clearButton.Opacity = 100;
+            }
+
+        }
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            searchBox.Text = "Search for lunch recipes...";
+            clearButton.Opacity = 0;
         }
 
         private void Breakfast_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new BreakfastPage());
+            BreakfastPage Breakfast_Page = new BreakfastPage();
+            if (searchBox.Text != "Search for lunch recipes...")
+            {
+                Breakfast_Page.searchBox.Text = searchBox.Text;
+            }
+            mainWindow?.ChangeView(Breakfast_Page);
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
@@ -57,19 +93,36 @@ namespace EazyRecipez
         private void Dinner_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new DinnerPage());
+            DinnerPage Dinner_Page = new DinnerPage();
+            if (searchBox.Text != "Search for lunch recipes...")
+            {
+                Dinner_Page.searchBox.Text = searchBox.Text;
+            }
+            mainWindow?.ChangeView(Dinner_Page);
         }
 
         private void Dessert_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new DessertPage());
+            DessertPage Dessert_Page = new DessertPage();
+            if (searchBox.Text != "Search for lunch recipes...")
+            {
+                Dessert_Page.searchBox.Text = searchBox.Text;
+            }
+
+            mainWindow?.ChangeView(Dessert_Page);
         }
 
         private void Lunch_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new HomePage());
+            HomePage Home_Page = new HomePage();
+            if (searchBox.Text != "Search for lunch recipes...")
+            {
+                Home_Page.searchBox.Text = searchBox.Text;
+            }
+
+            mainWindow?.ChangeView(Home_Page);
         }
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)

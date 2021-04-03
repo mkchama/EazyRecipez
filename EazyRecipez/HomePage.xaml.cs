@@ -27,11 +27,33 @@ namespace EazyRecipez
         {
             InitializeComponent();
         }
- 
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+
+        private void RecipeName_MouseDown(object sender, RoutedEventArgs e)
         {
+            if (searchBox.Text.Equals("Search for recipes..."))
+            {
+                searchBox.Text = "";
+            }
+        }
 
+        private void RecipeName_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (searchBox.Text.Equals(""))
+            {
+                searchBox.Text = "Search for recipes...";
+            }
+
+            else
+            {
+                clearButton.Opacity = 100;
+            }
+        }
+
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            searchBox.Text = "Search for recipes...";
+            clearButton.Opacity = 0;
         }
 
         private void Recipe_Click(object sender, RoutedEventArgs e)
@@ -41,28 +63,43 @@ namespace EazyRecipez
         }
 
 
-        private void Breakfast_Click(object sender, RoutedEventArgs e)
-        {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new BreakfastPage());
-        }
-
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow?.ChangeView(new ProfilePage());
         }
 
+        private void Breakfast_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            BreakfastPage Breakfast_Page = new BreakfastPage();
+            if (searchBox.Text != "Search for recipes...")
+            {
+                Breakfast_Page.searchBox.Text = searchBox.Text;
+            }
+            mainWindow?.ChangeView(Breakfast_Page);
+        }
+
         private void Lunch_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new LunchPage());
+            LunchPage Lunch_Page = new LunchPage();
+            if (searchBox.Text != "Search for recipes...")
+            {
+                Lunch_Page.searchBox.Text = searchBox.Text;
+            }
+            mainWindow?.ChangeView(Lunch_Page);
         }
 
         private void Dinner_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new DinnerPage());
+            DinnerPage Dinner_Page = new DinnerPage();
+            if (searchBox.Text != "Search for recipes...")
+            {
+                Dinner_Page.searchBox.Text = searchBox.Text;
+            }
+            mainWindow?.ChangeView(Dinner_Page);
         }
 
         private void Create_Click(object sender, RoutedEventArgs e)
@@ -74,7 +111,12 @@ namespace EazyRecipez
         private void Dessert_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new DessertPage());
+            DessertPage Dessert_Page = new DessertPage();
+            if (searchBox.Text != "Search for recipes...")
+            {
+                Dessert_Page.searchBox.Text = searchBox.Text;
+            }
+            mainWindow?.ChangeView(Dessert_Page);
         }
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
@@ -91,23 +133,7 @@ namespace EazyRecipez
             e.Handled = true;
         }
 
-        private void search_MouseDown(object sender, RoutedEventArgs e)
-        {
-            if (searchField.Text.Equals("Search for recipes..."))
-            {
-                searchField.Text = "";
-            }
-
-        }
-
-        private void search_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (searchField.Text.Equals(""))
-            {
-                searchField.Text = "Search for recipes...";
-            }
-
-        }
+       
 
 
 

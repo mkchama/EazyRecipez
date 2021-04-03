@@ -56,7 +56,8 @@
             </StackPanel>
         </ScrollViewer>
 
-        <TextBox HorizontalAlignment="Center" Height="25" Margin="0,65,0,0" FontSize="16" TextWrapping="Wrap" Text="Search for recipes..." VerticalAlignment="Top" Width="290" Background="{x:Null}" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name ="searchBox" HorizontalAlignment="Center" Height="25" Margin="0,65,0,0" FontSize="16" TextWrapping="Wrap" Text="Search for dessert recipes..." VerticalAlignment="Top" Width="290" Background="{x:Null}" PreviewMouseDown="RecipeName_MouseDown" LostFocus="RecipeName_LostFocus"/>
+        <Button x:Name="clearButton" Content="x" HorizontalAlignment="Left" Margin="321,65,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="2.409,0.478" Background="White" BorderThickness="0 0.7 0.7 0.7" Opacity="100" Click="Clear_Click"/>
         <Image Height="20"  Source="Images/search_icon.png" Stretch="Fill"  Width="20"  Margin="10,40,338,685"/>
 
         <Grid HorizontalAlignment="Left" Height="62" Margin="10,10,0,0" VerticalAlignment="Top" Width="390"/>

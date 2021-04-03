@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\
+C:\Users\mkchama\Source\Repos\mkchama\EazyRecipez\EazyRecipez\obj\Debug\
 EazyRecipez
 none
 false
 DEBUG;TRACE
-C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\App.xaml
+C:\Users\mkchama\Source\Repos\mkchama\EazyRecipez\EazyRecipez\App.xaml
 21-1826424915
 
 26-2142254905
-21-788796250
+21-1918881391
 BreakfastPage.xaml;CreatePage.xaml;DessertPage.xaml;DessertRecipe1.xaml;DessertRecipe2.xaml;DinnerPage.xaml;DinnerRecipe1.xaml;DinnerRecipe2.xaml;EditPage.xaml;HomePage.xaml;InstructionsPage.xaml;LunchPage.xaml;MainWindow.xaml;OfflinePage.xaml;OnlinePage.xaml;FavoritesPage.xaml;MyRecipesPage.xaml;ProfilePage.xaml;RecipePage.xaml;UserRecipePage.xaml;Window1.xaml;
 
-True
+False
 
