@@ -20,16 +20,18 @@
         </StackPanel>
 
         <StackPanel>
-            <TextBlock Text="Lemon Garlic Salmon" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,10,0,0" FontSize="25" FontWeight="Bold"/>
+            <TextBlock Text="Lemon Garlic" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,10,0,0" FontSize="32" FontWeight="Bold"/>
+            <TextBlock Text="Salmon" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,0,0,0" FontSize="32" FontWeight="Bold"/>
+
         </StackPanel>
 
-        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="640" Margin="0,55,0,0" VerticalAlignment="Top" Width="375" >
+        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="640" Margin="0,100,0,0" VerticalAlignment="Top" Width="375" >
             <StackPanel>
 
                 <ScrollViewer  Name="sv1" BorderThickness="0" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Margin="100,0,100,0">
                     <StackPanel>
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/dinner1-lemonsalmon.jpg" Width="175" Height="160"/>
+                            <Image Source="Images/salmon.jpg" Width="175" Height="160"/>
                             <Image Source="Images/dinner11.jpg" Width="175"/>
                             <Image Source="Images/dinner12.jpg" Width="175"/>
                         </StackPanel>
@@ -100,43 +102,45 @@
                     </StackPanel>
                 </Border>
 
-                <StackPanel Margin="0,10,0,0">
-                    <Label Content="Comments                    ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
+                <Label Content="Comments                     ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="28" FontWeight="Bold"/>
+
+
+                <StackPanel Margin="0,0,0,0">
                     <TextBox x:Name="commentsField"  HorizontalAlignment="Center" PreviewMouseDown="comment_MouseDown" LostFocus="comment_LostFocus"  Height="25" Margin="0,0,0,10" FontSize="16" TextWrapping="Wrap" Text="Add a comment..." VerticalAlignment="Top" Width="330" Background="{x:Null}"/>
                     <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="250" Margin="0,0,0,0" VerticalAlignment="Top" Width="375" >
                         <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
                             <StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/profilepic1.jpg" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-name-100.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="User123" Width="189" FontSize="18" FontWeight="Bold"/>
-                                        <Label Content="Cannot wait to make this again!" Width="190" FontSize="15" FontWeight="Normal"/>
+                                        <Label Content="User123" Width="Auto" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="Cannot wait to make this again!" Width="Auto" FontSize="15" FontWeight="Normal"/>
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                                     </StackPanel>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/profilepic2.jpg" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-name-100.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="User456" Width="189" FontSize="18" FontWeight="Bold"/>
-                                        <Label Content="Awesome Recipe!" Width="190" FontSize="15" FontWeight="Normal"/>
+                                        <Label Content="User456" Width="Auto" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="Awesome Recipe!" Width="Auto" FontSize="15" FontWeight="Normal"/>
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                                     </StackPanel>
                                 </StackPanel>
 
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/profilepic3.jpg" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-name-100.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="User789" Width="189" FontSize="18" FontWeight="Bold"/>
-                                        <Label Content="Amazing, love it!" Width="190" FontSize="15" FontWeight="Normal"/>
+                                        <Label Content="User789" Width="Auto" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="Amazing, love it!" Width="Auto" FontSize="15" FontWeight="Normal"/>
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="Auto"/>
                                     </StackPanel>
                                 </StackPanel>
 
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/profilepic4.jpeg" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-name-100.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="Userabc" Width="189" FontSize="18" FontWeight="Bold"/>
-                                        <Label Content="Great flavor!" Width="190" FontSize="15" FontWeight="Normal"/>
+                                        <Label Content="Userabc" Width="Auto" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="Great flavor!" Width="Auto" FontSize="15" FontWeight="Normal"/>
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="Auto"/>
                                     </StackPanel>
                                 </StackPanel>

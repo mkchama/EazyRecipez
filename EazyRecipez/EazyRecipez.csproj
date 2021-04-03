@@ -327,7 +327,6 @@
     <Resource Include="Images\dessert7-pumpkincheesecake.jpg" />
     <Resource Include="Images\dessert8-bostoncreamycake.jpg" />
     <Resource Include="Images\dessert9-applecrisp.jpg" />
-    <Resource Include="Images\dinner1-lemonsalmon.jpg" />
     <Resource Include="Images\dinner11.jpg" />
     <Resource Include="Images\dinner12.jpg" />
     <Resource Include="Images\dinner2-tunasteak.jpg" />
@@ -351,6 +350,12 @@
     <Resource Include="Images\pumpkin.jpg" />
     <Resource Include="Images\quinoa.png" />
     <Resource Include="Images\tapioca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dinner1-lemonsalmon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\salmon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
