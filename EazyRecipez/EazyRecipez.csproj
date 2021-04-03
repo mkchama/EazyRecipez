@@ -357,6 +357,75 @@
   <ItemGroup>
     <Resource Include="Images\salmon.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pancakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\quiche.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\hashbrown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\danishes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\crepes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\eggburrito.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\smoothiebowl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\scrameggs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bananacookie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tunasalad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\grillcheese.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\beefsand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\beansoup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cobbsalad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\eggsalad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sloppyjoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\banhmi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\beefbowl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chickcurry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chowder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\shrimptaco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\meatballs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\chickpasta.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

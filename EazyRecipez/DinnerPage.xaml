@@ -88,7 +88,7 @@
                         </Button.Style>
 
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/salmon.jpg" Width="96" Height="75"/>
+                            <Image Source="Images/salmon.jpg" Width="85" Height="85"/>
                             <StackPanel>
                                 <Label Content="Lemon Garlic Salmon" Width="189" FontSize="17" FontWeight="Bold"/>
                                 <Label Content="★★★★★ (136)" Width="190" FontSize="15" FontWeight="Bold"/>
@@ -122,7 +122,7 @@
                             </Style>
                         </Button.Style>
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/dinner2-tunasteak.jpg" Width="96" Height="75"/>
+                            <Image Source="Images/dinner2-tunasteak.jpg" Width="85"/>
                             <StackPanel>
                                 <Label Content="Tuna Steak" Width="190" FontSize="17" FontWeight="Bold"/>
                                 <Label Content="★★★★☆ (64)" Width="190" FontSize="15" FontWeight="Bold"/>
@@ -133,7 +133,7 @@
                     </Button>
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dinner3-beefbulgogi.jpg" Width="96" Height="85"/>
+                        <Image Source="Images/dinner3-beefbulgogi.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Beef Bulgogi" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★☆☆ (86)" Width="190" FontSize="15" FontWeight="Bold"/>
@@ -145,7 +145,7 @@
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dinner4-avacadosalad.png" Width="96" Height="85" />
+                        <Image Source="Images/dinner4-avacadosalad.png" Width="85" />
                         <StackPanel>
                             <Label Content="Avacado Salad" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★☆☆☆ (97)" Width="190" FontSize="15" FontWeight="Bold"/>
@@ -156,7 +156,7 @@
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dinner5-chickencoconut.jpg" Width="96" Height="85"/>
+                        <Image Source="Images/chickcurry.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Chicken Curry" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★☆☆ (46)" Width="190" FontSize="15" FontWeight="Bold"/>
@@ -167,7 +167,7 @@
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dinner6-cornchowder.jpg" Width="96" Height="85"/>
+                        <Image Source="Images/chowder.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★☆ (70)" Width="190" FontSize="15" FontWeight="Bold"/>
@@ -178,7 +178,7 @@
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dinner7-shrimptacos.jpg" Width="96" Height="85"/>
+                        <Image Source="Images/shrimptaco.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Shrimp Tacos" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (88)" Width="190" FontSize="15" FontWeight="Bold"/>
@@ -188,7 +188,7 @@
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dinner8-italianmeetballs.jpg" Width="96" Height="85"/>
+                        <Image Source="Images/meatballs.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Italian Meetballs" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★☆ (23)" Width="190" FontSize="15" FontWeight="Bold"/>
@@ -198,7 +198,7 @@
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dinner9-chickenpasta.jpg" Width="96" Height="85"/>
+                        <Image Source="Images/chickpasta.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Chicken Pasta" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★☆☆ (56)" Width="190" FontSize="15" FontWeight="Bold"/>

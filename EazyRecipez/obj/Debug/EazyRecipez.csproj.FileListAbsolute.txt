@@ -139,3 +139,4 @@ C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.cspr
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.csproj.CopyComplete
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.exe
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.pdb
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.csprojAssemblyReference.cache

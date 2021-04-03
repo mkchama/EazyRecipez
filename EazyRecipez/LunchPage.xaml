@@ -65,11 +65,11 @@
                 <StackPanel Margin="10">
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-pancake-96.png" Width="Auto"/>
+                        <Image Source="Images/tunasalad.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Tuna Salad" Width="Auto" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (88)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="40 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                         </StackPanel>
@@ -77,87 +77,95 @@
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-bento-96.png" Width="Auto"/>
+                        <Image Source="Images/grillcheese.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Grilled Cheese Sandwich" Width="Auto" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (100)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="5 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
                         </StackPanel>
                     </StackPanel>
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-pizza-96.png" Width="Auto"/>
+                        <Image Source="Images/beefsand.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Italian Beef Sandwich" Width="Auto" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (110)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="1 hr 25 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
                         </StackPanel>
                     </StackPanel>
 
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-taco-96.png" Width="Auto"/>
+                        <Image Source="Images/beansoup.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Bean Soup" Width="Auto" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (46)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="25 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
                         </StackPanel>
                     </StackPanel>
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-cereal-96.png" Width="Auto"/>
+                        <Image Source="Images/cobbsalad.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Cobb Salad" Width="Auto" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (287)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="50 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
                         </StackPanel>
                     </StackPanel>
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-bagel-96.png" Width="Auto"/>
+                        <Image Source="Images/eggsalad.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Egg salad" Width="Auto" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (1327)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="35 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
                         </StackPanel>
                     </StackPanel>
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-pancake-96.png" Width="Auto"/>
+                        <Image Source="Images/beefbowl.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Ground Beef Bowl" Width="Auto" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (87)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="25 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
                         </StackPanel>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-pancake-96.png" Width="Auto"/>
+                        <Image Source="Images/sloppyjoe.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Sloppy Joes" Width="Auto" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (215)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="40 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
                         </StackPanel>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-pancake-96.png" Width="Auto"/>
+                        <Image Source="Images/banhmi.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Banh Mi" Width="Auto" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (99)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="50 min" Width="Auto"/>
+                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                         </StackPanel>
                     </StackPanel>
