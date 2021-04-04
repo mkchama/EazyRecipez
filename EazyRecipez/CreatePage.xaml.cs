@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace EazyRecipez
 {
@@ -22,6 +23,12 @@ namespace EazyRecipez
     /// </summary>
     public partial class CreatePage : Page
     {
+
+
+        private List<TextBox> ingredientsList = new List<TextBox>();
+        private List<TextBox> instructionList = new List<TextBox>();
+
+
         public CreatePage()
         {
             InitializeComponent();
@@ -48,9 +55,11 @@ namespace EazyRecipez
         protected void ButtonGenerate_Click(object sender, RoutedEventArgs e)
         {
             var newTextBox = new TextBox();
+            int id = ingredientsList.Count;
+
             // here set new textbox parameters
-            newTextBox.Name = "newInstruction1";
-            newTextBox.Text = "Add another instruction";
+            newTextBox.Name = "newInstruction" + id.ToString();
+            newTextBox.Text = "";
             newTextBox.FontSize = 20;
             instructionPanel.Children.Add(newTextBox);
         }
@@ -58,12 +67,14 @@ namespace EazyRecipez
         protected void ButtonIngredient_Click(object sender, RoutedEventArgs e)
         {
             var newTextBox = new TextBox();
+            int id = ingredientsList.Count;
+
             // here set new textbox parameters
-            newTextBox.Name = "newIngredient";
-            newTextBox.Text = "Add another ingredient";
+            newTextBox.Name = "newIngredient" + id.ToString();
+            newTextBox.Text = "";
             newTextBox.FontSize = 20;
+            ingredientsList.Add(newTextBox);
             ingredientField.Children.Add(newTextBox);
-            ingredientField.RegisterName(newTextBox.Name, newTextBox.Text);
 
         }
 
@@ -148,6 +159,8 @@ namespace EazyRecipez
                 savedOffline.Visibility = Visibility.Visible;
                 savedOfflineLabel.Visibility = Visibility.Visible;
 
+                Save_File(sender);
+
                 offlineButton.IsEnabled = false;
                 onlineButton.IsEnabled = false;
 
@@ -166,6 +179,8 @@ namespace EazyRecipez
             {
                 savedOnline.Visibility = Visibility.Visible;
                 savedOnlineLabel.Visibility = Visibility.Visible;
+
+                Save_File(sender);
 
                 offlineButton.IsEnabled = false;
                 onlineButton.IsEnabled = false;
@@ -200,6 +215,58 @@ namespace EazyRecipez
             {
                 return false;
             }
+        }
+
+        private void Save_File(Object sender)
+        {
+            string fileName = @"\recipes\" + recipeNameField.Text + ".txt";
+            string path = AppDomain.CurrentDomain.BaseDirectory + fileName;
+            // Create a file to write to.
+            using (StreamWriter sw = File.CreateText(path))
+            {
+                sw.WriteLine(recipeNameField.Text);
+                sw.WriteLine(descriptionField.Text);
+                sw.WriteLine(categoryCombo.Text);
+                sw.WriteLine(ingredientsField.Text);
+                foreach (var ingredient in ingredientsList)
+                {
+                    if (ingredient.Text != "")
+                    {
+                        sw.WriteLine(ingredient.Text);
+                    }
+
+                }
+                sw.WriteLine("Instructions");
+                sw.WriteLine(instructionsField.Text);
+                foreach (var instruction in instructionList)
+                {
+                    if (instruction.Text != "")
+                    {
+                        sw.WriteLine(instruction.Text);
+                    }
+
+                }
+                sw.WriteLine("endInstructions");
+                if (hoursBox.SelectedIndex > -1)
+                {
+                    sw.WriteLine(hoursBox.Text);
+                }
+                else
+                {
+                    sw.WriteLine("0");
+                }
+                if (minutesBox.SelectedIndex > -1)
+                {
+                    sw.WriteLine(minutesBox.Text);
+                }
+                else
+                {
+                    sw.WriteLine("0");
+                }
+                sw.WriteLine("Demo User");
+
+            }
+
         }
 
     }

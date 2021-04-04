@@ -67,47 +67,50 @@
                     <Label x:Name="timeLabel" Content="Time to Complete" FontSize="20" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal">
                         <ComboBox x:Name="hoursBox" Width="80" MaxDropDownHeight="100" ScrollViewer.VerticalScrollBarVisibility="Hidden">
-                            <ComboBoxItem x:Name="boxh0" Content="0 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh1" Content="1 hour" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh2" Content="2 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh3" Content="3 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh4" Content="4 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh5" Content="5 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh6" Content="6 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh7" Content="7 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh8" Content="8 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh9" Content="9 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh10" Content="10 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh11" Content="11 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh12" Content="12 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh13" Content="13 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh14" Content="14 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh15" Content="15 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh16" Content="16 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh17" Content="17 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh18" Content="18 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh19" Content="19 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh20" Content="20 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh21" Content="21 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh22" Content="22 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh23" Content="23 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxh24" Content="24 hours" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxhextra" Content="24+ hours" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh0" Content="0" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh1" Content="1" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh2" Content="2" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh3" Content="3" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh4" Content="4" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh5" Content="5" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh6" Content="6" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh7" Content="7" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh8" Content="8" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh9" Content="9" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh10" Content="10" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh11" Content="11" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh12" Content="12" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh13" Content="13" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh14" Content="14" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh15" Content="15" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh16" Content="16" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh17" Content="17" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh18" Content="18" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh19" Content="19" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh20" Content="20" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh21" Content="21" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh22" Content="22" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh23" Content="23" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh24" Content="24" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxhextra" Content="24+" FontSize="15"/>
                         </ComboBox>
+                        <Label Content="h" FontSize="15"/>
                         <Separator Width="40" Background="White" />
                         <ComboBox x:Name="minutesBox" Width="100" MaxDropDownHeight="100" ScrollViewer.VerticalScrollBarVisibility="Hidden">
-                            <ComboBoxItem x:Name="boxm5" Content="5 minutes" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxm10" Content="10 minutes" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxm15" Content="15 minutes" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxm20" Content="20 minutes" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxm25" Content="25 minutes" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxm30" Content="30 minutes" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxm35" Content="35 minutes" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxm40" Content="40 minutes" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxm45" Content="45 minutes" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxm50" Content="50 minutes" FontSize="15"/>
-                            <ComboBoxItem x:Name="boxm55" Content="55 minutes" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxmu5" Content="under 5" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm5" Content="5" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm10" Content="10" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm15" Content="15" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm20" Content="20" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm25" Content="25" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm30" Content="30" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm35" Content="35" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm40" Content="40" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm45" Content="45" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm50" Content="50" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm55" Content="55" FontSize="15"/>
                         </ComboBox>
+                        <Label Content="m" FontSize="15"/>
                     </StackPanel>
                     
                     <Label x:Name="uploadPhotos" Content="Upload Photo(s)" FontSize="20" FontWeight="Bold"/>
