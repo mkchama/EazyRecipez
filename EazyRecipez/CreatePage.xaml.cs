@@ -143,22 +143,63 @@ namespace EazyRecipez
 
         private async void Offline_Click(object sender, RoutedEventArgs e)
         {
-            savedOffline.Visibility = Visibility.Visible;
-            savedOfflineLabel.Visibility = Visibility.Visible;
-            await Task.Delay(TimeSpan.FromSeconds(2));
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new OfflinePage());
+            if (Valid_Request(sender))
+            {
+                savedOffline.Visibility = Visibility.Visible;
+                savedOfflineLabel.Visibility = Visibility.Visible;
+
+                offlineButton.IsEnabled = false;
+                onlineButton.IsEnabled = false;
+
+                await Task.Delay(TimeSpan.FromSeconds(2));
+                var mainWindow = (MainWindow)Application.Current.MainWindow;
+                mainWindow?.ChangeView(new OfflinePage());
+            }
+
 
         }
 
         private async void Online_Click(object sender, RoutedEventArgs e)
         {
-            savedOnline.Visibility = Visibility.Visible;
-            savedOnlineLabel.Visibility = Visibility.Visible;
-            await Task.Delay(TimeSpan.FromSeconds(2));
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new OnlinePage());
 
+            if (Valid_Request(sender))
+            {
+                savedOnline.Visibility = Visibility.Visible;
+                savedOnlineLabel.Visibility = Visibility.Visible;
+
+                offlineButton.IsEnabled = false;
+                onlineButton.IsEnabled = false;
+
+                await Task.Delay(TimeSpan.FromSeconds(2));
+                var mainWindow = (MainWindow)Application.Current.MainWindow;
+                mainWindow?.ChangeView(new OnlinePage());
+            }
+
+        }
+
+        private bool Valid_Request(Object sender)
+        {
+            if (!recipeNameField.Text.Equals("Enter the recipe name") && !instructionsField.Text.Equals("Enter an instruction") && !ingredientsField.Text.Equals("Enter an ingredient")
+                && !descriptionField.Text.Equals("Enter a description") && categoryCombo.SelectedIndex > -1 && Time_Chosen(sender))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool Time_Chosen(Object sender)
+        {
+            if (hoursBox.SelectedIndex > -1 || minutesBox.SelectedIndex > -1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
     }
