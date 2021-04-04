@@ -102,12 +102,6 @@ namespace EazyRecipez
             mainWindow?.ChangeView(Dinner_Page);
         }
 
-        private void Create_Click(object sender, RoutedEventArgs e)
-        {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new CreatePage());
-        }
-
         private void Dessert_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
@@ -118,6 +112,26 @@ namespace EazyRecipez
             }
             mainWindow?.ChangeView(Dessert_Page);
         }
+
+        private void Appetizer_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            AppetizerPage Appetizer_Page = new AppetizerPage();
+            if (searchBox.Text != "Search for recipes...")
+            {
+                Appetizer_Page.searchBox.Text = searchBox.Text;
+            }
+
+            mainWindow?.ChangeView(Appetizer_Page);
+        }
+
+        private void Create_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new CreatePage());
+        }
+
+
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {

@@ -20,7 +20,7 @@ namespace EazyRecipez
     /// </summary>
     public partial class MainWindow : Window
     {
-        private object content;
+   //     private object content;
         public MainWindow()
         {
             InitializeComponent();

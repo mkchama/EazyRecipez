@@ -61,16 +61,7 @@ namespace EazyRecipez
             clearButton.Opacity = 0;
         }
 
-        private void Breakfast_Click(object sender, RoutedEventArgs e)
-        {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            BreakfastPage Breakfast_Page = new BreakfastPage();
-            if (searchBox.Text != "Search for lunch recipes...")
-            {
-                Breakfast_Page.searchBox.Text = searchBox.Text;
-            }
-            mainWindow?.ChangeView(Breakfast_Page);
-        }
+
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
@@ -88,6 +79,28 @@ namespace EazyRecipez
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow?.ChangeView(new ProfilePage());
+        }
+
+        private void Breakfast_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            BreakfastPage Breakfast_Page = new BreakfastPage();
+            if (searchBox.Text != "Search for lunch recipes...")
+            {
+                Breakfast_Page.searchBox.Text = searchBox.Text;
+            }
+            mainWindow?.ChangeView(Breakfast_Page);
+        }
+        private void Lunch_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            HomePage Home_Page = new HomePage();
+            if (searchBox.Text != "Search for lunch recipes...")
+            {
+                Home_Page.searchBox.Text = searchBox.Text;
+            }
+
+            mainWindow?.ChangeView(Home_Page);
         }
 
         private void Dinner_Click(object sender, RoutedEventArgs e)
@@ -113,16 +126,16 @@ namespace EazyRecipez
             mainWindow?.ChangeView(Dessert_Page);
         }
 
-        private void Lunch_Click(object sender, RoutedEventArgs e)
+        private void Appetizer_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            HomePage Home_Page = new HomePage();
+            AppetizerPage Appetizer_Page = new AppetizerPage();
             if (searchBox.Text != "Search for lunch recipes...")
             {
-                Home_Page.searchBox.Text = searchBox.Text;
+                Appetizer_Page.searchBox.Text = searchBox.Text;
             }
 
-            mainWindow?.ChangeView(Home_Page);
+            mainWindow?.ChangeView(Appetizer_Page);
         }
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)

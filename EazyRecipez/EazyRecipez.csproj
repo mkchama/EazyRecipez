@@ -77,6 +77,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AppetizerPage.xaml.cs">
+      <DependentUpon>AppetizerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BreakfastPage.xaml.cs">
       <DependentUpon>BreakfastPage.xaml</DependentUpon>
     </Compile>
@@ -137,6 +140,10 @@
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="AppetizerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BreakfastPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

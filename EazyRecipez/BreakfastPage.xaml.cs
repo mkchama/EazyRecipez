@@ -104,6 +104,18 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new ProfilePage());
         }
 
+        private void Breakfast_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            HomePage Home_Page = new HomePage();
+            if (searchBox.Text != "Search for breakfast recipes...")
+            {
+                Home_Page.searchBox.Text = searchBox.Text;
+            }
+
+            mainWindow?.ChangeView(Home_Page);
+        }
+
         private void Lunch_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
@@ -131,19 +143,26 @@ namespace EazyRecipez
         private void Dessert_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new DessertPage());
-        }
-
-        private void Breakfast_Click(object sender, RoutedEventArgs e)
-        {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            HomePage Home_Page = new HomePage();
+            DessertPage Dessert_Page = new DessertPage();
             if (searchBox.Text != "Search for breakfast recipes...")
             {
-                Home_Page.searchBox.Text = searchBox.Text;
+                Dessert_Page.searchBox.Text = searchBox.Text;
+            }
+            mainWindow?.ChangeView(Dessert_Page);
+        }
+
+
+
+        private void Appetizer_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            AppetizerPage Appetizer_Page = new AppetizerPage();
+            if (searchBox.Text != "Search for breakfast recipes...")
+            {
+                Appetizer_Page.searchBox.Text = searchBox.Text;
             }
 
-            mainWindow?.ChangeView(Home_Page);
+            mainWindow?.ChangeView(Appetizer_Page);
         }
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)

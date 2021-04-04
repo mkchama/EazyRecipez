@@ -79,7 +79,16 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new ProfilePage());
         }
 
-
+        private void Breakfast_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            BreakfastPage Breakfast_Page = new BreakfastPage();
+            if (searchBox.Text != "Search for dessert recipes...")
+            {
+                Breakfast_Page.searchBox.Text = searchBox.Text;
+            }
+            mainWindow?.ChangeView(Breakfast_Page);
+        }
         private void Lunch_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
@@ -103,17 +112,6 @@ namespace EazyRecipez
             mainWindow?.ChangeView(Dinner_Page);
         }
 
-        private void Breakfast_Click(object sender, RoutedEventArgs e)
-        {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            BreakfastPage Breakfast_Page = new BreakfastPage();
-            if (searchBox.Text != "Search for dessert recipes...")
-            {
-                Breakfast_Page.searchBox.Text = searchBox.Text;
-            }
-            mainWindow?.ChangeView(Breakfast_Page);
-        }
-
         private void Dessert_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
@@ -123,7 +121,18 @@ namespace EazyRecipez
                 Home_Page.searchBox.Text = searchBox.Text;
             }
 
-            mainWindow?.ChangeView(new HomePage());
+            mainWindow?.ChangeView(Home_Page);
+        }
+        private void Appetizer_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            AppetizerPage Appetizer_Page = new AppetizerPage();
+            if (searchBox.Text != "Search for dessert recipes...")
+            {
+                Appetizer_Page.searchBox.Text = searchBox.Text;
+            }
+
+            mainWindow?.ChangeView(Appetizer_Page);
         }
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)

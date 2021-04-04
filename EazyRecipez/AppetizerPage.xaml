@@ -1,4 +1,4 @@
-﻿<Page x:Class="EazyRecipez.DessertPage"
+﻿<Page x:Class="EazyRecipez.AppetizerPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,12 +6,12 @@
       xmlns:local="clr-namespace:EazyRecipez"
       mc:Ignorable="d" 
 
-      Title="DessertPage" Height="800" Width="390">
+      Title="AppetizerPage" Height="800" Width="390">
 
     <Grid Background="White">
 
         <StackPanel>
-            <TextBlock Text="Dessert" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,10,0,0" FontSize="34" FontWeight="Bold"/>
+            <TextBlock Text="Appetizer" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,10,0,0" FontSize="34" FontWeight="Bold"/>
         </StackPanel>
 
 
@@ -38,14 +38,14 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button Margin="10,5,10,5" Grid.Column="3" Content=" Dessert "  Width="Auto" Height="Auto" FontSize="16" Click="Dessert_Click" IsEnabled="True" Opacity="0.6">
+                <Button Margin="10,5,10,5" Grid.Column="3" Content=" Dessert "  Width="Auto" Height="Auto" FontSize="16" Click="Dessert_Click">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="7"/>
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button Margin="10,5,10,5" Grid.Column="3" Content=" Appetizer "  Width="Auto" Height="Auto" FontSize="16" Click="Appetizer_Click">
+                <Button Margin="10,5,10,5" Grid.Column="3" Content=" Appetizer "  Width="Auto" Height="Auto" FontSize="16" Click="Appetizer_Click" IsEnabled="True" Opacity="0.6">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="7"/>
@@ -56,7 +56,7 @@
             </StackPanel>
         </ScrollViewer>
 
-        <TextBox x:Name ="searchBox" HorizontalAlignment="Center" Height="25" Margin="0,65,0,0" FontSize="16" TextWrapping="Wrap" Text="Search for dessert recipes..." VerticalAlignment="Top" Width="290" Background="{x:Null}" PreviewMouseDown="RecipeName_MouseDown" LostFocus="RecipeName_LostFocus"/>
+        <TextBox x:Name="searchBox" HorizontalAlignment="Center" Height="25" Margin="0,65,0,0" FontSize="16" TextWrapping="Wrap" Text="Search for appetizer recipes..." VerticalAlignment="Top" Width="290" Background="{x:Null}" PreviewMouseDown="RecipeName_MouseDown" LostFocus="RecipeName_LostFocus"/>
         <Button x:Name="clearButton" Content="x" HorizontalAlignment="Left" Margin="321,65,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="2.409,0.478" Background="White" BorderThickness="0 0.7 0.7 0.7" Opacity="100" Click="Clear_Click"/>
         <Image Height="20"  Source="Images/search_icon.png" Stretch="Fill"  Width="20"  Margin="10,40,338,685"/>
 
@@ -65,7 +65,7 @@
             <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="350" Height="Auto">
                 <StackPanel Margin="10">
 
-                    <Button Click="DessertPage1_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
+                    <Button Click="DinnerPage1_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
 
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">
@@ -88,18 +88,19 @@
                         </Button.Style>
 
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/dessert1-sugarcreampie.jpg" Width="85"/>
+                            <Image Source="Images/salmon.jpg" Width="85" Height="85"/>
                             <StackPanel>
-                                <Label Content="Sugar Cream Pie" Width="189" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★★★☆ (67)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Estimated time: 1hour40min" Width="190"/>
+                                <Label Content="Lemon Garlic Salmon" Width="189" FontSize="17" FontWeight="Bold"/>
+                                <Label Content="★★★★★ (136)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="Estimated time: 10min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                             </StackPanel>
                         </StackPanel>
                     </Button>
 
-                    <Button Click="DessertPage2_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
+
+                    <Button Click="DinnerPage2_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
 
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">
@@ -120,89 +121,88 @@
                                 </Setter>
                             </Style>
                         </Button.Style>
-
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/dessert2-frenchmacaroon.jpg" Width="85"/>
+                            <Image Source="Images/dinner2-tunasteak.jpg" Width="85"/>
                             <StackPanel>
-                                <Label Content="French Macaroon" Width="189" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★☆☆☆ (35)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Estimated time: 1hour20min" Width="190"/>
+                                <Label Content="Tuna Steak" Width="190" FontSize="17" FontWeight="Bold"/>
+                                <Label Content="★★★★☆ (64)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="Estimated time: 25min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                             </StackPanel>
                         </StackPanel>
                     </Button>
 
                     <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/dessert3-cheesecake.jpg" Width="85"/>
-                            <StackPanel>
-                                <Label Content="Cheesecake Cupcakes" Width="189" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★★☆☆ (58)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Estimated time: 1hour" Width="190"/>
-                                <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                            </StackPanel>
-                        </StackPanel>
-                    
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dessert4-eggtart.jpg" Width="85"/>
+                        <Image Source="Images/dinner3-beefbulgogi.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Egg Tart" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (172)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 45min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dessert5-oreotruffles.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Oreo Truffles" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (78)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 1hour15min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dessert6-banadapudding.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Banana Pudding" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★☆☆☆ (90)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 25min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dessert7-pumpkincheesecake.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Pumpkin Cheesecake" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★☆☆☆☆ (92)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 1hour" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dessert8-bostoncreamycake.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Boston Creamy Cake" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (11)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Beef Bulgogi" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (86)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 30min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
 
+
+
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dessert9-applecrisp.jpg" Width="85"/>
+                        <Image Source="Images/dinner4-avacadosalad.png" Width="85" />
                         <StackPanel>
-                            <Label Content="Apple Crisp" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (66)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Avacado Salad" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★☆☆☆ (97)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Estimated time: 15 min" Width="190"/>
+                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                        </StackPanel>
+                    </StackPanel>
+
+
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/chickcurry.jpg" Width="85"/>
+                        <StackPanel>
+                            <Label Content="Chicken Curry" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (46)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Estimated time: 30min" Width="190"/>
+                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                        </StackPanel>
+                    </StackPanel>
+
+
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/chowder.jpg" Width="85"/>
+                        <StackPanel>
+                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★★★☆ (70)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                        </StackPanel>
+                    </StackPanel>
+
+
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/shrimptaco.jpg" Width="85"/>
+                        <StackPanel>
+                            <Label Content="Shrimp Tacos" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★★★ (88)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Estimated time: 15min" Width="190"/>
+                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/meatballs.jpg" Width="85"/>
+                        <StackPanel>
+                            <Label Content="Italian Meetballs" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★★☆ (23)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 35min" Width="190"/>
+                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Images/chickpasta.jpg" Width="85"/>
+                        <StackPanel>
+                            <Label Content="Chicken Pasta" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (56)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Estimated time: 25min" Width="190"/>
 
                         </StackPanel>
                     </StackPanel>
@@ -229,8 +229,10 @@
                 <Button x:Name="ProfileButton" Content="Button" HorizontalAlignment="Left" Margin="300,705,0,0" VerticalAlignment="Top" Width="50" Height="50" Opacity="0" Click="Profile_Click"/>
 
                 <Button x:Name="CreateButton" Content="Button" HorizontalAlignment="Left" Margin="160,705,0,0" VerticalAlignment="Top" Width="50" Height="50" Opacity="0" Click="Create_Click"/>
+
             </Canvas>
-            
+
+
         </StackPanel>
 
 

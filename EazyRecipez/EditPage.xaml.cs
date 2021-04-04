@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.IO;
 
 namespace EazyRecipez
 {
@@ -22,7 +21,6 @@ namespace EazyRecipez
     /// </summary>
     public partial class EditPage : Page
     {
-        String content;
         public static string dirParameter = AppDomain.CurrentDomain.BaseDirectory + @"\file.txt";
         public EditPage()
         {
