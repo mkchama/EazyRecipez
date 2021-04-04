@@ -96,6 +96,55 @@ namespace EazyRecipez
 
         }
 
+        private void View_Load(object sender, RoutedEventArgs e)
+        {
+            string name = "testing";
+            string fileName = @"\recipes\" + name + ".txt";
+            string dirParameter = AppDomain.CurrentDomain.BaseDirectory + fileName;
+
+            System.IO.StreamReader file = new System.IO.StreamReader(dirParameter);
+            recipeName.Text = file.ReadLine();
+            subHeaderText.Text = file.ReadLine();
+            categoryText.Text = file.ReadLine();
+            string next;
+            while ((next = file.ReadLine()) != "Instructions")
+            {
+                ingredientsField.Text += next + "\n";
+
+            }
+            int ind = 1;
+            while ((next = file.ReadLine()) != "endInstructions")
+            {
+                instructionField.Text += ind.ToString() + ". " + next + "\n";
+                ind++;
+            }
+            timeText.Text = Get_Time(file);
+            authorText.Text = file.ReadLine();
+
+        }
+
+        private string Get_Time(System.IO.StreamReader file)
+        {
+            string first = file.ReadLine();
+            string second = file.ReadLine();
+            if (first == "0")
+            {
+                return second + "m";
+            }
+            else
+            {
+                if (second == "0")
+                {
+                    return first + "h";
+                }
+                else
+                {
+                    return first + "h " + second + "m";
+                }
+            }
+
+        }
+
 
     }
 }
