@@ -142,3 +142,5 @@ C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.pdb
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.csprojAssemblyReference.cache
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\ImageGallery.g.cs
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\ImageGallery.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\AppetizerPage.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\AppetizerPage.baml
