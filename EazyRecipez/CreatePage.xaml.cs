@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace EazyRecipez
 {
@@ -139,17 +141,23 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new ImageGallery());
         }
 
-        private void Offline_Click(object sender, RoutedEventArgs e)
+        private async void Offline_Click(object sender, RoutedEventArgs e)
         {
             savedOffline.Visibility = Visibility.Visible;
             savedOfflineLabel.Visibility = Visibility.Visible;
+            await Task.Delay(TimeSpan.FromSeconds(2));
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new OfflinePage());
 
         }
 
-        private void Online_Click(object sender, RoutedEventArgs e)
+        private async void Online_Click(object sender, RoutedEventArgs e)
         {
             savedOnline.Visibility = Visibility.Visible;
             savedOnlineLabel.Visibility = Visibility.Visible;
+            await Task.Delay(TimeSpan.FromSeconds(2));
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new OnlinePage());
 
         }
 
