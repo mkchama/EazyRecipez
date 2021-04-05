@@ -219,3 +219,7 @@ C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.
 C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.csproj.CopyComplete
 C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.exe
 C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.pdb
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\AppetizerRecipe1.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\AppetizerRecipe2.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\AppetizerRecipe1.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\AppetizerRecipe2.baml
