@@ -91,7 +91,7 @@
                             <Image Source="Images/salmon.jpg" Width="85" Height="85"/>
                             <StackPanel>
                                 <Label Content="Lemon Garlic Salmon" Width="189" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★★★★ (136)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="★★★★★ (136 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                                 <Label Content="Estimated time: 10min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
@@ -125,7 +125,7 @@
                             <Image Source="Images/dinner2-tunasteak.jpg" Width="85"/>
                             <StackPanel>
                                 <Label Content="Tuna Steak" Width="190" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★★★☆ (64)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="★★★★☆ (64 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                                 <Label Content="Estimated time: 25min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                             </StackPanel>
@@ -148,7 +148,7 @@
                         <Image Source="Images/dinner4-avacadosalad.png" Width="85" />
                         <StackPanel>
                             <Label Content="Avacado Salad" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★☆☆☆ (97)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★☆☆☆ (97 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 15 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -159,7 +159,7 @@
                         <Image Source="Images/chickcurry.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Chicken Curry" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (46)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (46 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 30min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -170,7 +170,7 @@
                         <Image Source="Images/chowder.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★☆ (70)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★★★☆ (70 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time to complete" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -181,7 +181,7 @@
                         <Image Source="Images/shrimptaco.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Shrimp Tacos" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (88)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★★★ (88 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 15min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -191,7 +191,7 @@
                         <Image Source="Images/meatballs.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Italian Meetballs" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★☆ (23)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★★☆ (23 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 35min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -201,7 +201,7 @@
                         <Image Source="Images/chickpasta.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Chicken Pasta" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (56)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (56 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 25min" Width="190"/>
 
                         </StackPanel>

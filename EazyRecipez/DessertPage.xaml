@@ -91,7 +91,7 @@
                             <Image Source="Images/dessert1-sugarcreampie.jpg" Width="85"/>
                             <StackPanel>
                                 <Label Content="Sugar Cream Pie" Width="189" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★★★☆ (67)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="★★★★☆ (67 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                                 <Label Content="Estimated time: 1 hour 40 min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
@@ -125,7 +125,7 @@
                             <Image Source="Images/dessert2-frenchmacaroon.jpg" Width="85"/>
                             <StackPanel>
                                 <Label Content="French Macaroon" Width="189" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★☆☆☆ (35)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="★★☆☆☆ (35 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                                 <Label Content="Estimated time: 1 hour 20 min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                             </StackPanel>
@@ -136,7 +136,7 @@
                             <Image Source="Images/dessert3-cheesecake.jpg" Width="85"/>
                             <StackPanel>
                                 <Label Content="Cheesecake Cupcakes" Width="189" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★★☆☆ (58)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="★★★☆☆ (58 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                                 <Label Content="Estimated time: 1 hour" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                             </StackPanel>
@@ -148,7 +148,7 @@
                         <Image Source="Images/dessert4-eggtart.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Egg Tart" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (172)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (172 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 45 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -159,7 +159,7 @@
                         <Image Source="Images/dessert5-oreotruffles.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Oreo Truffles" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (78)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★★★ (78 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 1 hour 15 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -170,7 +170,7 @@
                         <Image Source="Images/dessert6-banadapudding.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Banana Pudding" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★☆☆☆ (90)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★☆☆☆ (90 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 25 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -181,7 +181,7 @@
                         <Image Source="Images/dessert7-pumpkincheesecake.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Pumpkin Cheesecake" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★☆☆☆☆ (92)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★☆☆☆☆ (92 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 1 hour" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -191,7 +191,7 @@
                         <Image Source="Images/dessert8-bostoncreamycake.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Boston Creamy Cake" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (11)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★★★ (11 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 30 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -201,7 +201,7 @@
                         <Image Source="Images/dessert9-applecrisp.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Apple Crisp" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (66)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (66 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 35 min" Width="190"/>
 
                         </StackPanel>

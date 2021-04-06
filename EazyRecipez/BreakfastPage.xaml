@@ -69,7 +69,7 @@
                         <Image Source="Images/pancakes.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Fluffy Pancakes" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (221)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (221 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
                             <Label Content="25 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
@@ -81,7 +81,7 @@
                         <Image Source="Images/quiche.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Breakfast Quiche" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (89)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (89 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="45 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -92,7 +92,7 @@
                         <Image Source="Images/hashbrown.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Hash Brown Cake" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (117)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (117 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
                             <Label Content="50 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -104,7 +104,7 @@
                         <Image Source="Images/danishes.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Danishes" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (178)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (178 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
                             <Label Content="45 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -115,7 +115,7 @@
                         <Image Source="Images/crepes.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Strawberry Crepes" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (208)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (208 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
                             <Label Content="40 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -126,7 +126,7 @@
                         <Image Source="Images/eggburrito.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Egg Burritos" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (116)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (116 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
                             <Label Content="25 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -137,7 +137,7 @@
                         <Image Source="Images/smoothiebowl.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Berry Smoothie Bowl" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (89)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (89 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
                             <Label Content="5 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -147,7 +147,7 @@
                         <Image Source="Images/scrameggs.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Avocado Scrambled Eggs" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (72)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (72 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
                             <Label Content="10 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -157,7 +157,7 @@
                         <Image Source="Images/bananacookie.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Banana Oat Cookies" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (101)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="☆☆☆☆☆ (101 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
                             <Label Content="35 min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>

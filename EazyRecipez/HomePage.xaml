@@ -92,7 +92,7 @@
                             <Image Source="Images/ham.jpg" Width="85"/>
                             <StackPanel>
                                 <Label Content="Honey-Glazed Ham" Width="189" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="☆☆☆☆☆ (113 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="★★★★★ (113 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                                 <Label Content="2 hrs 50 mins" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
@@ -105,7 +105,7 @@
                         <Image Source="Images/blt.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="BLT Sandwich" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆ (36 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (36 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="15 mins" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -116,7 +116,7 @@
                         <Image Source="Images/tapioca.jpg" Width="85" Height="85"/>
                         <StackPanel>
                             <Label Content="Tapioca Pudding" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ 98 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★★★ (98 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="30 mins" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -128,7 +128,7 @@
                         <Image Source="Images/cinammon.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Cinammon Rolls" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆ (70 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★★☆ (70 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="30 mins" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -139,7 +139,7 @@
                         <Image Source="Images/jollof.jpg" Width="85" Height="85"/>
                         <StackPanel>
                             <Label Content="Jollof Rice" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (110 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★★★ (110 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="50 mins" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -150,7 +150,7 @@
                         <Image Source="Images/pulledpork.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Pulled Pork Sandwich" Width="189" FontSize="16.5" FontWeight="Bold"/>
-                            <Label Content="☆☆☆ (44 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (44 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="20 mins" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -161,7 +161,7 @@
                         <Image Source="Images/dessert9-applecrisp.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Apple Crisp" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (66)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (66 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 35min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -171,7 +171,7 @@
                         <Image Source="Images/chickcurry.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Chicken Curry" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (46)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (46 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Estimated time: 30min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
@@ -181,7 +181,7 @@
                         <Image Source="Images/crepes.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Strawberry Crepes" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (208)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="★★★★★ (208 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
                             <Label Content="40 min" Width="Auto"/>
                         </StackPanel>
                     </StackPanel>
