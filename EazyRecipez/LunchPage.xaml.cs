@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace EazyRecipez
 {
@@ -28,12 +29,86 @@ namespace EazyRecipez
         }
         void LunchPage_Loaded(object sender, RoutedEventArgs e)
         {
-            if (searchBox.Text == "Search for lunch recipes...")
+            if (searchBox.Text == "Search for lunch recipes..." || searchBox.Text == "")
             {
                 clearButton.Opacity = 0;
             }
+            else
+            {
+                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/LunchRecipes.txt";
+                using (StreamReader file = new StreamReader(FilePath))
+
+                {
+                    string line;
+                    //ThePanel.Children.RemoveRange(0, ThePanel.Children.Count - 2);
+                    ThePanel.Children.Clear();
+                    while ((line = file.ReadLine()) != null)
+                    {
+                        Console.WriteLine(line);
+                        string[] contents = line.Split('&');
+
+                        if (contents[0].ToLower().Contains(searchBox.Text.ToLower()))
+                        {
+                            var NewPanel = new StackPanel();
+                            NewPanel.Orientation = Orientation.Horizontal;
+                            ThePanel.Children.Add(NewPanel);
+
+
+                            string TextPath = "/Images/" + contents[3];
+                            Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+                            Image RecipeImage = new Image();
+                            RecipeImage.Width = 85;
+                            RecipeImage.Source = new BitmapImage(resourceUri);
+
+                            NewPanel.Children.Add(RecipeImage);
+
+                            var RecipeList = new StackPanel();
+
+                            var NameLabel = new Label();
+                            NameLabel.Content = contents[0];
+                            NameLabel.FontSize = 17;
+                            NameLabel.FontWeight = FontWeights.Bold;
+
+                            var RatingLabel = new Label();
+                            RatingLabel.Content = contents[1];
+                            RatingLabel.FontSize = 15;
+                            RatingLabel.FontWeight = FontWeights.Bold;
+
+                            var TimeLabel = new Label();
+                            TimeLabel.Content = contents[2];
+                            var Divider = new Rectangle();
+                            Divider.HorizontalAlignment = HorizontalAlignment.Stretch;
+                            Divider.VerticalAlignment = VerticalAlignment.Center;
+                            Divider.Fill = System.Windows.Media.Brushes.LightGray;
+                            Divider.Height = 1;
+
+
+                            RecipeList.Children.Add(NameLabel);
+                            RecipeList.Children.Add(RatingLabel);
+                            RecipeList.Children.Add(TimeLabel);
+                            RecipeList.Children.Add(Divider);
+
+                            NewPanel.Children.Add(RecipeList);
+                        }
+
+
+                    }
+                }
+            }
         }
 
+        private void searchBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                var mainWindow = (MainWindow)Application.Current.MainWindow;
+                LunchPage Lunch_Page = new LunchPage();
+
+                Lunch_Page.searchBox.Text = searchBox.Text;
+
+                mainWindow?.ChangeView(Lunch_Page);
+            }
+        }
         private void RecipeName_MouseDown(object sender, RoutedEventArgs e)
         {
             if (searchBox.Text.Equals("Search for lunch recipes..."))
@@ -57,20 +132,13 @@ namespace EazyRecipez
         }
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-            searchBox.Text = "Search for lunch recipes...";
-            clearButton.Opacity = 0;
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            LunchPage Lunch_Page = new LunchPage();
+
+            mainWindow?.ChangeView(Lunch_Page);
         }
 
-        private void Breakfast_Click(object sender, RoutedEventArgs e)
-        {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            BreakfastPage Breakfast_Page = new BreakfastPage();
-            if (searchBox.Text != "Search for lunch recipes...")
-            {
-                Breakfast_Page.searchBox.Text = searchBox.Text;
-            }
-            mainWindow?.ChangeView(Breakfast_Page);
-        }
+
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
@@ -88,6 +156,28 @@ namespace EazyRecipez
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow?.ChangeView(new ProfilePage());
+        }
+
+        private void Breakfast_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            BreakfastPage Breakfast_Page = new BreakfastPage();
+            if (searchBox.Text != "Search for lunch recipes...")
+            {
+                Breakfast_Page.searchBox.Text = searchBox.Text;
+            }
+            mainWindow?.ChangeView(Breakfast_Page);
+        }
+        private void Lunch_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            HomePage Home_Page = new HomePage();
+            if (searchBox.Text != "Search for lunch recipes...")
+            {
+                Home_Page.searchBox.Text = searchBox.Text;
+            }
+
+            mainWindow?.ChangeView(Home_Page);
         }
 
         private void Dinner_Click(object sender, RoutedEventArgs e)
@@ -113,16 +203,16 @@ namespace EazyRecipez
             mainWindow?.ChangeView(Dessert_Page);
         }
 
-        private void Lunch_Click(object sender, RoutedEventArgs e)
+        private void Appetizer_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            HomePage Home_Page = new HomePage();
+            AppetizerPage Appetizer_Page = new AppetizerPage();
             if (searchBox.Text != "Search for lunch recipes...")
             {
-                Home_Page.searchBox.Text = searchBox.Text;
+                Appetizer_Page.searchBox.Text = searchBox.Text;
             }
 
-            mainWindow?.ChangeView(Home_Page);
+            mainWindow?.ChangeView(Appetizer_Page);
         }
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
@@ -138,5 +228,7 @@ namespace EazyRecipez
             }
             e.Handled = true;
         }
+
+        
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,29 +13,29 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.IO;
 
 namespace EazyRecipez
 {
     /// <summary>
-    /// Interaction logic for DinnerPage.xaml
+    /// Interaction logic for AppetizerPage.xaml
     /// </summary>
-    public partial class DinnerPage : Page
+    public partial class AppetizerPage : Page
     {
-        public DinnerPage()
+        public AppetizerPage()
         {
             InitializeComponent();
-            Loaded += DinnerPage_Loaded;
+            Loaded += AppetizerPage_Loaded;
         }
-        void DinnerPage_Loaded(object sender, RoutedEventArgs e)
+        void AppetizerPage_Loaded(object sender, RoutedEventArgs e)
         {
-            if (searchBox.Text == "Search for dinner recipes..." || searchBox.Text == "")
+            if (searchBox.Text == "Search for appetizer recipes..." || searchBox.Text == "")
             {
+                searchBox.Text = "Search for appetizer recipes...";
                 clearButton.Opacity = 0;
             }
             else
-            {
-                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/DinnerRecipes.txt";
+            {//change the recipes
+                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/AppetizerRecipes.txt";
                 using (StreamReader file = new StreamReader(FilePath))
 
                 {
@@ -101,17 +102,17 @@ namespace EazyRecipez
             if (e.Key == Key.Return)
             {
                 var mainWindow = (MainWindow)Application.Current.MainWindow;
-                DinnerPage Dinner_Page = new DinnerPage();
+                AppetizerPage Appetizer_Page = new AppetizerPage();
 
-                Dinner_Page.searchBox.Text = searchBox.Text;
+                Appetizer_Page.searchBox.Text = searchBox.Text;
 
-                mainWindow?.ChangeView(Dinner_Page);
+                mainWindow?.ChangeView(Appetizer_Page);
             }
         }
 
         private void RecipeName_MouseDown(object sender, RoutedEventArgs e)
         {
-            if (searchBox.Text.Equals("Search for dinner recipes..."))
+            if (searchBox.Text.Equals("Search for appetizer recipes..."))
             {
                 searchBox.Text = "";
             }
@@ -121,7 +122,7 @@ namespace EazyRecipez
         {
             if (searchBox.Text.Equals(""))
             {
-                searchBox.Text = "Search for dinner recipes...";
+                searchBox.Text = "Search for appetizer recipes...";
             }
             else
             {
@@ -132,9 +133,10 @@ namespace EazyRecipez
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            DinnerPage Dinner_Page = new DinnerPage();
+            AppetizerPage Appetizer_Page = new AppetizerPage();
 
-            mainWindow?.ChangeView(Dinner_Page);
+            mainWindow?.ChangeView(Appetizer_Page);
+
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
@@ -155,46 +157,45 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new ProfilePage());
         }
 
-        private void Lunch_Click(object sender, RoutedEventArgs e)
-        {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            LunchPage Lunch_Page = new LunchPage();
-            if (searchBox.Text != "Search for dinner recipes...")
-            {
-                Lunch_Page.searchBox.Text = searchBox.Text;
-            }
-            mainWindow?.ChangeView(Lunch_Page);
-        }
-
-
         private void Breakfast_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
             BreakfastPage Breakfast_Page = new BreakfastPage();
-            if (searchBox.Text != "Search for dinner recipes...")
+            if (searchBox.Text != "Search for appetizer recipes...")
             {
                 Breakfast_Page.searchBox.Text = searchBox.Text;
             }
             mainWindow?.ChangeView(Breakfast_Page);
         }
 
+        private void Lunch_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            LunchPage Lunch_Page = new LunchPage();
+            if (searchBox.Text != "Search for appetizer recipes...")
+            {
+                Lunch_Page.searchBox.Text = searchBox.Text;
+            }
+            mainWindow?.ChangeView(Lunch_Page);
+        }
+
         private void Dinner_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            HomePage Home_Page = new HomePage();
-            if (searchBox.Text != "Search for dinner recipes...")
+            DinnerPage Dinner_Page = new DinnerPage();
+            if (searchBox.Text != "Search for appetizer recipes...")
             {
-                Home_Page.searchBox.Text = searchBox.Text;
+                Dinner_Page.searchBox.Text = searchBox.Text;
             }
 
-            mainWindow?.ChangeView(Home_Page);
+            mainWindow?.ChangeView(Dinner_Page);
         }
 
         private void Dessert_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
             DessertPage Dessert_Page = new DessertPage();
-            if (searchBox.Text != "Search for dinner recipes...")
+            if (searchBox.Text != "Search for appetizer recipes...")
             {
                 Dessert_Page.searchBox.Text = searchBox.Text;
             }
@@ -202,17 +203,16 @@ namespace EazyRecipez
             mainWindow?.ChangeView(Dessert_Page);
         }
 
-
         private void Appetizer_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            AppetizerPage Appetizer_Page = new AppetizerPage();
-            if (searchBox.Text != "Search for dinner recipes...")
+            HomePage Home_Page = new HomePage();
+            if (searchBox.Text != "Search for appetizer recipes...")
             {
-                Appetizer_Page.searchBox.Text = searchBox.Text;
+                Home_Page.searchBox.Text = searchBox.Text;
             }
 
-            mainWindow?.ChangeView(Appetizer_Page);
+            mainWindow?.ChangeView(Home_Page);
         }
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
