@@ -28,9 +28,85 @@ namespace EazyRecipez
         }
         void AppetizerPage_Loaded(object sender, RoutedEventArgs e)
         {
-            if (searchBox.Text == "Search for appetizer recipes...")
+            if (searchBox.Text == "Search for appetizer recipes..." || searchBox.Text == "")
             {
+                searchBox.Text = "Search for appetizer recipes...";
                 clearButton.Opacity = 0;
+            }
+            else
+            {//change the recipes
+                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/AppetizerRecipes.txt";
+                using (StreamReader file = new StreamReader(FilePath))
+
+                {
+                    string line;
+                    //ThePanel.Children.RemoveRange(0, ThePanel.Children.Count - 2);
+                    ThePanel.Children.Clear();
+                    while ((line = file.ReadLine()) != null)
+                    {
+                        Console.WriteLine(line);
+                        string[] contents = line.Split('&');
+
+                        if (contents[0].ToLower().Contains(searchBox.Text.ToLower()))
+                        {
+                            var NewPanel = new StackPanel();
+                            NewPanel.Orientation = Orientation.Horizontal;
+                            ThePanel.Children.Add(NewPanel);
+
+
+                            string TextPath = "/Images/" + contents[3];
+                            Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+                            Image RecipeImage = new Image();
+                            RecipeImage.Width = 85;
+                            RecipeImage.Source = new BitmapImage(resourceUri);
+
+                            NewPanel.Children.Add(RecipeImage);
+
+                            var RecipeList = new StackPanel();
+
+                            var NameLabel = new Label();
+                            NameLabel.Content = contents[0];
+                            NameLabel.FontSize = 17;
+                            NameLabel.FontWeight = FontWeights.Bold;
+
+                            var RatingLabel = new Label();
+                            RatingLabel.Content = contents[1];
+                            RatingLabel.FontSize = 15;
+                            RatingLabel.FontWeight = FontWeights.Bold;
+
+                            var TimeLabel = new Label();
+                            TimeLabel.Content = contents[2];
+                            var Divider = new Rectangle();
+                            Divider.HorizontalAlignment = HorizontalAlignment.Stretch;
+                            Divider.VerticalAlignment = VerticalAlignment.Center;
+                            Divider.Fill = System.Windows.Media.Brushes.LightGray;
+                            Divider.Height = 1;
+
+
+                            RecipeList.Children.Add(NameLabel);
+                            RecipeList.Children.Add(RatingLabel);
+                            RecipeList.Children.Add(TimeLabel);
+                            RecipeList.Children.Add(Divider);
+
+                            NewPanel.Children.Add(RecipeList);
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        private void searchBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                var mainWindow = (MainWindow)Application.Current.MainWindow;
+                AppetizerPage Appetizer_Page = new AppetizerPage();
+
+                Appetizer_Page.searchBox.Text = searchBox.Text;
+
+                mainWindow?.ChangeView(Appetizer_Page);
             }
         }
 
@@ -56,8 +132,11 @@ namespace EazyRecipez
         }
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-            searchBox.Text = "Search for appetizer recipes...";
-            clearButton.Opacity = 0;
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            AppetizerPage Appetizer_Page = new AppetizerPage();
+
+            mainWindow?.ChangeView(Appetizer_Page);
+
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
@@ -150,16 +229,18 @@ namespace EazyRecipez
             e.Handled = true;
         }
 
-        private void AppetizerPage1_Click(object sender, RoutedEventArgs e)
+        private void DinnerPage1_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new AppetizerRecipe1());
+            mainWindow?.ChangeView(new DinnerRecipe1());
         }
 
-        private void AppetizerPage2_Click(object sender, RoutedEventArgs e)
+        private void DinnerPage2_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new AppetizerRecipe2());
+            mainWindow?.ChangeView(new DinnerRecipe2());
         }
+
+        
     }
 }

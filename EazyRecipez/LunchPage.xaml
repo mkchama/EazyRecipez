@@ -55,14 +55,14 @@
             </StackPanel>
         </ScrollViewer>
 
-        <TextBox x:Name ="searchBox" HorizontalAlignment="Center" Height="25" Margin="0,65,0,0" FontSize="16" TextWrapping="Wrap" Text="Search for lunch recipes..." VerticalAlignment="Top" Width="290" Background="{x:Null}" PreviewMouseDown="RecipeName_MouseDown" LostFocus="RecipeName_LostFocus"/>
+        <TextBox x:Name ="searchBox" HorizontalAlignment="Center" Height="25" Margin="0,65,0,0" FontSize="16" TextWrapping="Wrap" Text="Search for lunch recipes..." VerticalAlignment="Top" Width="290" Background="{x:Null}" PreviewMouseDown="RecipeName_MouseDown" LostFocus="RecipeName_LostFocus" KeyDown="searchBox_KeyDown"/>
         <Button x:Name="clearButton" Content="x" HorizontalAlignment="Left" Margin="321,65,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="2.409,0.478" Background="White" BorderThickness="0 0.7 0.7 0.7" Opacity="100" Click="Clear_Click"/>
         <Image Height="20"  Source="Images/search_icon.png" Stretch="Fill"  Width="20"  Margin="10,40,338,685"/>
 
         <Grid HorizontalAlignment="Left" Height="62" Margin="10,10,0,0" VerticalAlignment="Top" Width="390"/>
         <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="565" Margin="0,135,0,0" VerticalAlignment="Top" Width="375" >
             <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="350" Height="Auto">
-                <StackPanel Margin="10">
+                <StackPanel x:Name="ThePanel" Margin="10">
 
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Images/tunasalad.jpg" Width="85"/>

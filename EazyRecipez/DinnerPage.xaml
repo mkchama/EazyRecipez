@@ -56,14 +56,14 @@
             </StackPanel>
         </ScrollViewer>
 
-        <TextBox x:Name="searchBox" HorizontalAlignment="Center" Height="25" Margin="0,65,0,0" FontSize="16" TextWrapping="Wrap" Text="Search for dinner recipes..." VerticalAlignment="Top" Width="290" Background="{x:Null}" PreviewMouseDown="RecipeName_MouseDown" LostFocus="RecipeName_LostFocus"/>
+        <TextBox x:Name="searchBox" HorizontalAlignment="Center" Height="25" Margin="0,65,0,0" FontSize="16" TextWrapping="Wrap" Text="Search for dinner recipes..." VerticalAlignment="Top" Width="290" Background="{x:Null}" PreviewMouseDown="RecipeName_MouseDown" LostFocus="RecipeName_LostFocus" KeyDown="searchBox_KeyDown"/>
         <Button x:Name="clearButton" Content="x" HorizontalAlignment="Left" Margin="321,65,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="2.409,0.478" Background="White" BorderThickness="0 0.7 0.7 0.7" Opacity="100" Click="Clear_Click"/>
         <Image Height="20"  Source="Images/search_icon.png" Stretch="Fill"  Width="20"  Margin="10,40,338,685"/>
 
         <Grid HorizontalAlignment="Left" Height="62" Margin="10,10,0,0" VerticalAlignment="Top" Width="390"/>
         <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="565" Margin="0,135,0,0" VerticalAlignment="Top" Width="375" >
             <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="350" Height="Auto">
-                <StackPanel Margin="10">
+                <StackPanel x:Name="ThePanel" Margin="10">
 
                     <Button Click="DinnerPage1_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
 
@@ -160,7 +160,7 @@
                         <StackPanel>
                             <Label Content="Chicken Curry" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★☆☆ (46)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 30min" Width="190"/>
+                            <Label Content="Estimated time: 30 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
@@ -169,9 +169,9 @@
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Images/chowder.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="Chowder soup" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★☆ (70)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Estimated time: 40 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
@@ -182,7 +182,7 @@
                         <StackPanel>
                             <Label Content="Shrimp Tacos" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (88)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 15min" Width="190"/>
+                            <Label Content="Estimated time: 15 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
@@ -190,9 +190,9 @@
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Images/meatballs.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Italian Meetballs" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="Italian Meatballs" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★☆ (23)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 35min" Width="190"/>
+                            <Label Content="Estimated time: 35 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
@@ -202,7 +202,7 @@
                         <StackPanel>
                             <Label Content="Chicken Pasta" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★☆☆ (56)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 25min" Width="190"/>
+                            <Label Content="Estimated time: 25 min" Width="190"/>
 
                         </StackPanel>
                     </StackPanel>
