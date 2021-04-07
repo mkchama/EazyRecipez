@@ -25,7 +25,7 @@
 
         </StackPanel>
 
-        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="640" Margin="0,100,0,0" VerticalAlignment="Top" Width="375" >
+        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="600" Margin="0,100,0,0" VerticalAlignment="Top" Width="375" >
             <StackPanel>
 
                 <ScrollViewer  Name="sv1" BorderThickness="0" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Margin="100,0,100,0">
