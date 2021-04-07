@@ -229,18 +229,16 @@ namespace EazyRecipez
             e.Handled = true;
         }
 
-        private void DinnerPage1_Click(object sender, RoutedEventArgs e)
+        private void AppetizerPage1_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new DinnerRecipe1());
+            mainWindow?.ChangeView(new AppetizerRecipe1());
         }
 
-        private void DinnerPage2_Click(object sender, RoutedEventArgs e)
+        private void AppetizerPage2_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new DinnerRecipe2());
+            mainWindow?.ChangeView(new AppetizerRecipe2());
         }
-
-        
     }
 }

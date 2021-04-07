@@ -65,7 +65,7 @@
             <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="350" Height="Auto">
                 <StackPanel x:Name="ThePanel" Margin="10">
 
-                    <Button Click="DinnerPage1_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
+                    <Button Click="AppetizerPage1_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
 
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">
@@ -88,11 +88,11 @@
                         </Button.Style>
 
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/salmon.jpg" Width="85" Height="85"/>
+                            <Image Source="Images/appe1-savorypartybread.jpg" Width="85" Height="85"/>
                             <StackPanel>
-                                <Label Content="Lemon Garlic Salmon" Width="189" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★★★★ (136 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Estimated time: 10min" Width="190"/>
+                                <Label Content="Savory Party Bread" Width="189" FontSize="17" FontWeight="Bold"/>
+                                <Label Content="★★★★★ (136 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="Est. time: 40 min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                             </StackPanel>
@@ -100,7 +100,7 @@
                     </Button>
 
 
-                    <Button Click="DinnerPage2_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
+                    <Button Click="AppetizerPage2_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
 
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">
@@ -122,22 +122,22 @@
                             </Style>
                         </Button.Style>
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/dinner2-tunasteak.jpg" Width="85"/>
+                            <Image Source="Images/appe2-tuscansausage.jpg" Width="85"/>
                             <StackPanel>
-                                <Label Content="Tuna Steak" Width="190" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★★★☆ (64 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Estimated time: 25min" Width="190"/>
+                                <Label Content="Tuscan Sausage" Width="190" FontSize="17" FontWeight="Bold"/>
+                                <Label Content="★★★★☆ (64 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="Est. time: 25 min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                             </StackPanel>
                         </StackPanel>
                     </Button>
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dinner3-beefbulgogi.jpg" Width="85"/>
+                        <Image Source="Images/APPE3-BUFFALOCHICKENDIP.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Beef Bulgogi" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (86)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 30min" Width="190"/>
+                            <Label Content="Buffalo Chicken Dip" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (86 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Est. time: 30 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
@@ -145,64 +145,64 @@
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dinner4-avacadosalad.png" Width="85" />
+                        <Image Source="Images/appe4-creamyartichokedip.jpg" Width="85" />
                         <StackPanel>
-                            <Label Content="Avacado Salad" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★☆☆☆ (97 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 15 min" Width="190"/>
+                            <Label Content="Creamy Artichoke " Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★☆☆☆ (97 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Est. time: 15 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/chickcurry.jpg" Width="85"/>
+                        <Image Source="Images/appe5-cherrytomatoes.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Chicken Curry" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (46 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 30min" Width="190"/>
+                            <Label Content="Cherry Tomatoes" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (46 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Est. time: 30 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/chowder.jpg" Width="85"/>
+                        <Image Source="Images/appe6-partyshrimp.jpg" Width="85" Height="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★☆ (70 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Party Shrimp" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★★☆ (70 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Est. time: 25 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/shrimptaco.jpg" Width="85"/>
+                        <Image Source="Images/appe7-cheesefries.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Shrimp Tacos" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (88 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 15min" Width="190"/>
+                            <Label Content="Cheese Fries" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★★★ (88 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Est. time: 15 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/meatballs.jpg" Width="85"/>
+                        <Image Source="Images/appe8-baconcheeseburger.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Italian Meetballs" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★☆ (23 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 35min" Width="190"/>
+                            <Label Content="Bacon Cheeseburger" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★★☆ (23 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Est. time: 35 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/chickpasta.jpg" Width="85"/>
+                        <Image Source="Images/appe9-springroll.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Chicken Pasta" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (56 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 25min" Width="190"/>
+                            <Label Content="Spring Roll" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (56 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Est. time: 25 min" Width="190"/>
 
                         </StackPanel>
                     </StackPanel>
