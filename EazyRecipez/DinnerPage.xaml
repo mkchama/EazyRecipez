@@ -57,7 +57,7 @@
         </ScrollViewer>
 
         <TextBox x:Name="searchBox" HorizontalAlignment="Center" Height="25" Margin="0,65,0,0" FontSize="16" TextWrapping="Wrap" Text="Search for dinner recipes..." VerticalAlignment="Top" Width="290" Background="{x:Null}" PreviewMouseDown="RecipeName_MouseDown" LostFocus="RecipeName_LostFocus" KeyDown="searchBox_KeyDown"/>
-        <Button x:Name="clearButton" Content="x" HorizontalAlignment="Left" Margin="321,65,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="2.409,0.478" Background="White" BorderThickness="0 0.7 0.7 0.7" Opacity="100" Click="Clear_Click"/>
+        <Button x:Name="clearButton" Content="x" HorizontalAlignment="Left" Margin="321,65,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="2.409,0.478" Background="White" BorderThickness="0 0.7 0.7 0.7" Opacity="0" Click="Clear_Click"/>
         <Image Height="20"  Source="Images/search_icon.png" Stretch="Fill"  Width="20"  Margin="10,40,338,685"/>
 
         <Grid HorizontalAlignment="Left" Height="62" Margin="10,10,0,0" VerticalAlignment="Top" Width="390"/>
@@ -132,80 +132,7 @@
                         </StackPanel>
                     </Button>
 
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dinner3-beefbulgogi.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Beef Bulgogi" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (86 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 30min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/dinner4-avacadosalad.png" Width="85" />
-                        <StackPanel>
-                            <Label Content="Avacado Salad" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★☆☆☆ (97 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 15 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/chickcurry.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Chicken Curry" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (46 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 30 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/chowder.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Chowder soup" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★☆ (70 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 40 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/shrimptaco.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Shrimp Tacos" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (88 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 15 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/meatballs.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Italian Meatballs" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★☆ (23 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 35 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/chickpasta.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Chicken Pasta" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (56 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 25 min" Width="190"/>
-
-                        </StackPanel>
-                    </StackPanel>
+                    
 
                     <Frame x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
                 </StackPanel>

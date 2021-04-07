@@ -29,70 +29,64 @@ namespace EazyRecipez
 
         void DessertPage_Loaded(object sender, RoutedEventArgs e)
         {
-            if (searchBox.Text == "Search for dessert recipes..." || searchBox.Text == "")
-            {
-                clearButton.Opacity = 0;
-            }
-            else
-            {
-                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/DessertRecipes.txt";
-                using (StreamReader file = new StreamReader(FilePath))
+            string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/DessertRecipes.txt";
+            using (StreamReader file = new StreamReader(FilePath))
 
+            {
+                string line;
+                //ThePanel.Children.RemoveRange(0, ThePanel.Children.Count - 2);
+                ThePanel.Children.Clear();
+                while ((line = file.ReadLine()) != null)
                 {
-                    string line;
-                    //ThePanel.Children.RemoveRange(0, ThePanel.Children.Count - 2);
-                    ThePanel.Children.Clear();
-                    while ((line = file.ReadLine()) != null)
+                    Console.WriteLine(line);
+                    string[] contents = line.Split('&');
+
+                    if ((contents[0].ToLower().Contains(searchBox.Text.ToLower())) || searchBox.Text.Equals("Search for dessert recipes..."))
                     {
-                        Console.WriteLine(line);
-                        string[] contents = line.Split('&');
-
-                        if (contents[0].ToLower().Contains(searchBox.Text.ToLower()))
-                        {
-                            var NewPanel = new StackPanel();
-                            NewPanel.Orientation = Orientation.Horizontal;
-                            ThePanel.Children.Add(NewPanel);
+                        var NewPanel = new StackPanel();
+                        NewPanel.Orientation = Orientation.Horizontal;
+                        ThePanel.Children.Add(NewPanel);
 
 
-                            string TextPath = "/Images/" + contents[3];
-                            Uri resourceUri = new Uri(TextPath, UriKind.Relative);
-                            Image RecipeImage = new Image();
-                            RecipeImage.Width = 85;
-                            RecipeImage.Source = new BitmapImage(resourceUri);
+                        string TextPath = "/Images/" + contents[3];
+                        Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+                        Image RecipeImage = new Image();
+                        RecipeImage.Width = 85;
+                        RecipeImage.Source = new BitmapImage(resourceUri);
 
-                            NewPanel.Children.Add(RecipeImage);
+                        NewPanel.Children.Add(RecipeImage);
 
-                            var RecipeList = new StackPanel();
+                        var RecipeList = new StackPanel();
 
-                            var NameLabel = new Label();
-                            NameLabel.Content = contents[0];
-                            NameLabel.FontSize = 17;
-                            NameLabel.FontWeight = FontWeights.Bold;
+                        var NameLabel = new Label();
+                        NameLabel.Content = contents[0];
+                        NameLabel.FontSize = 17;
+                        NameLabel.FontWeight = FontWeights.Bold;
 
-                            var RatingLabel = new Label();
-                            RatingLabel.Content = contents[1];
-                            RatingLabel.FontSize = 15;
-                            RatingLabel.FontWeight = FontWeights.Bold;
+                        var RatingLabel = new Label();
+                        RatingLabel.Content = contents[1];
+                        RatingLabel.FontSize = 15;
+                        RatingLabel.FontWeight = FontWeights.Bold;
 
-                            var TimeLabel = new Label();
-                            TimeLabel.Content = contents[2];
-                            var Divider = new Rectangle();
-                            Divider.HorizontalAlignment = HorizontalAlignment.Stretch;
-                            Divider.VerticalAlignment = VerticalAlignment.Center;
-                            Divider.Fill = System.Windows.Media.Brushes.LightGray;
-                            Divider.Height = 1;
+                        var TimeLabel = new Label();
+                        TimeLabel.Content = contents[2];
+                        var Divider = new Rectangle();
+                        Divider.HorizontalAlignment = HorizontalAlignment.Stretch;
+                        Divider.VerticalAlignment = VerticalAlignment.Center;
+                        Divider.Fill = System.Windows.Media.Brushes.LightGray;
+                        Divider.Height = 1;
 
 
-                            RecipeList.Children.Add(NameLabel);
-                            RecipeList.Children.Add(RatingLabel);
-                            RecipeList.Children.Add(TimeLabel);
-                            RecipeList.Children.Add(Divider);
+                        RecipeList.Children.Add(NameLabel);
+                        RecipeList.Children.Add(RatingLabel);
+                        RecipeList.Children.Add(TimeLabel);
+                        RecipeList.Children.Add(Divider);
 
-                            NewPanel.Children.Add(RecipeList);
-                        }
-
+                        NewPanel.Children.Add(RecipeList);
 
                     }
+
+
                 }
             }
         }
@@ -104,6 +98,11 @@ namespace EazyRecipez
                 var mainWindow = (MainWindow)Application.Current.MainWindow;
                 DessertPage Dessert_Page = new DessertPage();
 
+                if (!searchBox.Text.Equals("Search for dessert recipes..."))
+                {
+                    clearButton.Opacity = 100;
+                }
+
                 Dessert_Page.searchBox.Text = searchBox.Text;
 
                 mainWindow?.ChangeView(Dessert_Page);
@@ -112,6 +111,7 @@ namespace EazyRecipez
 
         private void RecipeName_MouseDown(object sender, RoutedEventArgs e)
         {
+            clearButton.Opacity = 100;
             if (searchBox.Text.Equals("Search for dessert recipes..."))
             {
                 searchBox.Text = "";

@@ -56,7 +56,7 @@
         </ScrollViewer>
 
         <TextBox x:Name ="searchBox" HorizontalAlignment="Center" Height="25" Margin="0,65,0,0" FontSize="16" TextWrapping="Wrap" Text="Search for lunch recipes..." VerticalAlignment="Top" Width="290" Background="{x:Null}" PreviewMouseDown="RecipeName_MouseDown" LostFocus="RecipeName_LostFocus" KeyDown="searchBox_KeyDown"/>
-        <Button x:Name="clearButton" Content="x" HorizontalAlignment="Left" Margin="321,65,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="2.409,0.478" Background="White" BorderThickness="0 0.7 0.7 0.7" Opacity="100" Click="Clear_Click"/>
+        <Button x:Name="clearButton" Content="x" HorizontalAlignment="Left" Margin="321,65,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="2.409,0.478" Background="White" BorderThickness="0 0.7 0.7 0.7" Opacity="0" Click="Clear_Click"/>
         <Image Height="20"  Source="Images/search_icon.png" Stretch="Fill"  Width="20"  Margin="10,40,338,685"/>
 
         <Grid HorizontalAlignment="Left" Height="62" Margin="10,10,0,0" VerticalAlignment="Top" Width="390"/>
@@ -64,111 +64,7 @@
             <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="350" Height="Auto">
                 <StackPanel x:Name="ThePanel" Margin="10">
 
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/tunasalad.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Tuna Salad" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (88 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="40 min" Width="Auto"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/grillcheese.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Grilled Cheese Sandwich" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (100 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="5 min" Width="Auto"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/beefsand.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Italian Beef Sandwich" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (110 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="1 hr 25 min" Width="Auto"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-
-                        </StackPanel>
-                    </StackPanel>
-
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/beansoup.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Bean Soup" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (46 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="25 min" Width="Auto"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/cobbsalad.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Cobb Salad" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (287 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="50 min" Width="Auto"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/eggsalad.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Egg salad" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (1327 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="35 min" Width="Auto"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/beefbowl.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Ground Beef Bowl" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (87 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="25 min" Width="Auto"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-
-                        </StackPanel>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/sloppyjoe.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Sloppy Joes" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (215 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="40 min" Width="Auto"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-
-                        </StackPanel>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/banhmi.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Banh Mi" Width="Auto" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (99 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="50 min" Width="Auto"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-
-                        </StackPanel>
-                    </StackPanel>
+                    
 
                     <Frame x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
                 </StackPanel>
