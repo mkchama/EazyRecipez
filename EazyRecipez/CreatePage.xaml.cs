@@ -273,6 +273,12 @@ namespace EazyRecipez
                 csw.WriteLine(line);
             }
 
+            using (FileStream fs = new FileStream(AppDomain.CurrentDomain.BaseDirectory + @"/AllRecipes.txt", FileMode.Append, FileAccess.Write))
+            using (StreamWriter csw = new StreamWriter(fs))
+            {
+                csw.WriteLine(line);
+            }
+
             // Create a file to write to.
             using (StreamWriter sw = File.CreateText(path))
             {
