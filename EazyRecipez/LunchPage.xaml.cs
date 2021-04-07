@@ -63,6 +63,7 @@ namespace EazyRecipez
                         NameLabel.Content = contents[0];
                         NameLabel.FontSize = 17;
                         NameLabel.FontWeight = FontWeights.Bold;
+                        
 
                         var RatingLabel = new Label();
                         RatingLabel.Content = contents[1];
