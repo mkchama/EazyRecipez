@@ -92,7 +92,7 @@
                             <StackPanel>
                                 <Label Content="Lemon Garlic Salmon" Width="189" FontSize="17" FontWeight="Bold"/>
                                 <Label Content="★★★★★ (136 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Estimated time: 10min" Width="190"/>
+                                <Label Content="Est. time: 10min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                             </StackPanel>
@@ -126,7 +126,7 @@
                             <StackPanel>
                                 <Label Content="Tuna Steak" Width="190" FontSize="17" FontWeight="Bold"/>
                                 <Label Content="★★★★☆ (64 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Estimated time: 25min" Width="190"/>
+                                <Label Content="Est. time: 25min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                             </StackPanel>
                         </StackPanel>
@@ -137,7 +137,7 @@
                         <StackPanel>
                             <Label Content="Beef Bulgogi" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★☆☆ (86 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 30min" Width="190"/>
+                            <Label Content="Est. time: 30min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
@@ -149,7 +149,7 @@
                         <StackPanel>
                             <Label Content="Avacado Salad" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★☆☆☆ (97 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 15 min" Width="190"/>
+                            <Label Content="Est. time: 15min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
@@ -160,7 +160,7 @@
                         <StackPanel>
                             <Label Content="Chicken Curry" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★☆☆ (46 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 30 min" Width="190"/>
+                            <Label Content="Est. time: 30min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
@@ -171,7 +171,7 @@
                         <StackPanel>
                             <Label Content="Chowder soup" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★☆ (70 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 40 min" Width="190"/>
+                            <Label Content="Est. time: 40min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
@@ -182,7 +182,7 @@
                         <StackPanel>
                             <Label Content="Shrimp Tacos" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (88 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 15 min" Width="190"/>
+                            <Label Content="Est. time: 15min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
@@ -192,7 +192,7 @@
                         <StackPanel>
                             <Label Content="Italian Meatballs" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★☆ (23 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 35 min" Width="190"/>
+                            <Label Content="Est. time: 35min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
@@ -202,7 +202,7 @@
                         <StackPanel>
                             <Label Content="Chicken Pasta" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★☆☆ (56 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time: 25 min" Width="190"/>
+                            <Label Content="Est.time: 25min" Width="190"/>
 
                         </StackPanel>
                     </StackPanel>

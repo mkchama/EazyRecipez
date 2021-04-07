@@ -123,9 +123,9 @@
 
                             <StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/icons8-pancake-96.png" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-user-50.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="Username" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="jimmy_hart" Width="189" FontSize="18" FontWeight="Bold"/>
                                         <Label Content="Awesome Recipe!" Width="190" FontSize="15" FontWeight="Normal"/>
 
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
@@ -135,9 +135,9 @@
 
 
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/icons8-taco-96.png" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-user-50.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="Username" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="JohnWick123" Width="189" FontSize="18" FontWeight="Bold"/>
                                         <Label Content="Awesome Recipe!" Width="190" FontSize="15" FontWeight="Normal"/>
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
@@ -145,18 +145,18 @@
                                 </StackPanel>
 
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/icons8-taco-96.png" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-user-50.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="Username" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="honeyhart" Width="189" FontSize="18" FontWeight="Bold"/>
                                         <Label Content="Awesome Recipe!" Width="190" FontSize="15" FontWeight="Normal"/>
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                                     </StackPanel>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/icons8-taco-96.png" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-user-50.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="Username" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="cloud_99" Width="189" FontSize="18" FontWeight="Bold"/>
                                         <Label Content="Awesome Recipe!" Width="190" FontSize="15" FontWeight="Normal"/>
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="Auto"/>
 

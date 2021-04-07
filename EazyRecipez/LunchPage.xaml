@@ -69,7 +69,7 @@
                         <StackPanel>
                             <Label Content="Tuna Salad" Width="Auto" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (88 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="40 min" Width="Auto"/>
+                            <Label Content="Est. time: 40min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                         </StackPanel>
@@ -81,7 +81,7 @@
                         <StackPanel>
                             <Label Content="Grilled Cheese Sandwich" Width="Auto" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (100 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="5 min" Width="Auto"/>
+                            <Label Content="Est. time: 5min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                         </StackPanel>
@@ -93,7 +93,7 @@
                         <StackPanel>
                             <Label Content="Italian Beef Sandwich" Width="Auto" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (110 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="1 hr 25 min" Width="Auto"/>
+                            <Label Content="Est. time: 1 hr 25min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                         </StackPanel>
@@ -106,7 +106,7 @@
                         <StackPanel>
                             <Label Content="Bean Soup" Width="Auto" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (46 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="25 min" Width="Auto"/>
+                            <Label Content="Est. time: 25min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                         </StackPanel>
@@ -118,7 +118,7 @@
                         <StackPanel>
                             <Label Content="Cobb Salad" Width="Auto" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (287 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="50 min" Width="Auto"/>
+                            <Label Content="Est. time: 50min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                         </StackPanel>
@@ -130,7 +130,7 @@
                         <StackPanel>
                             <Label Content="Egg salad" Width="Auto" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (1327 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="35 min" Width="Auto"/>
+                            <Label Content="Est. time: 35min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                         </StackPanel>
@@ -142,7 +142,7 @@
                         <StackPanel>
                             <Label Content="Ground Beef Bowl" Width="Auto" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (87 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="25 min" Width="Auto"/>
+                            <Label Content="Est. time: 25min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                         </StackPanel>
@@ -153,7 +153,7 @@
                         <StackPanel>
                             <Label Content="Sloppy Joes" Width="Auto" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (215 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="40 min" Width="Auto"/>
+                            <Label Content="Est. time: 40min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                         </StackPanel>
@@ -164,7 +164,7 @@
                         <StackPanel>
                             <Label Content="Banh Mi" Width="Auto" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★★★★ (99 reviews)" Width="Auto" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="50 min" Width="Auto"/>
+                            <Label Content="Est. time: 50min" Width="Auto"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                         </StackPanel>
