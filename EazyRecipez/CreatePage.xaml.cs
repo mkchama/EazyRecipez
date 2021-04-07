@@ -247,7 +247,26 @@ namespace EazyRecipez
 
 
             string mainPhoto = "dessert1-sugarcreampie.jpg";
-            string line = recipeNameField.Text + "&☆☆☆☆☆ (0)&" + hour +" hour " + min + " min&" + mainPhoto;
+            string hourFormat;
+            string minFormat;
+            if (int.Parse(hour) > 1)
+            {
+                hourFormat = hour + " hours ";
+            } else if ((int.Parse(hour) == 0)) {
+                hourFormat = "";
+            } else
+            {
+                hourFormat = hour + " hour ";
+            }
+            if (int.Parse(min) == 0)
+            {
+                minFormat = "";
+            }
+            else
+            {
+                minFormat = min + " min";
+            }
+            string line = recipeNameField.Text + "&☆☆☆☆☆ (0 reviews)&" + hourFormat + minFormat + "&" + mainPhoto;
             using (FileStream fs = new FileStream(categoryPath, FileMode.Append, FileAccess.Write))
             using (StreamWriter csw = new StreamWriter(fs))
             {
