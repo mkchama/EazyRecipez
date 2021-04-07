@@ -217,10 +217,43 @@ namespace EazyRecipez
             }
         }
 
-        private void Save_File(Object sender)
+        private async void Save_File(Object sender)
         {
             string fileName = @"\recipes\" + recipeNameField.Text + ".txt";
             string path = AppDomain.CurrentDomain.BaseDirectory + fileName;
+
+            string category = categoryCombo.Text;
+            string categoryPath = AppDomain.CurrentDomain.BaseDirectory + @"/" + category + "Recipes.txt";
+
+            string min;
+            string hour;
+
+            if (hoursBox.SelectedIndex > -1)
+            {
+                hour = hoursBox.Text;
+            }
+            else
+            {
+                hour = "0";
+            }
+            if (minutesBox.SelectedIndex > -1)
+            {
+                min = minutesBox.Text;
+            }
+            else
+            {
+                min = "0";
+            }
+
+
+            string mainPhoto = "dessert1-sugarcreampie.jpg";
+            string line = recipeNameField.Text + "&☆☆☆☆☆ (0)&" + hour +" hour " + min + " min&" + mainPhoto;
+            using (FileStream fs = new FileStream(categoryPath, FileMode.Append, FileAccess.Write))
+            using (StreamWriter csw = new StreamWriter(fs))
+            {
+                csw.WriteLine(line);
+            }
+
             // Create a file to write to.
             using (StreamWriter sw = File.CreateText(path))
             {
@@ -247,22 +280,8 @@ namespace EazyRecipez
 
                 }
                 sw.WriteLine("endInstructions");
-                if (hoursBox.SelectedIndex > -1)
-                {
-                    sw.WriteLine(hoursBox.Text);
-                }
-                else
-                {
-                    sw.WriteLine("0");
-                }
-                if (minutesBox.SelectedIndex > -1)
-                {
-                    sw.WriteLine(minutesBox.Text);
-                }
-                else
-                {
-                    sw.WriteLine("0");
-                }
+                sw.WriteLine(hour);
+                sw.WriteLine(min);
                 sw.WriteLine("Demo User");
 
             }

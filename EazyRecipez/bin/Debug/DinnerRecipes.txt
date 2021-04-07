@@ -1,4 +1,3 @@
-Lemon Garlic Salmon&★★★★★ (136)&10 min&salmon.jpg
 Tuna Steak&★★★★☆ (64)&25 min&dinner2-tunasteak.jpg
 Beef Bulgogi&★★★☆☆ (86)&30 min&dinner3-beefbulgogi.jpg
 Avacado Salad&★★☆☆☆ (97)&15 min&dinner4-avacadosalad.png
@@ -7,3 +6,6 @@ Chowder soup&★★★★★☆ (70)&40 min&chowder.jpg
 Shrimp Tacos&★★★★★ (88)&15 min&shrimptaco.jpg
 Italian Meatballs&★★★★☆ (23)&35 min&meatballs.jpg
 Chicken Pasta&★★★☆☆ (56)&25 min&chickpasta.jpg
+Italian Meatballs&★★★★☆ (23)&35 min&meatballs.jpg
+newsave test&☆☆☆☆☆ (0)&3 hour 10 min&dessert1-sugarcreampie.jpg
+Beef Bulgogi&★★★☆☆ (86)&30 min&dinner3-beefbulgogi.jpg
