@@ -108,35 +108,35 @@
                         <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
                             <StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/profilepic1.jpg" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-user-50.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="User123" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="cloud_99" Width="189" FontSize="18" FontWeight="Bold"/>
                                         <Label Content="Delicious and easy to make." Width="210" FontSize="15" FontWeight="Normal"/>
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                                     </StackPanel>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/profilepic2.jpg" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-user-50.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="User456" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="JohnWick123" Width="189" FontSize="18" FontWeight="Bold"/>
                                         <Label Content="The best pie i've ever had" Width="210" FontSize="15" FontWeight="Normal"/>
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                                     </StackPanel>
                                 </StackPanel>
 
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/profilepic3.jpg" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-user-50.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="User789" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="Emily_A" Width="189" FontSize="18" FontWeight="Bold"/>
                                         <Label Content="My kids love it!" Width="210" FontSize="15" FontWeight="Normal"/>
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="Auto"/>
                                     </StackPanel>
                                 </StackPanel>
 
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/profilepic4.jpeg" Width="30"/>
+                                    <Image Margin="0,-25,0,0" Source="Images/icons8-user-50.png" Width="30"/>
                                     <StackPanel>
-                                        <Label Content="Userabc" Width="189" FontSize="18" FontWeight="Bold"/>
+                                        <Label Content="clairo" Width="189" FontSize="18" FontWeight="Bold"/>
                                         <Label Content="Fantastic" Width="210" FontSize="15" FontWeight="Normal"/>
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="Auto"/>
                                     </StackPanel>

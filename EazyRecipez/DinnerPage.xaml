@@ -92,7 +92,7 @@
                             <StackPanel>
                                 <Label Content="Lemon Garlic Salmon" Width="189" FontSize="17" FontWeight="Bold"/>
                                 <Label Content="★★★★★ (136 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Estimated time: 10min" Width="190"/>
+                                <Label Content="Est. time: 10min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                             </StackPanel>
@@ -126,7 +126,7 @@
                             <StackPanel>
                                 <Label Content="Tuna Steak" Width="190" FontSize="17" FontWeight="Bold"/>
                                 <Label Content="★★★★☆ (64 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Estimated time: 25min" Width="190"/>
+                                <Label Content="Est. time: 25min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                             </StackPanel>
                         </StackPanel>

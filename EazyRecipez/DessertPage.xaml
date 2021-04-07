@@ -92,7 +92,7 @@
                             <StackPanel>
                                 <Label Content="Sugar Cream Pie" Width="189" FontSize="17" FontWeight="Bold"/>
                                 <Label Content="★★★★☆ (67 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Estimated time: 1 hour 40 min" Width="190"/>
+                                <Label Content="Est.time: 1 hour 40min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
                             </StackPanel>
@@ -126,7 +126,7 @@
                             <StackPanel>
                                 <Label Content="French Macaroon" Width="189" FontSize="17" FontWeight="Bold"/>
                                 <Label Content="★★☆☆☆ (35 reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Estimated time: 1 hour 20 min" Width="190"/>
+                                <Label Content="Est. time: 1 hour 20min" Width="190"/>
                                 <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                             </StackPanel>
                         </StackPanel>
