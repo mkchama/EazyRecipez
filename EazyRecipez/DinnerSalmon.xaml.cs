@@ -19,99 +19,20 @@ namespace EazyRecipez
     /// <summary>
     /// Interaction logic for DinnerPage.xaml
     /// </summary>
-    public partial class DinnerPage : Page
+    public partial class DinnerSalmon : Page
     {
-        public DinnerPage()
+        public DinnerSalmon()
         {
             InitializeComponent();
-            Loaded += DinnerPage_Loaded;
+            Loaded += DinnerSalmon_Loaded;
         }
-        void DinnerPage_Loaded(object sender, RoutedEventArgs e)
+        void DinnerSalmon_Loaded(object sender, RoutedEventArgs e)
         {
             if (searchBox.Text == "Search for dinner recipes..." || searchBox.Text == "")
             {
                 clearButton.Opacity = 0;
             }
-            else if (searchBox.Text.ToLower() == "salmon")
-            {
-                var mainWindow = (MainWindow)Application.Current.MainWindow;
-                DinnerSalmon Dinner_Salmon = new DinnerSalmon();
-
-                Dinner_Salmon.searchBox.Text = searchBox.Text;
-
-                mainWindow?.ChangeView(Dinner_Salmon);
-            }
-            else if (searchBox.Text.ToLower() == "steak")
-            {
-                var mainWindow = (MainWindow)Application.Current.MainWindow;
-                DinnerSteak Dinner_Steak = new DinnerSteak();
-
-                Dinner_Steak.searchBox.Text = searchBox.Text;
-
-                mainWindow?.ChangeView(Dinner_Steak);
-            }
-            else
-            {
-                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/DinnerRecipes.txt";
-                using (StreamReader file = new StreamReader(FilePath))
-
-                {
-                    string line;
-                    //ThePanel.Children.RemoveRange(0, ThePanel.Children.Count - 2);
-                    ThePanel.Children.Clear();
-                    while ((line = file.ReadLine()) != null)
-                    {
-                        Console.WriteLine(line);
-                        string[] contents = line.Split('&');
-
-                        if (contents[0].ToLower().Contains(searchBox.Text.ToLower()))
-                        {
-                            var NewPanel = new StackPanel();
-                            NewPanel.Orientation = Orientation.Horizontal;
-                            ThePanel.Children.Add(NewPanel);
-
-
-                            string TextPath = "/Images/" + contents[3];
-                            Uri resourceUri = new Uri(TextPath, UriKind.Relative);
-                            Image RecipeImage = new Image();
-                            RecipeImage.Width = 85;
-                            RecipeImage.Source = new BitmapImage(resourceUri);
-
-                            NewPanel.Children.Add(RecipeImage);
-
-                            var RecipeList = new StackPanel();
-
-                            var NameLabel = new Label();
-                            NameLabel.Content = contents[0];
-                            NameLabel.FontSize = 17;
-                            NameLabel.FontWeight = FontWeights.Bold;
-
-                            var RatingLabel = new Label();
-                            RatingLabel.Content = contents[1];
-                            RatingLabel.FontSize = 15;
-                            RatingLabel.FontWeight = FontWeights.Bold;
-
-                            var TimeLabel = new Label();
-                            TimeLabel.Content = contents[2];
-                            var Divider = new Rectangle();
-                            Divider.HorizontalAlignment = HorizontalAlignment.Stretch;
-                            Divider.VerticalAlignment = VerticalAlignment.Center;
-                            Divider.Fill = System.Windows.Media.Brushes.LightGray;
-                            Divider.Height = 1;
-
-
-                            RecipeList.Children.Add(NameLabel);
-                            RecipeList.Children.Add(RatingLabel);
-                            RecipeList.Children.Add(TimeLabel);
-                            RecipeList.Children.Add(Divider);
-
-                            NewPanel.Children.Add(RecipeList);
-                        }
-
-
-                    }
-                }
-            }
+            
         }
 
         private void searchBox_KeyDown(object sender, KeyEventArgs e)
@@ -119,30 +40,11 @@ namespace EazyRecipez
             if (e.Key == Key.Return)
             {
                 var mainWindow = (MainWindow)Application.Current.MainWindow;
-                if (searchBox.Text.ToLower() == "steak")
-                {
+                DinnerPage Dinner_Page = new DinnerPage();
 
-                    DinnerSteak Dinner_Steak = new DinnerSteak();
-                    Dinner_Steak.searchBox.Text = searchBox.Text;
-                    mainWindow?.ChangeView(Dinner_Steak);
+                Dinner_Page.searchBox.Text = searchBox.Text;
 
-                }
-                else if (searchBox.Text.ToLower() == "salmon")
-                {
-                    DinnerSalmon Dinner_Salmon = new DinnerSalmon();
-                    Dinner_Salmon.searchBox.Text = searchBox.Text;
-                    mainWindow?.ChangeView(Dinner_Salmon);
-
-                }
-                else
-                {
-                    DinnerPage Dinner_Page = new DinnerPage();
-
-                    Dinner_Page.searchBox.Text = searchBox.Text;
-
-                    mainWindow?.ChangeView(Dinner_Page);
-                }
-                
+                mainWindow?.ChangeView(Dinner_Page);
             }
         }
 

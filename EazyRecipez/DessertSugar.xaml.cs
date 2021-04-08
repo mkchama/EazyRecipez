@@ -19,91 +19,22 @@ namespace EazyRecipez
     /// <summary>
     /// Interaction logic for DessertPage.xaml
     /// </summary>
-    public partial class DessertPage : Page
+    public partial class DessertSugar : Page
     {
-        public DessertPage()
+        public DessertSugar()
         {
             InitializeComponent();
-            Loaded += DessertPage_Loaded;
+            Loaded += DessertSugar_Loaded;
         }
 
-        void DessertPage_Loaded(object sender, RoutedEventArgs e)
+        void DessertSugar_Loaded(object sender, RoutedEventArgs e)
         {
             if (searchBox.Text == "Search for dessert recipes..." || searchBox.Text == "")
             {
                 clearButton.Opacity = 0;
             }
-            else if (searchBox.Text.ToLower() == "sugar")
-            {
-                var mainWindow = (MainWindow)Application.Current.MainWindow;
-                DessertSugar Dessert_Sugar = new DessertSugar();
+            
 
-                Dessert_Sugar.searchBox.Text = searchBox.Text;
-
-                mainWindow?.ChangeView(Dessert_Sugar);
-            }
-            else
-            {
-                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/DessertRecipes.txt";
-                using (StreamReader file = new StreamReader(FilePath))
-
-                {
-                    string line;
-                    //ThePanel.Children.RemoveRange(0, ThePanel.Children.Count - 2);
-                    ThePanel.Children.Clear();
-                    while ((line = file.ReadLine()) != null)
-                    {
-                        Console.WriteLine(line);
-                        string[] contents = line.Split('&');
-
-                        if (contents[0].ToLower().Contains(searchBox.Text.ToLower()))
-                        {
-                            var NewPanel = new StackPanel();
-                            NewPanel.Orientation = Orientation.Horizontal;
-                            ThePanel.Children.Add(NewPanel);
-
-
-                            string TextPath = "/Images/" + contents[3];
-                            Uri resourceUri = new Uri(TextPath, UriKind.Relative);
-                            Image RecipeImage = new Image();
-                            RecipeImage.Width = 85;
-                            RecipeImage.Source = new BitmapImage(resourceUri);
-
-                            NewPanel.Children.Add(RecipeImage);
-
-                            var RecipeList = new StackPanel();
-
-                            var NameLabel = new Label();
-                            NameLabel.Content = contents[0];
-                            NameLabel.FontSize = 17;
-                            NameLabel.FontWeight = FontWeights.Bold;
-
-                            var RatingLabel = new Label();
-                            RatingLabel.Content = contents[1];
-                            RatingLabel.FontSize = 15;
-                            RatingLabel.FontWeight = FontWeights.Bold;
-
-                            var TimeLabel = new Label();
-                            TimeLabel.Content = contents[2];
-                            var Divider = new Rectangle();
-                            Divider.HorizontalAlignment = HorizontalAlignment.Stretch;
-                            Divider.VerticalAlignment = VerticalAlignment.Center;
-                            Divider.Fill = System.Windows.Media.Brushes.LightGray;
-                            Divider.Height = 1;
-
-
-                            RecipeList.Children.Add(NameLabel);
-                            RecipeList.Children.Add(RatingLabel);
-                            RecipeList.Children.Add(TimeLabel);
-                            RecipeList.Children.Add(Divider);
-
-                            NewPanel.Children.Add(RecipeList);
-                        }
-
-
-                    }
-                }
-            }
         }
 
         private void searchBox_KeyDown(object sender, KeyEventArgs e)
@@ -111,23 +42,11 @@ namespace EazyRecipez
             if (e.Key == Key.Return)
             {
                 var mainWindow = (MainWindow)Application.Current.MainWindow;
-                if (searchBox.Text.ToLower() == "sugar")
-                {
-                    DessertSugar Dessert_Sugar = new DessertSugar();
-                    Dessert_Sugar.searchBox.Text = searchBox.Text;
-                    mainWindow?.ChangeView(Dessert_Sugar);
+                DessertPage Dessert_Page = new DessertPage();
 
-                }
-                else
-                {
-                    DessertPage Dessert_Page = new DessertPage();
+                Dessert_Page.searchBox.Text = searchBox.Text;
 
-                    Dessert_Page.searchBox.Text = searchBox.Text;
-
-                    mainWindow?.ChangeView(Dessert_Page);
-
-                }
-                
+                mainWindow?.ChangeView(Dessert_Page);
             }
         }
 
@@ -252,12 +171,6 @@ namespace EazyRecipez
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow?.ChangeView(new DessertRecipe1());
-        }
-
-        private void DessertPage2_Click(object sender, RoutedEventArgs e)
-        {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new DessertRecipe2());
         }
 
 

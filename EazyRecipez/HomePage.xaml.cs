@@ -23,6 +23,7 @@ namespace EazyRecipez
     {
 
 
+
         public HomePage()
         {
             InitializeComponent();
@@ -31,63 +32,98 @@ namespace EazyRecipez
 
         private void HomePage_Loaded(object sender, RoutedEventArgs e)
         {
-            string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/AllRecipes.txt";
-            using (StreamReader file = new StreamReader(FilePath))
-
+            if (searchBox.Text == "Search for recipes..." || searchBox.Text == "")
             {
-                string line;
-                ThePanel.Children.Clear();
-                while ((line = file.ReadLine()) != null)
+                searchBox.Text = "Search for recipes...";
+                clearButton.Opacity = 0;
+            }
+            else if (searchBox.Text.ToLower() == "salmon")
+            {
+                var mainWindow = (MainWindow)Application.Current.MainWindow;
+                HomeSalmon Home_Salmon = new HomeSalmon();
+
+                Home_Salmon.searchBox.Text = searchBox.Text;
+
+                mainWindow?.ChangeView(Home_Salmon);
+            }
+            else if (searchBox.Text.ToLower() == "steak")
+            {
+                var mainWindow = (MainWindow)Application.Current.MainWindow;
+                HomeSteak Home_Steak = new HomeSteak();
+
+                Home_Steak.searchBox.Text = searchBox.Text;
+
+                mainWindow?.ChangeView(Home_Steak);
+            }
+            else if (searchBox.Text.ToLower() == "sugar")
+            {
+                var mainWindow = (MainWindow)Application.Current.MainWindow;
+                HomeSugar Home_Sugar = new HomeSugar();
+
+                Home_Sugar.searchBox.Text = searchBox.Text;
+
+                mainWindow?.ChangeView(Home_Sugar);
+            }
+
+            else
+            {
+                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/AllRecipes.txt";
+                using (StreamReader file = new StreamReader(FilePath))
+
                 {
-                    Console.WriteLine(line);
-                    string[] contents = line.Split('&');
-
-                    if ((contents[0].ToLower().Contains(searchBox.Text.ToLower())) || searchBox.Text.Equals("Search for recipes..."))
+                    string line;
+                    //ThePanel.Children.RemoveRange(0, ThePanel.Children.Count - 2);
+                    ThePanel.Children.Clear();
+                    while ((line = file.ReadLine()) != null)
                     {
-                        var NewPanel = new StackPanel();
-                        NewPanel.Orientation = Orientation.Horizontal;
-                        ThePanel.Children.Add(NewPanel);
+                        string[] contents = line.Split('&');
+
+                        if (contents[0].ToLower().Contains(searchBox.Text.ToLower()))
+                        {
+                            var NewPanel = new StackPanel();
+                            NewPanel.Orientation = Orientation.Horizontal;
+                            ThePanel.Children.Add(NewPanel);
 
 
-                        string TextPath = "/Images/" + contents[3];
-                        Uri resourceUri = new Uri(TextPath, UriKind.Relative);
-                        Image RecipeImage = new Image();
-                        RecipeImage.Width = 85;
-                        RecipeImage.Source = new BitmapImage(resourceUri);
+                            string TextPath = "/Images/" + contents[3];
+                            Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+                            Image RecipeImage = new Image();
+                            RecipeImage.Width = 85;
+                            RecipeImage.Source = new BitmapImage(resourceUri);
 
-                        NewPanel.Children.Add(RecipeImage);
+                            NewPanel.Children.Add(RecipeImage);
 
-                        var RecipeList = new StackPanel();
+                            var RecipeList = new StackPanel();
 
-                        var NameLabel = new Label();
-                        NameLabel.Content = contents[0];
-                        NameLabel.FontSize = 17;
-                        NameLabel.FontWeight = FontWeights.Bold;
+                            var NameLabel = new Label();
+                            NameLabel.Content = contents[0];
+                            NameLabel.FontSize = 17;
+                            NameLabel.FontWeight = FontWeights.Bold;
 
-                        var RatingLabel = new Label();
-                        RatingLabel.Content = contents[1];
-                        RatingLabel.FontSize = 15;
-                        RatingLabel.FontWeight = FontWeights.Bold;
+                            var RatingLabel = new Label();
+                            RatingLabel.Content = contents[1];
+                            RatingLabel.FontSize = 15;
+                            RatingLabel.FontWeight = FontWeights.Bold;
 
-                        var TimeLabel = new Label();
-                        TimeLabel.Content = contents[2];
-                        var Divider = new Rectangle();
-                        Divider.HorizontalAlignment = HorizontalAlignment.Stretch;
-                        Divider.VerticalAlignment = VerticalAlignment.Center;
-                        Divider.Fill = System.Windows.Media.Brushes.LightGray;
-                        Divider.Height = 1;
+                            var TimeLabel = new Label();
+                            TimeLabel.Content = contents[2];
+                            var Divider = new Rectangle();
+                            Divider.HorizontalAlignment = HorizontalAlignment.Stretch;
+                            Divider.VerticalAlignment = VerticalAlignment.Center;
+                            Divider.Fill = System.Windows.Media.Brushes.LightGray;
+                            Divider.Height = 1;
 
 
-                        RecipeList.Children.Add(NameLabel);
-                        RecipeList.Children.Add(RatingLabel);
-                        RecipeList.Children.Add(TimeLabel);
-                        RecipeList.Children.Add(Divider);
+                            RecipeList.Children.Add(NameLabel);
+                            RecipeList.Children.Add(RatingLabel);
+                            RecipeList.Children.Add(TimeLabel);
+                            RecipeList.Children.Add(Divider);
 
-                        NewPanel.Children.Add(RecipeList);
+                            NewPanel.Children.Add(RecipeList);
+                        }
+
 
                     }
-
-
                 }
             }
         }
@@ -97,21 +133,44 @@ namespace EazyRecipez
             if (e.Key == Key.Return)
             {
                 var mainWindow = (MainWindow)Application.Current.MainWindow;
-                HomePage Home_Page = new HomePage();
-
-                if (!searchBox.Text.Equals("Search for recipes..."))
+                if (searchBox.Text.ToLower() == "steak")
                 {
-                    clearButton.Opacity = 100;
+                    
+                    HomeSteak Home_Steak = new HomeSteak();
+                    Home_Steak.searchBox.Text = searchBox.Text;
+                    mainWindow?.ChangeView(Home_Steak);
+
+                }
+                else if (searchBox.Text.ToLower() == "salmon")
+                {
+                    Console.WriteLine("YOOOOOO");
+                    HomeSalmon Home_Salmon = new HomeSalmon();
+                    Home_Salmon.searchBox.Text = searchBox.Text;
+                    mainWindow?.ChangeView(Home_Salmon);
+
+                }
+                else if (searchBox.Text.ToLower() == "sugar")
+                {
+                    HomeSugar Home_Sugar = new HomeSugar();
+                    Home_Sugar.searchBox.Text = searchBox.Text;
+                    mainWindow?.ChangeView(Home_Sugar);
+
+                }else
+                {
+                    HomePage Home_Page = new HomePage();
+
+                    Home_Page.searchBox.Text = searchBox.Text;
+
+                    mainWindow?.ChangeView(Home_Page);
+
                 }
 
-                Home_Page.searchBox.Text = searchBox.Text;
-
-                mainWindow?.ChangeView(Home_Page);
+                
+                
             }
         }
         private void RecipeName_MouseDown(object sender, RoutedEventArgs e)
         {
-            clearButton.Opacity = 100;
             if (searchBox.Text.Equals("Search for recipes..."))
             {
                 searchBox.Text = "";
@@ -139,11 +198,7 @@ namespace EazyRecipez
             mainWindow?.ChangeView(Home_Page);
         }
 
-        private void Recipe_Click(object sender, RoutedEventArgs e)
-        {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new RecipePage());
-        }
+        
 
 
         private void Profile_Click(object sender, RoutedEventArgs e)
@@ -214,6 +269,50 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new CreatePage());
         }
 
+        //The RecipePage, fluffy pancakes might need to be changed, it's used for being tested right now"
+        private void Recipe_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new RecipePage());
+        }
+
+
+
+        private void DessertPage1_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new DessertRecipe1());
+        }
+        private void DessertPage2_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new DessertRecipe2());
+        }
+
+        private void DinnerPage1_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new DinnerRecipe1());
+        }
+
+        private void DinnerPage2_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new DinnerRecipe2());
+        }
+
+        private void AppetizerPage1_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new AppetizerRecipe1());
+        }
+
+        private void AppetizerPage2_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new AppetizerRecipe2());
+        }
+
 
 
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
@@ -230,6 +329,6 @@ namespace EazyRecipez
             e.Handled = true;
         }
 
-        
+
     }
 }

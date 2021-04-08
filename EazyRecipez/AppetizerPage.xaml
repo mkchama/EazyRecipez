@@ -147,7 +147,7 @@
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Images/appe4-creamyartichokedip.jpg" Width="85" />
                         <StackPanel>
-                            <Label Content="Creamy Artichoke " Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="Creamy Artichoke" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★☆☆☆ (97 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Est. time: 15 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
