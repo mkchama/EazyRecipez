@@ -148,8 +148,7 @@ namespace EazyRecipez
 
         private void Image_Click(object sender, RoutedEventArgs e)
         {
-            var mainWindow = (MainWindow)Application.Current.MainWindow;
-            mainWindow?.ChangeView(new ImageGallery());
+            gallery.Visibility = Visibility.Visible;
         }
 
         private async void Offline_Click(object sender, RoutedEventArgs e)
@@ -170,6 +169,18 @@ namespace EazyRecipez
             }
 
 
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            gallery.Visibility = Visibility.Hidden;
+            imagesShow.Visibility = Visibility.Visible;
+            uploadShow.Visibility = Visibility.Hidden;
+        }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            gallery.Visibility = Visibility.Hidden;
         }
 
         private async void Online_Click(object sender, RoutedEventArgs e)

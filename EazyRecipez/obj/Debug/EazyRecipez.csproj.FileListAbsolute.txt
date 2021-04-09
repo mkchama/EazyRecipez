@@ -330,3 +330,7 @@ C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\DinnerSteak.
 C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\HomeSalmon.baml
 C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\HomeSteak.baml
 C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\HomeSugar.baml
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\createRecipePhoto.g.cs
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\Page1.g.cs
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\createRecipePhoto.baml
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\Page1.baml

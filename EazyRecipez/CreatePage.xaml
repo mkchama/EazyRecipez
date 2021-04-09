@@ -8,7 +8,7 @@
 
       Title="CreatePage" Height="800" Width="390">
 
- 
+
 
     <Grid Background="White">
         <StackPanel>
@@ -37,7 +37,7 @@
                     <TextBox x:Name="ingredientsField" PreviewMouseDown="ingredients_MouseDown" LostFocus="ingredients_LostFocus" Text="Enter an ingredient" TextWrapping="Wrap" Width="270" FontSize="20" Height="Auto" HorizontalAlignment="Left"/>
 
                     <StackPanel x:Name="ingredientField">
-                        
+
                     </StackPanel>
                     <Button x:Name="btnIngredient" Content="Add an ingredient" Click="ButtonIngredient_Click" Height="30"  Width="120" Margin="0,10,0,0">
                         <Button.Resources>
@@ -52,9 +52,9 @@
 
 
                     <TextBox x:Name="instructionsField" PreviewMouseDown="instructions_MouseDown" LostFocus="instructions_LostFocus" Text="Enter an instruction" TextWrapping="Wrap" Width="270" FontSize="20" Height="Auto" HorizontalAlignment="Left"/>
-                 
+
                     <StackPanel x:Name="instructionPanel">
-                        
+
                     </StackPanel>
                     <Button x:Name="btnClickMe" Content="Add a step" Click="ButtonGenerate_Click" Height="30"  Width="80" Margin="0,10,0,0">
                         <Button.Resources>
@@ -114,7 +114,7 @@
                     </StackPanel>
                     
                     <Label x:Name="uploadPhotos" Content="Upload Photo(s)" FontSize="20" FontWeight="Bold"/>
-                    <StackPanel Orientation="Horizontal" Width="270" HorizontalAlignment="Center" >
+                    <StackPanel x:Name="uploadShow" Orientation="Horizontal" Width="270" HorizontalAlignment="Center" >
                         <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Image_Click"/>
                         <Separator Width="10" Background="White" />
                         <Button Content="" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -122,13 +122,20 @@
                         <Button Content="" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     </StackPanel>
+                    <StackPanel x:Name="imagesShow" Orientation="Horizontal" Width="270" HorizontalAlignment="Center" Visibility="Hidden" >
+                        <Image Source="/images/appe1-savorypartybread.jpg" Height="45" Width="45"/>
+                        <Separator Width="10" Background="White" />
+                        <Image Source="/images/appe21.jpg" Height="45" Width="45"/>
+                        <Separator Width="10" Background="White" />
+                        <Image Source="/images/appe22.jpg" Height="45" Width="45"/>
+                    </StackPanel>
                     <Separator Width="10" Background="White" />
 
 
                 </ItemsControl>
             </Border>
         </ScrollViewer>
-        
+
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Button x:Name="onlineButton" Content="Post" Click="Online_Click" HorizontalAlignment="Left" Margin="0,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
                 <Button.Resources>
@@ -156,6 +163,76 @@
                 </VisualBrush>
             </Rectangle.Fill>
         </Rectangle>
+
+        <Grid x:Name="gallery" Margin="0,0,15,104" Background="White" Visibility="Hidden">
+            <StackPanel>
+                <TextBlock Text="Upload Image(s)" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,10,0,0" FontSize="34" FontWeight="Bold"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,66,0,50">
+
+                <StackPanel x:Name="image_panel" Orientation="Horizontal" HorizontalAlignment="Center" Width="360" Margin="0,50,0,0">
+                    <CheckBox x:Name="pick1" Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
+                        <Image Source="/images/appe1-savorypartybread.jpg"/>
+                    </CheckBox>
+                    <CheckBox x:Name="pick2" Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
+                        <Image Source="/images/appe21.jpg"/>
+                    </CheckBox>
+                    <CheckBox x:Name="pick3" Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
+                        <Image Source="Images/icons8-pancake-96.png"/>
+                    </CheckBox>
+
+                </StackPanel>
+
+                <StackPanel x:Name="image_panel2" Orientation="Horizontal" HorizontalAlignment="Center" Width="360">
+                    <CheckBox x:Name="pick4" Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
+                        <Image Source="/images/appe22.jpg"/>
+                    </CheckBox>
+                    <CheckBox Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
+                        <Image Source="Images/icons8-pancake-96.png"/>
+                    </CheckBox>
+                    <CheckBox Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
+                        <Image Source="Images/icons8-pancake-96.png"/>
+                    </CheckBox>
+
+                </StackPanel>
+
+                <StackPanel x:Name="image_pane3" Orientation="Horizontal" HorizontalAlignment="Center" Width="360">
+                    <CheckBox Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
+                        <Image Source="Images/icons8-pancake-96.png"/>
+                    </CheckBox>
+                    <CheckBox Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
+                        <Image Source="Images/icons8-pancake-96.png"/>
+                    </CheckBox>
+                    <CheckBox Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
+                        <Image Source="Images/icons8-pancake-96.png"/>
+                    </CheckBox>
+
+                </StackPanel>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="saveButton" Content="Save" Click="Save_Click" HorizontalAlignment="Left" Margin="0,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="7"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="cancelButton" Content="Cancel" Click="Cancel_Click" HorizontalAlignment="Left" Margin="0,660,20,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="7"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+
+
         <Label x:Name="savedOfflineLabel" Content="Recipe Saved Offline" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,346,0,0" FontSize="30" FontWeight="Bold" Visibility="Hidden"/>
 
         <Rectangle x:Name="savedOnline" HorizontalAlignment="Left" Height="113" VerticalAlignment="Top" Width="320" Margin="27,315,0,0" Opacity="0.9" Visibility="Hidden">
