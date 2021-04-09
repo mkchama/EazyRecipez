@@ -23,58 +23,96 @@
             <TextBlock Text="Fluffly Pancakes" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,10,0,0" FontSize="34" FontWeight="Bold"/>
         </StackPanel>
         
-        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="600" Margin="0,55,0,0" VerticalAlignment="Top" Width="375" >
-            <StackPanel>
-                
-                <ScrollViewer  Name="sv1" BorderThickness="0" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Margin="100,0,100,0">
+
+
+                <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="600" Margin="0,55,0,0" VerticalAlignment="Top" Width="375" >
+
                     <StackPanel>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/icons8-pancake-96.png" Width="175"/>
-                            <Image Source="Images/icons8-taco-96.png" Width="175"/>
-                            <Image Source="Images/icons8-bento-96.png" Width="175"/>
-                        </StackPanel>
-                    </StackPanel>
-                </ScrollViewer>
-                
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                    <Button Height="25" Width="30" Background="White" Click="svPageLeft" Margin="0,0,0,0">
-                        <Image Source = "Images/icons8-arrow-left-100.png" />
-                    </Button>
-                    <Button Height="25" Width="30" Background="White" Click="svPageRight" Margin="10,0,0,0">
-                        <Image Source="Images/icons8-arrow-right-100.png" />
-                    </Button>
-                </StackPanel>
-                
-                <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
-                    <StackPanel HorizontalAlignment="Center">
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,0,0,0" FontSize="16"><Bold>Category:</Bold> Breakfast
-                            </TextBlock>
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,0,0,0" FontSize="16"><Bold>Time:</Bold> 25min
-                            </TextBlock>
+                        <StackPanel Margin="0,0,0,0">
+
+
+
                         </StackPanel>
 
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,5,0,0" FontSize="16"><Bold>Author:</Bold> RecipeMaker23</TextBlock>
-                            <TextBlock Text="☆☆☆☆☆ (200)" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,5,0,0" FontSize="16" FontWeight="Bold"/>
-                        </StackPanel>
-                    </StackPanel>
-                </Border>
+                        <ScrollViewer  Name="sv1" BorderThickness="0" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Margin="100,0,100,0">
 
-                <Label Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
-                <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
-                    
-                    <StackPanel Orientation="Vertical">
-                        <TextBlock x:Name="subHeaderText" FontSize="14" TextWrapping="Wrap" Foreground="Black" Margin="10">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="Images/pancakes.jpg" Width="175"/>
+                                    <Image Source="Images/pancakes2.jpg" Width="175" Height="175"/>
+                                    <Image Source="Images/pancakes3.jpg" Width="175"/>
+                                </StackPanel>
+
+
+
+                            </StackPanel>
+
+                        </ScrollViewer>
+                        <ToggleButton Name="cb" IsEnabled="True" VerticalAlignment="Center" Checked="HandleChecked" Unchecked="HandleUnchecked" Width="40" Height="40" Background="{x:Null}" BorderBrush="Transparent" Margin="135,-40,0,0">
+                            <ToggleButton.Style>
+                                <Style TargetType="{x:Type ToggleButton}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="ToggleButton">
+                                                <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                        Background="{TemplateBinding Background}">
+                                                    <ContentPresenter HorizontalAlignment="Center"                  
+                                              VerticalAlignment="Center"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsChecked" Value="True">
+                                            <Setter Property="Background" Value="Red" />
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ToggleButton.Style>
+                            <StackPanel  x:Name="heartPanel">
+                                <Image x:Name="emp_heart" Source="Images/iheart.png" />
+                            </StackPanel>
+                        </ToggleButton>
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                            <Button Height="25" Width="30" Background="White" Click="svPageLeft" Margin="0,0,0,0">
+                                <Image Source = "Images/icons8-arrow-left-100.png" />
+                            </Button>
+                            <Button Height="25" Width="30" Background="White" Click="svPageRight" Margin="10,0,0,0">
+                                <Image Source="Images/icons8-arrow-right-100.png" />
+                            </Button>
+                        </StackPanel>
+
+                        <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
+                            <StackPanel HorizontalAlignment="Center">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock x:Name="categoryText" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,0,0,0" FontSize="16"><Bold>Category:</Bold> Breakfast
+                                    </TextBlock>
+                                    <TextBlock x:Name="timeText" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,0,0,0" FontSize="16"><Bold>Time:</Bold> 25min
+                                    </TextBlock>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock x:Name="authorText" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,5,0,0" FontSize="16"><Bold>Author:</Bold> RecipeMaker23</TextBlock>
+                                    <TextBlock Text="★★★☆☆ (221)" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,5,0,0" FontSize="16" FontWeight="Bold"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                        <Label Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
+                        <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
+
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock x:Name="subHeaderText" FontSize="14" TextWrapping="Wrap" Foreground="Black" Margin="10">
                     SIMPLE. EASY. QUICK. FLUFFY. The Best Fluffy Pancakes recipe you will fall in love with.
-                        </TextBlock>
-                    </StackPanel>
-                </Border>
+                                </TextBlock>
+                            </StackPanel>
+                        </Border>
 
-                <Label Content="Ingredients" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
-                <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
-                    <StackPanel>
-                        <TextBlock  TextWrapping="Wrap" FontSize="14" Margin="10">
+                        <Label Content="Ingredients" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
+                        <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
+                            <StackPanel>
+                                <TextBlock x:Name="ingredientsField" TextWrapping="Wrap" FontSize="14" Margin="10">
                             <Bold>•</Bold> 2 cups all purpose | plain flour,
                             <LineBreak/> <Bold>•</Bold> 1/4 cup granulated sugar or sweetener,
                             <LineBreak/><Bold>•</Bold> 4 teaspoons baking powder,
@@ -84,71 +122,132 @@
                             <LineBreak/><Bold>•</Bold> 1/4 cup butter, (60g | 2 oz),
                             <LineBreak/><Bold>•</Bold> 2 teaspoons pure vanilla extract,
                             <LineBreak/><Bold>•</Bold> 1 large egg
-                        </TextBlock>
-                    </StackPanel>
-                </Border>
+                                </TextBlock>
+                            </StackPanel>
+                        </Border>
+                        <Button Click="Instructions_Click" Background="{x:Null}" BorderBrush="Transparent">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Background" Value="LightBlue" />
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                </Border>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" Value="#F8F8F8" TargetName="Border" />
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                            <Label Content="Instructions                    ➜"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
 
-                <Label Content="Instructions                    ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
-                <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
-                    <StackPanel>
-                        <TextBlock TextWrapping="Wrap" FontSize="14" Margin="10" >
+                        </Button>
+                        <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
+                            <StackPanel>
+                                <TextBlock x:Name="instructionField" TextWrapping="Wrap" FontSize="14" Margin="10" >
                             <Bold>1.</Bold> Combine together the flour, sugar (or sweetener), baking powder, baking soda and salt in a large-sized bowl. Make a well in the centre and add the milk, slightly cooled melted butter, vanilla and egg. <LineBreak/>
                             <Bold>2.</Bold> Use a wire whisk to whisk the wet ingredients together first before slowly folding them into the dry ingredients. Mix together until smooth (there may be a couple of lumps but that's okay).<LineBreak/>
                             <Bold>3.</Bold> Set the batter aside and allow to rest while heating up your pan or griddle. <LineBreak/>
                             <Bold>4.</Bold> Heat a nonstick pan or griddle over low-medium heat and wipe over with a little butter to lightly grease pan. Pour ¼ cup of batter onto the pan and spread out gently into a round shape with the back of your ladle or measuring cup.<LineBreak/>
                             <Bold>5.</Bold> When the underside is golden and bubbles begin to appear on the surface, flip with a spatula and cook until golden. Repeat with remaining batter.</TextBlock>
-                    </StackPanel>
-                </Border>
-                
-                <StackPanel Margin="0,10,0,0">
-                    <Label Content="Comments                    ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
-                    <TextBox x:Name="commentsField"  HorizontalAlignment="Center" PreviewMouseDown="comment_MouseDown" LostFocus="comment_LostFocus"  Height="25" Margin="0,0,0,10" FontSize="16" TextWrapping="Wrap" Text="Add a comment..." VerticalAlignment="Top" Width="330" Background="{x:Null}"/>
-                    <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="250" Margin="0,0,0,0" VerticalAlignment="Top" Width="375" >
-                        <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
-                            <StackPanel>
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/icons8-pancake-96.png" Width="30"/>
-                                    <StackPanel>
-                                        <Label Content="Username" Width="189" FontSize="18" FontWeight="Bold"/>
-                                        <Label Content="Awesome Recipe!" Width="190" FontSize="15" FontWeight="Normal"/>
-                                        <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                                    </StackPanel>
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/icons8-taco-96.png" Width="30"/>
-                                    <StackPanel>
-                                        <Label Content="Username" Width="189" FontSize="18" FontWeight="Bold"/>
-                                        <Label Content="Awesome Recipe!" Width="190" FontSize="15" FontWeight="Normal"/>
-                                        <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                                    </StackPanel>
-                                </StackPanel>
-
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/icons8-taco-96.png" Width="30"/>
-                                    <StackPanel>
-                                        <Label Content="Username" Width="189" FontSize="18" FontWeight="Bold"/>
-                                        <Label Content="Awesome Recipe!" Width="190" FontSize="15" FontWeight="Normal"/>
-                                        <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="Auto"/>
-                                    </StackPanel>
-                                </StackPanel>
-                                
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Margin="0,-25,0,0" Source="Images/icons8-taco-96.png" Width="30"/>
-                                    <StackPanel>
-                                        <Label Content="Username" Width="189" FontSize="18" FontWeight="Bold"/>
-                                        <Label Content="Awesome Recipe!" Width="190" FontSize="15" FontWeight="Normal"/>
-                                        <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="Auto"/>
-                                    </StackPanel>
-                                </StackPanel>
                             </StackPanel>
                         </Border>
-                    </ScrollViewer>
-                </StackPanel>
-            </StackPanel>
+                        <Label Content="Comments                      ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="28" FontWeight="Bold"/>
+                        <StackPanel Margin="0,0,0,0">
+                            <TextBox x:Name="commentsField"  HorizontalAlignment="Center" PreviewMouseDown="comment_MouseDown" LostFocus="comment_LostFocus" KeyDown="searchBox_KeyDown" Height="25" Margin="0,0,0,10" FontSize="16" TextWrapping="Wrap" Text="Add a comment..." VerticalAlignment="Top" Width="330" Background="{x:Null}"/>
 
-        </ScrollViewer>
+                            <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="250" Margin="0,0,0,5" VerticalAlignment="Top" Width="375" >
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
+
+                                    <StackPanel x:Name="parentComment">
+
+
+                                        <StackPanel x:Name="commentPanel" Orientation="Vertical">
+
+
+                                            <StackPanel x:Name="commentImage">
+
+                                            </StackPanel>
+
+                                            <StackPanel x:Name="newComment">
+
+                                            </StackPanel>
+
+                                        </StackPanel>
+
+                                        <StackPanel Orientation="Vertical">
+
+                                            <StackPanel Orientation="Horizontal" Height="50">
+                                                <Image Margin="0,0,0,0" Source="Images/icons8-user-50.png" Width="25"/>
+                                                <Label Content="chef101:" FontSize="18" FontWeight="Bold"/>
+                                                <Label Content="Awesome Recipe!" FontSize="15" FontWeight="Normal"/>
+                                            </StackPanel>
+
+                                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
+                                        </StackPanel>
+
+
+                                        <StackPanel Orientation="Vertical">
+
+                                            <StackPanel Orientation="Horizontal" Height="50">
+                                                <Image Margin="0,0,0,0" Source="Images/icons8-user-50.png" Width="25"/>
+                                                <Label Content="pika-23:" FontSize="18" FontWeight="Bold"/>
+                                                <Label Content="I like it" FontSize="15" FontWeight="Normal"/>
+                                            </StackPanel>
+
+                                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
+                                        </StackPanel>
+                                        <StackPanel Orientation="Vertical">
+
+                                            <StackPanel Orientation="Horizontal" Height="50">
+                                                <Image Margin="0,0,0,0" Source="Images/icons8-user-50.png" Width="25"/>
+                                                <Label Content="jimmy_hart:" FontSize="18" FontWeight="Bold"/>
+                                                <Label Content="Incredibly easy" FontSize="15" FontWeight="Normal"/>
+                                            </StackPanel>
+
+                                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
+                                        </StackPanel>
+                                        <StackPanel Orientation="Vertical">
+
+                                            <StackPanel Orientation="Horizontal" Height="50">
+                                                <Image Margin="0,0,0,0" Source="Images/icons8-user-50.png" Width="25"/>
+                                                <Label Content="recipemaker:" FontSize="18" FontWeight="Bold"/>
+                                                <Label Content="Saved!" FontSize="15" FontWeight="Normal"/>
+                                            </StackPanel>
+
+                                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
+                                        </StackPanel>
+                                        <StackPanel Orientation="Vertical">
+
+                                            <StackPanel Orientation="Horizontal" Height="50">
+                                                <Image Margin="0,0,0,0" Source="Images/icons8-user-50.png" Width="25"/>
+                                                <Label Content="sailormoon:" FontSize="18" FontWeight="Bold"/>
+                                                <Label Content="I'll try this out!" FontSize="15" FontWeight="Normal"/>
+                                            </StackPanel>
+
+                                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </ScrollViewer>
+                        </StackPanel>
+                    </StackPanel>
+
+                </ScrollViewer>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Button x:Name="onlineButton" Content="Edit" HorizontalAlignment="Left" Margin="0,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20" Click="Edit_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">

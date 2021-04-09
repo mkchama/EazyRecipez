@@ -9,66 +9,116 @@
         Title="ProfilePage" Height="800" Width="390">
     <Grid Background="White">
         <StackPanel>
+
             <Label Content="Profile Page" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,10,0,0" FontSize="34" FontWeight="Bold"/>
-            <Label Content="Username" HorizontalAlignment="Left" Height="33" Margin="135,10,0,0" VerticalAlignment="Top" Width="100" FontSize="15" RenderTransformOrigin="0.53,0.018"/>
-            <Label Content="# of Recipes Uploaded" HorizontalAlignment="Left" Height="35" Margin="135,0,0,0" VerticalAlignment="Top" Width="189" RenderTransformOrigin="0.519,0.688" FontSize="15"/>
-            <Image x:Name="Profile_Picture" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="30,77,0,0"/>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+                    <Image Height="100" Source="Images/icons8-name-100.png" HorizontalAlignment="Left" Width="100" Margin="10,0,0,0"/>
+                </StackPanel>
+                <StackPanel>
+                    <Label Content="Test User" HorizontalAlignment="Left" Height="33" Margin="0,10,0,0" VerticalAlignment="Top" Width="100" FontSize="15"/>
+                    <Label Content="5 Recipes Uploaded" HorizontalAlignment="Left" Height="35" Margin="0,0,0,0" VerticalAlignment="Top" Width="189" FontSize="15"/>
+                </StackPanel>
+            </StackPanel>
+            
         </StackPanel>
 
 
         <Grid HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" VerticalAlignment="Top" Width="390"/>
         <StackPanel Margin="10">
-            <Label Content="My Recipes                   ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="370" Margin="0,180,0,0" FontSize="28" FontWeight="Bold"/>
+            <Label Content="My Recipes                      ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="370" Margin="0,180,0,0" FontSize="28" FontWeight="Bold"/>
             <Border Padding="0" CornerRadius="6" HorizontalAlignment="Left" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="350" Height="Auto">
-                <StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-pancake-96.png" Width="Auto"/>
-                        <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="18" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                <StackPanel Margin="10">
+                    <Button Click="Pancake_Click" HorizontalAlignment="Left" Background="{x:Null}" BorderBrush="Transparent" >
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="LightBlue" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="#F8F8F8" TargetName="Border" />
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="350">
+                            <Image Source="Images/pancakes.jpg" Width="85"/>
+                            <StackPanel Margin="0,0,0,0">
+                                <Label Content="Fluffy Pancakes" Width="Auto" FontSize="18" FontWeight="Bold"/>
+                                <Label Content="★★★☆☆ (221)" Width="Auto" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="Est. time: 25min" Width="Auto"/>
+                                <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
 
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
+                    </Button>
 
 
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-taco-96.png" Width="Auto"/>
-                        <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="18" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="Auto"/>
+                    <Button Click="DinnerPage1_Click" HorizontalAlignment="Left" Background="{x:Null}" BorderBrush="Transparent" >
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="LightBlue" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="#F8F8F8" TargetName="Border" />
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Images/salmon.jpg" Width="85" Height="85"/>
+                            <StackPanel>
+                                <Label Content="Lemon Garlic Salmon" Width="189" FontSize="17" FontWeight="Bold"/>
+                                <Label Content="★★★★★ (136 Reviews )" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="Est. time: 10 min" Width="190"/>
+
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
+                    </Button>
                 </StackPanel>
             </Border>
 
 
-            <Label Content="My Favorties                ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="350" Margin="0,10,0,0" FontSize="28" FontWeight="Bold"/>
+            <Label Content="My Favorties                   ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="370" Margin="0,10,0,0" FontSize="28" FontWeight="Bold"/>
             <Border Padding="0" CornerRadius="6" HorizontalAlignment="Left" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="350" Height="Auto">
-                <StackPanel>
+                <StackPanel Margin="10">
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-cereal-96.png" Width="Auto"/>
+                        <Image Source="Images/APPE3-BUFFALOCHICKENDIP.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="18" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
+                            <Label Content="Buffalo Chicken Dip" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★★☆☆ (86 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Est. time: 30 min" Width="190"/>
                             <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-
                         </StackPanel>
                     </StackPanel>
 
 
+
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/icons8-pizza-96.png" Width="Auto"/>
+                        <Image Source="Images/appe4-creamyartichokedip.jpg" Width="85"/>
                         <StackPanel>
-                            <Label Content="Recipe Name" Width="189" FontSize="18" FontWeight="Bold"/>
-                            <Label Content="☆☆☆☆☆ (# of reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Estimated time to complete" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="Auto"/>
+                            <Label Content="Creamy Artichoke" Width="189" FontSize="17" FontWeight="Bold"/>
+                            <Label Content="★★☆☆☆ (97 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                            <Label Content="Est. time: 15 min" Width="190"/>
+                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
                         </StackPanel>
                     </StackPanel>
                 </StackPanel>
@@ -92,15 +142,11 @@
         </StackPanel>
 
         <Canvas>
-            <Image Height="100" Canvas.Left="27" Source="Images/icons8-name-100.png" Stretch="Fill" Canvas.Top="75" Width="100" RenderTransformOrigin="0.31,0.51"/>
-            <Image Height="30" Canvas.Left="324" Source="Images/icons8-settings-90.png" Stretch="Fill" Canvas.Top="22" Width="30" RenderTransformOrigin="0.028,0.2"/>
-
-            <Button x:Name="My_Favorties" Content="Button" Height="55" Canvas.Top="435" Width="382" Opacity="0" Click="BtnClickFav"/>
-            <Button x:Name="My_Recipes" Content="Button" Height="55" Canvas.Top="197" Width="382" Opacity="0" Click="BtnClickRecipes"/>
-
+            <Button x:Name="My_Favorties" Content="Button" Height="40" Canvas.Top="455" Width="382" Opacity="0" Click="BtnClickFav"/>
+            <Button x:Name="My_Recipes" Content="Button" Height="40" Canvas.Top="200" Width="382" Opacity="0" Click="BtnClickRecipes"/>
             <Frame x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
-     
         </Canvas>
+        
         <Button Content="Button" HorizontalAlignment="Left" Margin="155,705,0,0" VerticalAlignment="Top" Width="50" Height="50" Opacity="0" Click="Create_Click"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="27,705,0,0" VerticalAlignment="Top" Width="50" Height="50" Opacity="0" Click="Home_Click"/>
 

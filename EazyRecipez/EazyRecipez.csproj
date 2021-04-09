@@ -101,6 +101,9 @@
     <Compile Include="DessertRecipe2.xaml.cs">
       <DependentUpon>DessertRecipe2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DessertSugar.xaml.cs">
+      <DependentUpon>DessertSugar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DinnerPage.xaml.cs">
       <DependentUpon>DinnerPage.xaml</DependentUpon>
     </Compile>
@@ -110,11 +113,26 @@
     <Compile Include="DinnerRecipe2.xaml.cs">
       <DependentUpon>DinnerRecipe2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DinnerSalmon.xaml.cs">
+      <DependentUpon>DinnerSalmon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DinnerSteak.xaml.cs">
+      <DependentUpon>DinnerSteak.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EditPage.xaml.cs">
       <DependentUpon>EditPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeSalmon.xaml.cs">
+      <DependentUpon>HomeSalmon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeSteak.xaml.cs">
+      <DependentUpon>HomeSteak.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeSugar.xaml.cs">
+      <DependentUpon>HomeSugar.xaml</DependentUpon>
     </Compile>
     <Compile Include="ImageGallery.xaml.cs">
       <DependentUpon>ImageGallery.xaml</DependentUpon>
@@ -178,6 +196,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="DessertSugar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="DinnerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -190,6 +212,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="DinnerSalmon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DinnerSteak.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="EditPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -197,6 +227,18 @@
     <Page Include="HomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeSalmon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HomeSteak.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HomeSugar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ImageGallery.xaml">
       <SubType>Designer</SubType>
@@ -470,6 +512,27 @@
   <ItemGroup>
     <Resource Include="Images\appe4-creamyartichokedip.jpg" />
     <Resource Include="Images\appe9-springroll.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pancakes3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pancakes2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\redheart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iheart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iheartfill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\heart2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

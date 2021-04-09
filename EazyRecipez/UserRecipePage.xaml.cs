@@ -56,6 +56,12 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new MyRecipesPage());
         }
 
+        private void Instructions_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new InstructionsPage());
+        }
+
         private void ListBoxScrollHandler(object sender, MouseWheelEventArgs e)
         {
             if (e.Delta > 0)
@@ -103,6 +109,80 @@ namespace EazyRecipez
             {
                 commentsField.Text = "Add a comment...";
             }
+
+        }
+
+        private void searchBox_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.Key == Key.Return)
+            {
+
+                var mainWindow = (MainWindow)Application.Current.MainWindow;
+                Image RecipeImage = new Image();
+                var userNameLabel = new Label();
+                var commentLabel = new Label();
+
+                string TextPath = "/Images/icons8-user-50.png";
+                Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+
+
+                RecipeImage.Source = new BitmapImage(resourceUri);
+                RecipeImage.Width = 25;
+
+
+                var RecipeList = new StackPanel();
+                RecipeList.Orientation = Orientation.Horizontal;
+
+                var ImagePan = new StackPanel();
+                ImagePan.Orientation = Orientation.Horizontal;
+
+                userNameLabel.Content = "TestUser:";
+                userNameLabel.FontWeight = FontWeights.Bold;
+
+                userNameLabel.FontSize = 18;
+
+                var Divider = new Rectangle();
+                Divider.HorizontalAlignment = HorizontalAlignment.Stretch;
+                Divider.VerticalAlignment = VerticalAlignment.Center;
+                Divider.Fill = System.Windows.Media.Brushes.LightGray;
+                Divider.Height = 1;
+
+                commentLabel.Content = commentsField.Text;
+
+                commentLabel.FontSize = 15;
+
+                RecipeList.Height = 50;
+
+
+
+                RecipeList.Children.Add(RecipeImage);
+                RecipeList.Children.Add(userNameLabel);
+                RecipeList.Children.Add(commentLabel);
+
+
+                commentPanel.Children.Add(RecipeList);
+                commentPanel.Children.Add(Divider);
+                commentsField.Clear();
+
+
+            }
+        }
+
+        private void HandleChecked(object sender, RoutedEventArgs e)
+        {
+            ToggleButton toggle = sender as ToggleButton;
+            string TextPath = "/Images/heart2.png";
+            Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+            emp_heart.Source = new BitmapImage(resourceUri);
+        }
+
+        private void HandleUnchecked(object sender, RoutedEventArgs e)
+        {
+            ToggleButton toggle = sender as ToggleButton;
+            string TextPath = "/Images/iheart.png";
+            Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+            emp_heart.Source = new BitmapImage(resourceUri);
 
         }
     }

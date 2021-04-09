@@ -155,7 +155,8 @@ namespace EazyRecipez
                     Home_Sugar.searchBox.Text = searchBox.Text;
                     mainWindow?.ChangeView(Home_Sugar);
 
-                }else
+                }
+                else
                 {
                     HomePage Home_Page = new HomePage();
 
