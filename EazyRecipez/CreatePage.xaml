@@ -164,7 +164,7 @@
             </Rectangle.Fill>
         </Rectangle>
 
-        <Grid x:Name="gallery" Margin="0,0,15,104" Background="White" Visibility="Hidden">
+        <Grid x:Name="gallery" Margin="0,0,15,104" Background="White" Visibility="Visible">
             <StackPanel>
                 <TextBlock Text="Upload Image(s)" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,10,0,0" FontSize="34" FontWeight="Bold"/>
             </StackPanel>
@@ -179,7 +179,7 @@
                         <Image Source="/images/appe21.jpg"/>
                     </CheckBox>
                     <CheckBox x:Name="pick3" Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
-                        <Image Source="Images/icons8-pancake-96.png"/>
+                        <Image Source="Images/bananacookie.jpg"/>
                     </CheckBox>
 
                 </StackPanel>
@@ -189,23 +189,23 @@
                         <Image Source="/images/appe22.jpg"/>
                     </CheckBox>
                     <CheckBox Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
-                        <Image Source="Images/icons8-pancake-96.png"/>
+                        <Image Source="Images/banhmi.jpg"/>
                     </CheckBox>
                     <CheckBox Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
-                        <Image Source="Images/icons8-pancake-96.png"/>
+                        <Image Source="Images/dessert11.jpg"/>
                     </CheckBox>
 
                 </StackPanel>
 
                 <StackPanel x:Name="image_pane3" Orientation="Horizontal" HorizontalAlignment="Center" Width="360">
                     <CheckBox Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
-                        <Image Source="Images/icons8-pancake-96.png"/>
+                        <Image Source="Images/dessert22.jpg"/>
                     </CheckBox>
                     <CheckBox Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
-                        <Image Source="Images/icons8-pancake-96.png"/>
+                        <Image Source="Images/cobbsalad.jpg"/>
                     </CheckBox>
                     <CheckBox Style="{StaticResource {x:Type ToggleButton}}" Width="120" Height="120">
-                        <Image Source="Images/icons8-pancake-96.png"/>
+                        <Image Source="Images/chickpasta.jpg"/>
                     </CheckBox>
 
                 </StackPanel>
