@@ -193,6 +193,8 @@ namespace EazyRecipez
 
                 Save_File(sender, true);
 
+                AppetizerPage.recipeCreated = true;
+
                 offlineButton.IsEnabled = false;
                 onlineButton.IsEnabled = false;
 

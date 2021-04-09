@@ -21,6 +21,9 @@ namespace EazyRecipez
     /// </summary>
     public partial class AppetizerPage : Page
     {
+
+        public static Boolean recipeCreated = false;
+
         public AppetizerPage()
         {
             InitializeComponent();
@@ -28,6 +31,15 @@ namespace EazyRecipez
         }
         void AppetizerPage_Loaded(object sender, RoutedEventArgs e)
         {
+            if (recipeCreated)
+            {
+                breadRecipe.Visibility = Visibility.Visible;
+            } else
+            {
+                breadRecipe.Visibility = Visibility.Hidden;
+            }
+             
+
             if (searchBox.Text == "Search for appetizer recipes..." || searchBox.Text == "")
             {
                 searchBox.Text = "Search for appetizer recipes...";
