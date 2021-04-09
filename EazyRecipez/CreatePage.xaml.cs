@@ -159,7 +159,7 @@ namespace EazyRecipez
                 savedOffline.Visibility = Visibility.Visible;
                 savedOfflineLabel.Visibility = Visibility.Visible;
 
-                Save_File(sender);
+                Save_File(sender, false);
 
                 offlineButton.IsEnabled = false;
                 onlineButton.IsEnabled = false;
@@ -180,7 +180,7 @@ namespace EazyRecipez
                 savedOnline.Visibility = Visibility.Visible;
                 savedOnlineLabel.Visibility = Visibility.Visible;
 
-                Save_File(sender);
+                Save_File(sender, true);
 
                 offlineButton.IsEnabled = false;
                 onlineButton.IsEnabled = false;
@@ -217,13 +217,15 @@ namespace EazyRecipez
             }
         }
 
-        private async void Save_File(Object sender)
+        private async void Save_File(Object sender, Boolean isOnline)
         {
             string fileName = @"\recipes\" + recipeNameField.Text + ".txt";
             string path = AppDomain.CurrentDomain.BaseDirectory + fileName;
 
             string category = categoryCombo.Text;
             string categoryPath = AppDomain.CurrentDomain.BaseDirectory + @"/" + category + "Recipes.txt";
+            string onlinePath = AppDomain.CurrentDomain.BaseDirectory + @"/onlineRecipes.txt";
+            string offlinePath = AppDomain.CurrentDomain.BaseDirectory + @"/offlineRecipes.txt";
 
             string min;
             string hour;
@@ -272,6 +274,24 @@ namespace EazyRecipez
             {
                 csw.WriteLine(line);
             }
+
+            if (isOnline)
+            {
+                using (FileStream fs = new FileStream(onlinePath, FileMode.Append, FileAccess.Write))
+                using (StreamWriter csw = new StreamWriter(fs))
+                {
+                    csw.WriteLine(line);
+                }
+            } else
+            {
+                using (FileStream fs = new FileStream(offlinePath, FileMode.Append, FileAccess.Write))
+                using (StreamWriter csw = new StreamWriter(fs))
+                {
+                    csw.WriteLine(line);
+                }
+            }
+
+
 
             using (FileStream fs = new FileStream(AppDomain.CurrentDomain.BaseDirectory + @"/AllRecipes.txt", FileMode.Append, FileAccess.Write))
             using (StreamWriter csw = new StreamWriter(fs))

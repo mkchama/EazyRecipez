@@ -318,3 +318,15 @@ C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\DinnerSteak.baml
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\HomeSalmon.baml
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\HomeSteak.baml
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\HomeSugar.baml
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\DessertSugar.g.cs
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\DinnerSalmon.g.cs
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\DinnerSteak.g.cs
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\HomeSalmon.g.cs
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\HomeSteak.g.cs
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\HomeSugar.g.cs
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\DessertSugar.baml
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\DinnerSalmon.baml
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\DinnerSteak.baml
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\HomeSalmon.baml
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\HomeSteak.baml
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\HomeSugar.baml

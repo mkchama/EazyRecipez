@@ -142,6 +142,7 @@ namespace EazyRecipez
 
         private void View_Load(object sender, RoutedEventArgs e)
         {
+
             string name = "testing";
             string fileName = @"\recipes\" + name + ".txt";
             string dirParameter = AppDomain.CurrentDomain.BaseDirectory + fileName;
