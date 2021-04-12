@@ -89,6 +89,9 @@
     <Compile Include="BreakfastPage.xaml.cs">
       <DependentUpon>BreakfastPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BufRecipePage.xaml.cs">
+      <DependentUpon>BufRecipePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CreatePage.xaml.cs">
       <DependentUpon>CreatePage.xaml</DependentUpon>
     </Compile>
@@ -183,6 +186,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="BreakfastPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BufRecipePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -97,9 +98,40 @@ namespace EazyRecipez
 
         }
 
+        public static void Read_Fav()
+        {
+
+        }
+
+        public void DoCheckboxStuff(bool check)
+        {
+
+        }
 
         private void HandleChecked (object sender, RoutedEventArgs e)
         {
+            string name = "testing";
+            string fileName = @"\recipes\" + name + ".txt";
+            string dirParameter = AppDomain.CurrentDomain.BaseDirectory + fileName;
+
+            System.IO.StreamReader file = new System.IO.StreamReader(dirParameter);
+            
+            List<string> quotelist = File.ReadAllLines(dirParameter).ToList();
+            Console.Write(quotelist);
+            quotelist.RemoveAt(22);
+            file.Close();
+   
+            File.WriteAllLines(dirParameter, quotelist.ToArray());
+
+         
+
+            using (StreamWriter sw = File.AppendText(dirParameter))
+            {
+                sw.WriteLine("Checked");
+            }
+    
+            
+
             ToggleButton toggle = sender as ToggleButton;
             string TextPath = "/Images/heart2.png";
             Uri resourceUri = new Uri(TextPath, UriKind.Relative);
@@ -108,6 +140,24 @@ namespace EazyRecipez
 
         private void HandleUnchecked(object sender, RoutedEventArgs e)
         {
+            string name = "testing";
+            string fileName = @"\recipes\" + name + ".txt";
+            string dirParameter = AppDomain.CurrentDomain.BaseDirectory + fileName;
+
+            System.IO.StreamReader file = new System.IO.StreamReader(dirParameter);
+
+            List<string> quotelist = File.ReadAllLines(dirParameter).ToList();
+            Console.Write(quotelist);
+            quotelist.RemoveAt(22);
+            file.Close();
+
+            File.WriteAllLines(dirParameter, quotelist.ToArray());
+
+            using (StreamWriter sw = File.AppendText(dirParameter))
+            {
+                sw.WriteLine("UnChecked");
+            }
+
             ToggleButton toggle = sender as ToggleButton;
             string TextPath = "/Images/iheart.png";
             Uri resourceUri = new Uri(TextPath, UriKind.Relative);
@@ -115,6 +165,7 @@ namespace EazyRecipez
       
         }
 
+        
 
         /*private void Change_Color(object sender, RoutedEventArgs e)
         {
@@ -147,24 +198,68 @@ namespace EazyRecipez
             string fileName = @"\recipes\" + name + ".txt";
             string dirParameter = AppDomain.CurrentDomain.BaseDirectory + fileName;
 
+           
+
             System.IO.StreamReader file = new System.IO.StreamReader(dirParameter);
-            recipeName.Text = file.ReadLine();
-            subHeaderText.Text = file.ReadLine();
-            categoryText.Text = file.ReadLine();
+            
+            recipeName.Text =  file.ReadLine();
+            subHeaderText.Text =  file.ReadLine();
+            string Category = file.ReadLine();
+            categoryText.FontWeight = FontWeights.Bold;
+            categoryText.Text = Category;
             string next;
+            int ing = 1;
             while ((next = file.ReadLine()) != "Instructions")
             {
-                ingredientsField.Text += next + "\n";
+                if(ing == 1)
+                {
+                    ingredientsField.Text += "• " + next;
+
+                }
+                else
+                {
+                    ingredientsField.Text += "\n" + "• " + next;
+
+                }
+                ing++;
 
             }
             int ind = 1;
             while ((next = file.ReadLine()) != "endInstructions")
             {
-                instructionField.Text += ind.ToString() + ". " + next + "\n";
+                if (ind == 1)
+                {
+                    instructionField.Text += ind.ToString() + ". " + next;
+                }
+                else
+                {
+                    instructionField.Text += "\n" + ind.ToString() + ". " + next;
+
+                }
                 ind++;
             }
+            timeText.FontWeight = FontWeights.Bold;
             timeText.Text = Get_Time(file);
+            authorText.FontWeight = FontWeights.Bold;
             authorText.Text = file.ReadLine();
+
+      
+            
+
+            if (file.ReadLine() == "Checked")
+            {
+                string TextPath = "/Images/heart2.png";
+                Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+                emp_heart.Source = new BitmapImage(resourceUri);
+            }
+            else
+            {
+                ToggleButton toggle = sender as ToggleButton;
+                string TextPath = "/Images/iheart.png";
+                Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+                emp_heart.Source = new BitmapImage(resourceUri);
+            }
+            file.Close();
 
         }
 
@@ -233,7 +328,7 @@ namespace EazyRecipez
             string second = file.ReadLine();
             if (first == "0")
             {
-                return second + "m";
+                return second + "min";
             }
             else
             {
@@ -243,7 +338,7 @@ namespace EazyRecipez
                 }
                 else
                 {
-                    return first + "h " + second + "m";
+                    return first + "h " + second + "min";
                 }
             }
 

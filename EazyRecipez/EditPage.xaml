@@ -4,7 +4,9 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:EazyRecipez"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
+      
+      Loaded="View_Load"
 
       Title="EditPage" Height="800" Width="390">
 
@@ -28,49 +30,115 @@
                 <ItemsControl Margin="0" HorizontalAlignment="Center">
 
                     <Label x:Name="recipeNameLabel" Content="Recipe Name" FontWeight="Bold" FontSize="20"/>
-                    <TextBox x:Name="recipeNameField" Text="dsds" TextWrapping="Wrap" Width="270" FontSize="20" Background="White" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="recipeNameField" PreviewMouseDown="recipeName_MouseDown" LostFocus="title_LostFocus" Text="" TextWrapping="Wrap" Width="270" FontSize="20" Background="White" HorizontalAlignment="Left"/>
 
                     <Label x:Name="descriptionLabel" Content="Description" FontWeight="Bold" FontSize="20" />
-                    <TextBox x:Name="descriptionField" Text="SIMPLE. EASY. QUICK. FLUFFY. The Best Fluffy Pancakes recipe you will fall in love with." TextWrapping="Wrap" Width="270" FontSize="20" FontWeight="Normal" Height="100" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="descriptionField" PreviewMouseDown="description_MouseDown" LostFocus="description_LostFocus" Text="" TextWrapping="Wrap" Width="270" FontSize="20" FontWeight="Normal" Height="100" HorizontalAlignment="Left"/>
 
                     <Label x:Name="categoryLabel" Content="Category" FontSize="20" FontWeight="Bold"/>
                     <ComboBox x:Name="categoryCombo" Width="270" HorizontalAlignment="Left" Height="25" FontSize="15" VerticalAlignment="Center">
-                        <ComboBoxItem x:Name="breakfastItem" Content="Breakfast" FontSize="15"/>
-                        <ComboBoxItem x:Name="lunchItem" Content="Lunch" FontSize="15"/>
+                        <ComboBoxItem x:Name="breakfastItem" FontSize="15" Content="Breakfast"/>
+                        <ComboBoxItem x:Name="lunchItem" FontSize="15" Content="Lunch"/>
                         <ComboBoxItem x:Name="dinnerItem" FontSize="15" Content="Dinner"/>
                         <ComboBoxItem x:Name="dessertItem" FontSize="15" Content="Dessert"/>
                         <ComboBoxItem x:Name="appetizerItem" FontSize="15" Content="Appetizer"/>
                     </ComboBox>
 
                     <Label x:Name="ingredientsLabel" Content="Ingredients" FontSize="20" FontWeight="Bold"/>
-                    <TextBox x:Name="ingredientsField" Text="2 cups all purpose | plain flour,1/4 cup granulated sugar or sweetener, 4 teaspoons baking powder, 1/4 teaspoon baking soda, 1/2 teaspoon salt, 1 3/4 cups milk, (440ml), 1/4 cup butter, (60g | 2 oz), 2 teaspoons pure vanilla extract, 1 large egg" TextWrapping="Wrap" Width="270" FontSize="20" Height="122" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="ingredientsField" PreviewMouseDown="ingredients_MouseDown" LostFocus="ingredients_LostFocus" Text="" TextWrapping="Wrap" Width="270" FontSize="20" Height="Auto" HorizontalAlignment="Left"/>
+
+                    <StackPanel x:Name="ingredientField">
+
+                    </StackPanel>
+                    <Button x:Name="btnIngredient" Content="Add an ingredient" Click="ButtonIngredient_Click" Height="30"  Width="120" Margin="0,10,0,0">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="7"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
 
                     <Label x:Name="instructionsLabel" Content="Instructions" FontSize="20" FontWeight="Bold"/>
-                    <TextBox x:Name="instructionsField" Text="1. Combine together the flour, sugar (or sweetener), baking powder, baking soda and salt in a large-sized bowl. Make a well in the centre and add the milk, slightly cooled melted butter, vanilla and egg. 2. Use a wire whisk to whisk the wet ingredients together first before slowly folding them into the dry ingredients. Mix together until smooth (there may be a couple of lumps but that's okay). 3. Set the batter aside and allow to rest while heating up your pan or griddle. 4. Heat a nonstick pan or griddle over low-medium heat and wipe over with a little butter to lightly grease pan. Pour ¼ cup of batter onto the pan and spread out gently into a round shape with the back of your ladle or measuring cup. 5. When the underside is golden and bubbles begin to appear on the surface, flip with a spatula and cook until golden. Repeat with remaining batter.
-                    " TextWrapping="Wrap" Width="270" FontSize="20" Height="160" HorizontalAlignment="Left"/>
+
+
+
+                    <TextBox x:Name="instructionsField" PreviewMouseDown="instructions_MouseDown" LostFocus="instructions_LostFocus" Text="" TextWrapping="Wrap" Width="270" FontSize="20" Height="Auto" HorizontalAlignment="Left"/>
+
+                    <StackPanel x:Name="instructionPanel">
+
+                    </StackPanel>
+                    <Button x:Name="btnClickMe" Content="Add a step" Click="ButtonGenerate_Click" Height="30"  Width="80" Margin="0,10,0,0">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="7"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
 
                     <Label x:Name="timeLabel" Content="Time to Complete" FontSize="20" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal">
-                        <TextBox x:Name="timeField" TextWrapping="Wrap" Width="79" Height="29" FontSize="20" Text="25"/>
-                        <Separator Width="20" Background="White" />
-                        <ComboBox Width="117" FontSize="15" VerticalAlignment="Center">
-                            <ComboBoxItem x:Name="minutesItem" Content="Minutes" FontSize="15" VerticalAlignment="Center"/>
-                            <ComboBoxItem x:Name="hoursItem" Content="Hours" FontSize="15" VerticalAlignment="Center"/>
+                        <ComboBox x:Name="hoursBox" Width="80" MaxDropDownHeight="100" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <ComboBoxItem x:Name="boxh0" Content="0" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh1" Content="1" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh2" Content="2" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh3" Content="3" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh4" Content="4" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh5" Content="5" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh6" Content="6" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh7" Content="7" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh8" Content="8" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh9" Content="9" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh10" Content="10" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh11" Content="11" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh12" Content="12" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh13" Content="13" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh14" Content="14" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh15" Content="15" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh16" Content="16" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh17" Content="17" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh18" Content="18" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh19" Content="19" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh20" Content="20" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh21" Content="21" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh22" Content="22" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh23" Content="23" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxh24" Content="24" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxhextra" Content="24+" FontSize="15"/>
                         </ComboBox>
+                        <Label Content="h" FontSize="15"/>
+                        <Separator Width="40" Background="White" />
+                        <ComboBox x:Name="minutesBox" Width="100" MaxDropDownHeight="100" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <ComboBoxItem x:Name="boxmu5" Content="under 5" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm5" Content="5" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm10" Content="10" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm15" Content="15" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm20" Content="20" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm25" Content="25" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm30" Content="30" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm35" Content="35" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm40" Content="40" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm45" Content="45" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm50" Content="50" FontSize="15"/>
+                            <ComboBoxItem x:Name="boxm55" Content="55" FontSize="15"/>
+                        </ComboBox>
+                        <Label Content="m" FontSize="15"/>
                     </StackPanel>
 
                     <Label x:Name="uploadPhotos" Content="Upload Photo(s)" FontSize="20" FontWeight="Bold"/>
-                    <StackPanel Orientation="Horizontal" Width="270" HorizontalAlignment="Center" >
-                        <Image Source="Images/icons8-pancake-96.png" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <StackPanel x:Name="uploadShow" Orientation="Horizontal" Width="270" HorizontalAlignment="Center" >
+                        <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center" />
                         <Separator Width="10" Background="White" />
-                        <Image Source="Images/icons8-pancake-96.png" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Button Content="" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         <Separator Width="10" Background="White" />
-                        <Image Source="Images/icons8-pancake-96.png" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        <Separator Width="10" Background="White" />
-                        <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFA8A8A8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        <Separator Width="10" Background="White" />
-                        <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFA8A8A8" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Button Content="" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
+                    </StackPanel>
+                    <StackPanel x:Name="imagesShow" Orientation="Horizontal" Width="270" HorizontalAlignment="Center" Visibility="Hidden" >
+                        <Image Source="/images/appe1-savorypartybread.jpg" Height="45" Width="45"/>
+                        <Separator Width="10" Background="White" />
+                        <Image Source="/images/appe21.jpg" Height="45" Width="45"/>
+                        <Separator Width="10" Background="White" />
+                        <Image Source="/images/appe22.jpg" Height="45" Width="45"/>
                     </StackPanel>
                     <Separator Width="10" Background="White" />
 
@@ -78,7 +146,6 @@
                 </ItemsControl>
             </Border>
         </ScrollViewer>
-
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Button x:Name="onlineButton" Click="Save_Click" Content="Save" HorizontalAlignment="Left" Margin="0,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
                 <Button.Resources>

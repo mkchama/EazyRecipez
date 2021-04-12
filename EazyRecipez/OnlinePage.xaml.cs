@@ -79,6 +79,17 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new MyRecipesPage());
         }
 
+        private void Pancake_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new UserRecipePage());
+        }
+        private void DinnerPage1_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new DinnerRecipe1());
+        }
+
     }
 
 

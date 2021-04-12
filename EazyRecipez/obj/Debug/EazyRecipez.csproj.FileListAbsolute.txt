@@ -334,3 +334,9 @@ C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\createRecipe
 C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\Page1.g.cs
 C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\createRecipePhoto.baml
 C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\Page1.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\createRecipePhoto.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\Page1.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\createRecipePhoto.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\Page1.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\BufRecipePage.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\BufRecipePage.baml

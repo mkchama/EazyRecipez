@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -71,6 +72,23 @@ namespace EazyRecipez
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;
             mainWindow?.ChangeView(new DessertPage());
+        }
+
+        private void HandleChecked(object sender, RoutedEventArgs e)
+        {
+            ToggleButton toggle = sender as ToggleButton;
+            string TextPath = "/Images/heart2.png";
+            Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+            emp_heart.Source = new BitmapImage(resourceUri);
+        }
+
+        private void HandleUnchecked(object sender, RoutedEventArgs e)
+        {
+            ToggleButton toggle = sender as ToggleButton;
+            string TextPath = "/Images/iheart.png";
+            Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+            emp_heart.Source = new BitmapImage(resourceUri);
+
         }
 
         private void comment_LostFocus(object sender, RoutedEventArgs e)
