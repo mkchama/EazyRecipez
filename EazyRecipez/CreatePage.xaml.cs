@@ -40,6 +40,7 @@ namespace EazyRecipez
             {
                 recipeNameField.Text = "";
             }
+            recipeNameField.Background = Brushes.White;
 
         }
 

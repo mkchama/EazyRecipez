@@ -340,3 +340,5 @@ C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\createRecipePhot
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\Page1.baml
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\BufRecipePage.g.cs
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\BufRecipePage.baml
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\BufRecipePage.g.cs
+C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\BufRecipePage.baml
