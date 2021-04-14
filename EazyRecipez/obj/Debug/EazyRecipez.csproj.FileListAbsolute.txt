@@ -139,7 +139,6 @@ C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.cspr
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.csproj.CopyComplete
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.exe
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.pdb
-C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\EazyRecipez.csprojAssemblyReference.cache
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\ImageGallery.g.cs
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\ImageGallery.baml
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\AppetizerPage.g.cs
@@ -345,3 +344,7 @@ C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\BufRecipePag
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\bin\Debug\ToastNotifications.dll
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\bin\Debug\ToastNotifications.Messages.dll
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\App.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\bin\Debug\Toolkit.WPF.dll
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\RatingControl.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\RatingControl.g.cs
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\GeneratedInternalTypeHelper.g.cs
