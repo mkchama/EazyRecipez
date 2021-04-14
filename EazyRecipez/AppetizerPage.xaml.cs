@@ -163,6 +163,12 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new CreatePage());
         }
 
+        private void Buf_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new BufRecipePage());
+        }
+
         private void Profile_Click(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Application.Current.MainWindow;

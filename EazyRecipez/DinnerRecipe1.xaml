@@ -21,11 +21,12 @@
 
         <StackPanel>
             <TextBlock Text="Lemon Garlic" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,10,0,0" FontSize="32" FontWeight="Bold"/>
-            <TextBlock Text="Salmon" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,0,0,0" FontSize="32" FontWeight="Bold"/>
+            <TextBlock Text="Salmon" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,-10,0,0" FontSize="32" FontWeight="Bold"/>
+            <local:RatingControl Height="20" Width="100" VerticalAlignment="Center" Margin="0,0,0,0" />
 
         </StackPanel>
 
-        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="600" Margin="0,100,0,0" VerticalAlignment="Top" Width="375" >
+        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="595" Margin="0,105,0,0" VerticalAlignment="Top" Width="375" >
             <StackPanel>
 
                 <ScrollViewer  Name="sv1" BorderThickness="0" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Margin="100,0,100,0">

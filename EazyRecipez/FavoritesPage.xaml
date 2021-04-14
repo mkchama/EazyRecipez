@@ -4,7 +4,8 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:EazyRecipez"
-      mc:Ignorable="d" 
+      mc:Ignorable="d"
+      Loaded="View_Load"
       
 
       Title="FavoritesPage" Height="800" Width="390">
@@ -35,7 +36,7 @@
             <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="350" Height="Auto">
                 <StackPanel x:Name="ThePanel" Margin="10">
 
-                    <Button Click="Buf_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
+                    <Button Click="Buf_Click" HorizontalAlignment="Left" Background="{x:Null}" BorderBrush="Transparent" >
 
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">
@@ -56,13 +57,11 @@
                                 </Setter>
                             </Style>
                         </Button.Style>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/APPE3-BUFFALOCHICKENDIP.jpg" Width="85"/>
-                            <StackPanel>
-                                <Label Content="Buffalo Dip" Width="189" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★★☆☆ (86 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Est. time: 30 min" Width="190"/>
-                                <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+
+                        <StackPanel x:Name="bufDip" Orientation="Horizontal">
+                            <Image x:Name="recPic" Width="85"/>
+                            <StackPanel x:Name="stackLabel">
+
                             </StackPanel>
                         </StackPanel>
                     </Button>
@@ -70,16 +69,15 @@
 
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/appe4-creamyartichokedip.jpg" Width="85" />
+                        <Image Source="Images/appe4-creamyartichokedip.jpg" Width="85"/>
                         <StackPanel>
                             <Label Content="Creamy Artichoke" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★☆☆☆ (97 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Est. time: 15 min" Width="190"/>
-
                         </StackPanel>
                     </StackPanel>
 
-                    
+
 
                     <Frame x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
                 </StackPanel>
