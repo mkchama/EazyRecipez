@@ -5,6 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:EazyRecipez"
       mc:Ignorable="d" 
+      
 
       Title="FavoritesPage" Height="800" Width="390">
 
@@ -26,7 +27,7 @@
 
 
         <TextBox x:Name="searchBox" HorizontalAlignment="Center" Height="25" Margin="0,65,0,0" FontSize="16" TextWrapping="Wrap" Text="Search for recipes..." VerticalAlignment="Top" Width="290" Background="{x:Null}" PreviewMouseDown="RecipeName_MouseDown" LostFocus="RecipeName_LostFocus" KeyDown="searchBox_KeyDown"/>
-        <Button x:Name="clearButton" Content="x" HorizontalAlignment="Left" Margin="321,65,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="2.409,0.478" Background="White" BorderThickness="0 0.7 0.7 0.7" Opacity="0" Click="Clear_Click"/>
+        <Button x:Name="clearButton" Content="x" HorizontalAlignment="Left" Margin="321,65,0,0" VerticalAlignment="Top" Width="19" Height="25" RenderTransformOrigin="2.409,0.478" Background="White" BorderThickness="0 0.7 0.7 0.7" Opacity="100" Click="Clear_Click"/>
         <Image Height="20"  Source="Images/search_icon.png" Stretch="Fill"  Width="20"  Margin="10,40,338,685"/>
 
         <Grid HorizontalAlignment="Left" Height="62" Margin="10,0,0,0" VerticalAlignment="Top" Width="390"/>
@@ -34,15 +35,37 @@
             <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="350" Height="Auto">
                 <StackPanel x:Name="ThePanel" Margin="10">
 
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/APPE3-BUFFALOCHICKENDIP.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Buffalo Chicken Dip" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (86 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Est. time: 30 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                    <Button Click="Buf_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
+
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="LightBlue" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="#F8F8F8" TargetName="Border" />
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Images/APPE3-BUFFALOCHICKENDIP.jpg" Width="85"/>
+                            <StackPanel>
+                                <Label Content="Buffalo Dip" Width="189" FontSize="17" FontWeight="Bold"/>
+                                <Label Content="★★★☆☆ (86 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="Est. time: 30 min" Width="190"/>
+                                <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
+                    </Button>
 
 
 
@@ -52,125 +75,11 @@
                             <Label Content="Creamy Artichoke" Width="189" FontSize="17" FontWeight="Bold"/>
                             <Label Content="★★☆☆☆ (97 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
                             <Label Content="Est. time: 15 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-                    <Button  Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
-
-                        <Button.Style>
-                            <Style TargetType="{x:Type Button}">
-                                <Setter Property="Background" Value="LightBlue" />
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="{x:Type Button}">
-                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
-                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                            </Border>
-                                            <ControlTemplate.Triggers>
-                                                <Trigger Property="IsMouseOver" Value="True">
-                                                    <Setter Property="Background" Value="#F8F8F8" TargetName="Border" />
-                                                </Trigger>
-                                            </ControlTemplate.Triggers>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                            </Style>
-                        </Button.Style>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/appe2-tuscansausage.jpg" Width="85"/>
-                            <StackPanel>
-                                <Label Content="Tuscan Sausage" Width="190" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★★★☆ (64 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Est. time: 25 min" Width="190"/>
-                                <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </Button>
-                    <Button Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
-
-                        <Button.Style>
-                            <Style TargetType="{x:Type Button}">
-                                <Setter Property="Background" Value="LightBlue" />
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="{x:Type Button}">
-                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
-                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                            </Border>
-                                            <ControlTemplate.Triggers>
-                                                <Trigger Property="IsMouseOver" Value="True">
-                                                    <Setter Property="Background" Value="#F8F8F8" TargetName="Border" />
-                                                </Trigger>
-                                            </ControlTemplate.Triggers>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                            </Style>
-                        </Button.Style>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="Images/dinner2-tunasteak.jpg" Width="85"/>
-                            <StackPanel>
-                                <Label Content="Tuna Steak" Width="190" FontSize="17" FontWeight="Bold"/>
-                                <Label Content="★★★★☆ (64 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                                <Label Content="Est. time: 25 min" Width="190"/>
-                                <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </Button>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/appe5-cherrytomatoes.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Cherry Tomatoes" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (46 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Est. time: 30 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/appe6-partyshrimp.jpg" Width="85" Height="85"/>
-                        <StackPanel>
-                            <Label Content="Party Shrimp" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★☆ (70 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Est. time: 25 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/appe7-cheesefries.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Cheese Fries" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★★ (88 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Est. time: 15 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/appe8-baconcheeseburger.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Bacon Cheeseburger" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★★☆ (23 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Est. time: 35 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
-                        </StackPanel>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/appe9-springroll.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Spring Roll" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (56 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Est. time: 25 min" Width="190"/>
 
                         </StackPanel>
                     </StackPanel>
+
+                    
 
                     <Frame x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
                 </StackPanel>

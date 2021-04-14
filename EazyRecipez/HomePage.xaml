@@ -229,15 +229,38 @@
                         </StackPanel>
                     </Button>
 
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="Images/APPE3-BUFFALOCHICKENDIP.jpg" Width="85"/>
-                        <StackPanel>
-                            <Label Content="Buffalo Chicken Dip" Width="189" FontSize="17" FontWeight="Bold"/>
-                            <Label Content="★★★☆☆ (86 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
-                            <Label Content="Est. time: 30 min" Width="190"/>
-                            <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                    <Button Click="Buf_Click" Background="{x:Null}" BorderThickness="0" HorizontalAlignment="Left">
+
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="LightBlue" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="#F8F8F8" TargetName="Border" />
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Images/APPE3-BUFFALOCHICKENDIP.jpg" Width="85"/>
+                            <StackPanel>
+                                <Label Content="Buffalo Dip" Width="189" FontSize="17" FontWeight="Bold"/>
+                                <Label Content="★★★☆☆ (86 Reviews)" Width="190" FontSize="15" FontWeight="Bold"/>
+                                <Label Content="Est. time: 30 min" Width="190"/>
+                                <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
+                            </StackPanel>
                         </StackPanel>
-                    </StackPanel>
+                    </Button>
 
 
 

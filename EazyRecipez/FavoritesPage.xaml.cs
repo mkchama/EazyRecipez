@@ -35,37 +35,11 @@ namespace EazyRecipez
                 searchBox.Text = "Search for recipes...";
                 clearButton.Opacity = 0;
             }
-            else if (searchBox.Text.ToLower() == "salmon")
-            {
-                var mainWindow = (MainWindow)Application.Current.MainWindow;
-                HomeSalmon Home_Salmon = new HomeSalmon();
-
-                Home_Salmon.searchBox.Text = searchBox.Text;
-
-                mainWindow?.ChangeView(Home_Salmon);
-            }
-            else if (searchBox.Text.ToLower() == "steak")
-            {
-                var mainWindow = (MainWindow)Application.Current.MainWindow;
-                HomeSteak Home_Steak = new HomeSteak();
-
-                Home_Steak.searchBox.Text = searchBox.Text;
-
-                mainWindow?.ChangeView(Home_Steak);
-            }
-            else if (searchBox.Text.ToLower() == "sugar")
-            {
-                var mainWindow = (MainWindow)Application.Current.MainWindow;
-                HomeSugar Home_Sugar = new HomeSugar();
-
-                Home_Sugar.searchBox.Text = searchBox.Text;
-
-                mainWindow?.ChangeView(Home_Sugar);
-            }
+        
 
             else
             {
-                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/AllRecipes.txt";
+                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"/FavRecipes.txt";
                 using (StreamReader file = new StreamReader(FilePath))
 
                 {
@@ -131,38 +105,15 @@ namespace EazyRecipez
             if (e.Key == Key.Return)
             {
                 var mainWindow = (MainWindow)Application.Current.MainWindow;
-                if (searchBox.Text.ToLower() == "steak")
-                {
+           
+            
+                FavoritesPage Fav_Page = new FavoritesPage();
 
-                    HomeSteak Home_Steak = new HomeSteak();
-                    Home_Steak.searchBox.Text = searchBox.Text;
-                    mainWindow?.ChangeView(Home_Steak);
+                Fav_Page.searchBox.Text = searchBox.Text;
 
-                }
-                else if (searchBox.Text.ToLower() == "salmon")
-                {
-                    Console.WriteLine("YOOOOOO");
-                    HomeSalmon Home_Salmon = new HomeSalmon();
-                    Home_Salmon.searchBox.Text = searchBox.Text;
-                    mainWindow?.ChangeView(Home_Salmon);
+                mainWindow?.ChangeView(Fav_Page);
 
-                }
-                else if (searchBox.Text.ToLower() == "sugar")
-                {
-                    HomeSugar Home_Sugar = new HomeSugar();
-                    Home_Sugar.searchBox.Text = searchBox.Text;
-                    mainWindow?.ChangeView(Home_Sugar);
-
-                }
-                else
-                {
-                    FavoritesPage Fav_Page = new FavoritesPage();
-
-                    Fav_Page.searchBox.Text = searchBox.Text;
-
-                    mainWindow?.ChangeView(Fav_Page);
-
-                }
+            
 
 
 
@@ -198,6 +149,11 @@ namespace EazyRecipez
             mainWindow?.ChangeView(Fav_Page);
         }
 
+        private void Buf_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new BufRecipePage());
+        }
 
 
         private void Home_Click(object sender, RoutedEventArgs e)

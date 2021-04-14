@@ -126,11 +126,15 @@
 
                     <Label x:Name="uploadPhotos" Content="Upload Photo(s)" FontSize="20" FontWeight="Bold"/>
                     <StackPanel x:Name="uploadShow" Orientation="Horizontal" Width="270" HorizontalAlignment="Center" >
+                        <Separator Width="10" Background="White" />
+                        <Image Source="Images/pancakes.jpg" Width="45"/>
+                        <Image Source="Images/pancakes2.jpg" Width="45" Height="45"/>
+                        <Image Source="Images/pancakes3.jpg" Width="45"/>
+                        <Separator Width="10" Background="White" />
                         <Button Content="+" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                        <Separator Width="10" Background="White" />
-                        <Button Content="" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        <Separator Width="10" Background="White" />
-                        <Button Content="" Height="45" Width="45" FontSize="20" BorderBrush="#FFDEDEDE" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                        
+                        
 
                     </StackPanel>
                     <StackPanel x:Name="imagesShow" Orientation="Horizontal" Width="270" HorizontalAlignment="Center" Visibility="Hidden" >
