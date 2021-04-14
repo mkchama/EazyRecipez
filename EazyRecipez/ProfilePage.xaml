@@ -97,7 +97,7 @@
             </Border>
 
 
-            <Label Content="My Favorties                   ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="370" Margin="0,10,0,0" FontSize="28" FontWeight="Bold"/>
+            <Label Content="My Favorites                   ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="370" Margin="0,10,0,0" FontSize="28" FontWeight="Bold"/>
             <Border Padding="0" CornerRadius="6" HorizontalAlignment="Left" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="350" Height="Auto">
                 <StackPanel Margin="10">
                     <Button Click="Buf_Click" HorizontalAlignment="Left" Background="{x:Null}" BorderBrush="Transparent" >

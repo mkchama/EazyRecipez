@@ -50,7 +50,7 @@
                     </StackPanel>
          
                 </ScrollViewer>
-                <ToggleButton x:Name="tog" IsEnabled="True" VerticalAlignment="Center" Checked="HandleChecked" Unchecked="HandleUnchecked" Width="40" Height="40" Background="{x:Null}" BorderBrush="Transparent" Margin="135,-40,0,0">
+                <ToggleButton Command="{Binding FadeCommand}" x:Name="tog" IsEnabled="True" VerticalAlignment="Center" Checked="HandleChecked" Unchecked="HandleUnchecked" Width="40" Height="40" Background="{x:Null}" BorderBrush="Transparent" Margin="135,-40,0,0">
                     <ToggleButton.Style>
                         <Style TargetType="{x:Type ToggleButton}">
                             <Setter Property="Template">

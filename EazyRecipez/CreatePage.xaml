@@ -137,7 +137,7 @@
         </ScrollViewer>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button x:Name="onlineButton" Content="Post" Click="Online_Click" HorizontalAlignment="Left" Margin="0,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
+            <Button x:Name="onlineButton" Background="LightBlue" Content="Post" Click="Online_Click" HorizontalAlignment="Left" Margin="0,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="7"/>
@@ -213,7 +213,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="saveButton" Content="Save" Click="Save_Click" HorizontalAlignment="Left" Margin="0,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
+                <Button x:Name="saveButton" Content="Save" Click="Save_Click" Background="LightBlue" HorizontalAlignment="Center" Margin="10,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="7"/>

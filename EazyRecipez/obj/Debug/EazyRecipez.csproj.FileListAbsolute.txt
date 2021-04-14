@@ -342,3 +342,6 @@ C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\BufRecipePage.g.
 C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\BufRecipePage.baml
 C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\BufRecipePage.g.cs
 C:\Users\Michael\Documents\GitHub\EazyRecipez\EazyRecipez\obj\Debug\BufRecipePage.baml
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\bin\Debug\ToastNotifications.dll
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\bin\Debug\ToastNotifications.Messages.dll
+C:\Users\mkchama\source\repos\EazyRecipez\EazyRecipez\obj\Debug\App.baml

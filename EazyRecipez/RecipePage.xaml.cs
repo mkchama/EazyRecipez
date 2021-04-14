@@ -14,6 +14,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ToastNotifications;
+using ToastNotifications.Lifetime;
+using ToastNotifications.Position;
+using ToastNotifications.Messages;
 
 namespace EazyRecipez
 {
@@ -22,6 +26,7 @@ namespace EazyRecipez
     /// </summary>
     public partial class RecipePage : Page
     {
+
         public RecipePage()
         {
             InitializeComponent();
@@ -108,8 +113,25 @@ namespace EazyRecipez
 
         }
 
+        Notifier notifier = new Notifier(cfg =>
+        {
+            cfg.PositionProvider = new WindowPositionProvider(
+                parentWindow: Application.Current.MainWindow,
+                corner: Corner.BottomCenter,
+                offsetX: 10,
+                offsetY: 60);
+
+            cfg.LifetimeSupervisor = new TimeAndCountBasedLifetimeSupervisor(
+                notificationLifetime: TimeSpan.FromSeconds(3),
+                maximumNotificationCount: MaximumNotificationCount.FromCount(5));
+
+            cfg.Dispatcher = Application.Current.Dispatcher;
+        });
+
+
         private void HandleChecked (object sender, RoutedEventArgs e)
         {
+            
             string name = "testing";
             string fileName = @"\recipes\" + name + ".txt";
             string dirParameter = AppDomain.CurrentDomain.BaseDirectory + fileName;
@@ -136,10 +158,15 @@ namespace EazyRecipez
             string TextPath = "/Images/heart2.png";
             Uri resourceUri = new Uri(TextPath, UriKind.Relative);
             emp_heart.Source = new BitmapImage(resourceUri);
+
+            string message = "Liked Recipe";
+            notifier.ShowSuccess(message);
+            
         }
 
         private void HandleUnchecked(object sender, RoutedEventArgs e)
         {
+
             string name = "testing";
             string fileName = @"\recipes\" + name + ".txt";
             string dirParameter = AppDomain.CurrentDomain.BaseDirectory + fileName;
@@ -190,6 +217,8 @@ namespace EazyRecipez
             }
             
         }*/
+
+
 
         private void View_Load(object sender, RoutedEventArgs e)
         {
@@ -262,6 +291,7 @@ namespace EazyRecipez
             file.Close();
 
         }
+
 
 
 
