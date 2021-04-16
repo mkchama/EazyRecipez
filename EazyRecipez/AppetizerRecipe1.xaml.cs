@@ -107,5 +107,62 @@ namespace EazyRecipez
             }
 
         }
+
+        private void searchBox_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.Key == Key.Return)
+            {
+
+                var mainWindow = (MainWindow)Application.Current.MainWindow;
+                Image RecipeImage = new Image();
+                var userNameLabel = new Label();
+                var commentLabel = new Label();
+
+                string TextPath = "/Images/icons8-user-50.png";
+                Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+
+
+                RecipeImage.Source = new BitmapImage(resourceUri);
+                RecipeImage.Width = 25;
+
+
+                var RecipeList = new StackPanel();
+                RecipeList.Orientation = Orientation.Horizontal;
+
+                var ImagePan = new StackPanel();
+                ImagePan.Orientation = Orientation.Horizontal;
+
+                userNameLabel.Content = "TestUser:";
+                userNameLabel.FontWeight = FontWeights.Bold;
+
+                userNameLabel.FontSize = 18;
+
+                var Divider = new Rectangle();
+                Divider.HorizontalAlignment = HorizontalAlignment.Stretch;
+                Divider.VerticalAlignment = VerticalAlignment.Center;
+                Divider.Fill = System.Windows.Media.Brushes.LightGray;
+                Divider.Height = 1;
+
+                commentLabel.Content = commentsField.Text;
+
+                commentLabel.FontSize = 15;
+
+                RecipeList.Height = 50;
+
+
+
+                RecipeList.Children.Add(RecipeImage);
+                RecipeList.Children.Add(userNameLabel);
+                RecipeList.Children.Add(commentLabel);
+
+
+                commentPanel.Children.Add(RecipeList);
+                commentPanel.Children.Add(Divider);
+                commentsField.Clear();
+
+
+            }
+        }
     }
 }

@@ -29,7 +29,7 @@
         
 
 
-        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="645" Margin="0,75,0,0" VerticalAlignment="Top" Width="375" >
+        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="625" Margin="0,75,0,0" VerticalAlignment="Top" Width="375" >
 
             <StackPanel>
                 <StackPanel Margin="0,0,0,0">

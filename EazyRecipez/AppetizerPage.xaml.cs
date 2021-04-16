@@ -94,11 +94,11 @@ namespace EazyRecipez
                             Divider.Fill = System.Windows.Media.Brushes.LightGray;
                             Divider.Height = 1;
 
-
+                            RecipeList.Children.Add(Divider);
                             RecipeList.Children.Add(NameLabel);
                             RecipeList.Children.Add(RatingLabel);
                             RecipeList.Children.Add(TimeLabel);
-                            RecipeList.Children.Add(Divider);
+                            
 
                             NewPanel.Children.Add(RecipeList);
                         }

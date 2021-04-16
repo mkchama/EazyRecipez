@@ -62,6 +62,8 @@ namespace EazyRecipez
             newTextBox.Name = "newInstruction" + id.ToString();
             newTextBox.Text = "";
             newTextBox.FontSize = 20;
+            newTextBox.MaxWidth = 270;
+            newTextBox.TextWrapping = TextWrapping.WrapWithOverflow;
             instructionPanel.Children.Add(newTextBox);
         }
 
@@ -74,6 +76,8 @@ namespace EazyRecipez
             newTextBox.Name = "newIngredient" + id.ToString();
             newTextBox.Text = "";
             newTextBox.FontSize = 20;
+            newTextBox.MaxWidth = 270;
+            newTextBox.TextWrapping = TextWrapping.WrapWithOverflow;
             ingredientsList.Add(newTextBox);
             ingredientField.Children.Add(newTextBox);
 

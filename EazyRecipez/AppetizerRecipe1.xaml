@@ -25,7 +25,7 @@
             <local:RatingControl Height="20" Width="100" VerticalAlignment="Center" Margin="0,0,0,0" />
         </StackPanel>
 
-        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="640" Margin="0,75,0,0" VerticalAlignment="Top" Width="375" >
+        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="580" Margin="0,75,0,0" VerticalAlignment="Top" Width="375" >
             <StackPanel>
 
                 <ScrollViewer  Name="sv1" BorderThickness="0" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" ScrollViewer.VerticalScrollBarVisibility="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Margin="100,0,100,0">
@@ -119,22 +119,63 @@
                     </StackPanel>
                 </Border>
 
-                <StackPanel Margin="0,10,0,0">
-                    <Label Content="Comments                    ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="10,0,0,0" FontSize="28" FontWeight="Bold"/>
-                    <TextBox x:Name="commentsField"  HorizontalAlignment="Center" PreviewMouseDown="comment_MouseDown" LostFocus="comment_LostFocus"  Height="25" Margin="0,0,0,10" FontSize="16" TextWrapping="Wrap" Text="Add a comment..." VerticalAlignment="Top" Width="330" Background="{x:Null}"/>
-                    <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="250" Margin="0,0,0,0" VerticalAlignment="Top" Width="375" >
-                        <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
-                            <StackPanel>
-                                <Label Content="No comments yet" Width="210" FontSize="15" FontWeight="Normal"/>
-                            </StackPanel>
-                        </Border>
+               
+                    <Label Content="Comments                      ➜" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Margin="15,0,0,0" FontSize="28" FontWeight="Bold"/>
+                    <StackPanel Margin="0,0,0,0">
+                        <TextBox x:Name="commentsField"  HorizontalAlignment="Center" PreviewMouseDown="comment_MouseDown" LostFocus="comment_LostFocus" KeyDown="searchBox_KeyDown" Height="25" Margin="0,0,0,10" FontSize="16" TextWrapping="Wrap" Text="Add a comment..." VerticalAlignment="Top" Width="330" Background="{x:Null}"/>
+
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden"  HorizontalAlignment="Left" Height="250" Margin="0,0,0,5" VerticalAlignment="Top" Width="375" >
+
+                            <Border Padding="0" CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
+                                
+                                <StackPanel x:Name="parentComment">
+
+                                <StackPanel Margin="0,100,0,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Label FontSize="24">No Comments Yet!</Label>
+                                </StackPanel>
+                                <StackPanel x:Name="commentPanel" Orientation="Vertical">
+
+
+                                        <StackPanel x:Name="commentImage">
+
+                                        </StackPanel>
+
+                                        <StackPanel x:Name="newComment">
+
+                                        </StackPanel>
+
+                                    </StackPanel>
+                                
+
+                                  
+
+
+                                    
+                                </StackPanel>
+                            </Border>
                     </ScrollViewer>
                 </StackPanel>
             </StackPanel>
 
         </ScrollViewer>
 
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="onlineButton" Content="Edit" HorizontalAlignment="Left" Margin="0,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
 
+            <Button x:Name="offlineButton" Content="Delete" HorizontalAlignment="Left" Margin="0,660,20,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="7"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
 
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="99"  VerticalAlignment="Bottom" Width="384"/>
         <StackPanel Margin="-5">

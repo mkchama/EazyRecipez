@@ -90,6 +90,12 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new DinnerRecipe1());
         }
 
+        private void AppetizerPage1_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new AppetizerRecipe1());
+        }
+
     }
 
 

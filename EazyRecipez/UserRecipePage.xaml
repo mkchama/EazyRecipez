@@ -249,7 +249,7 @@
 
                 </ScrollViewer>
 
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Button x:Name="onlineButton" Content="Edit" HorizontalAlignment="Left" Margin="0,660,40,0" VerticalAlignment="Top" Height="35" Width="128" FontSize="20" Click="Edit_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
