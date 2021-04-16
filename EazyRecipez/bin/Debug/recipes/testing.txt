@@ -1,4 +1,4 @@
-Fluffy Pancakes
+Fluffy
 SIMPLE. EASY. QUICK. FLUFFY. The Best Fluffy Pancakes recipe you will fall in love with.
 Category: Breakfast
 2 cups all purpose | plain flour 
@@ -18,6 +18,6 @@ Heat a nonstick pan or griddle over low-medium heat and wipe over with a little 
 When the underside is golden and bubbles begin to appear on the surface, flip with a spatula and cook until golden. Repeat with remaining batter.
 endInstructions
 0
-Time: 30
+Time: 25
 Author: Test User
 UnChecked
