@@ -47,3 +47,6 @@ When viewing through the “clickable recipes”, not all recipes have all the f
 
 ###### Homepage/Category Pages:
 Categories need to be scrolled horizontally. The appetizer category is cut off from the view and can be viewed fully when scrolling (using a mouse). It will still function without being seen fully, but in order for the user to see it fully they will need to scroll (using a mouse).
+
+The demo video can be found through the following link:
+https://www.youtube.com/watch?v=gYohqPg-GDI
