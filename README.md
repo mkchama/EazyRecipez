@@ -15,7 +15,7 @@ On the top of most screens that list recipes, you can click on the search text f
 #### Using categories:
 In the Homepage, there are 5 categories that you can horizontally scroll through to access, clicking one will bring up a page with only recipes in that category. "Breakfast", "Lunch", "Dinner" "Dessert" and "Appetizer" are the options. Clicking on any of them will redirect to the specific category page that only contain recipes from that page. From that category page, clicking on the category will unselect the page, which will redirect them to the Homepage. Clicking on a different category will redirect them to that category page.
 
-#### Recipe View Page:
+###### Recipe View Page:
 Once a recipe has been clicked, you will be taken to the recipe view page. There are a number of things that can be done on this screen. You can click on the arrow below the pictures to go through the pictures, or use your mouse wheel to go through them. You can also rate the recipe through the stars above the images by clicking on the stars depending on your rating you wish to give. On the bottom right of the picture, there is a heart icon/button. Clicking on it will favorite the recipe, saving it to the favorite list, which can be accesed through the profile page.Clicking on the heart again will un-favorite the recipe, removing it from the favorite list. You can scroll through the view, and also pull up a larger single page list of the instructions. At the bottom of this view you reach the comments in which you can make a comment on the recipe. The arrow button should bring you back to the page that you were currently on before.
 
 #### Create/Edit:
