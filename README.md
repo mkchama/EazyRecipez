@@ -2,18 +2,14 @@
 
 README
 
-README
-
 Created for CPSC 481, University of Calgary
 Group 02 - Michael Funk, Olufunke Ogunmefun, Junehyuk Kim,  Shude Li, Mohammad Chama
 
-Easy Recipez
+# Easy Recipez
 A one stop cooking app for all your cooking needs. Allows users to view and create recipes for their favorite, or soon to be favorite meals. After creating recipes, users will either have a choice to share to other users or to simply save it to their personal collection.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Basic Instructions
-
-Searching:
+## Basic Instructions
+### Searching:
 On the top of most screens that list recipes, you can click on the search text field to find your desired recipe. Using a keyword will search through the recipes’ names, not the ingredients in the recipe. You can also hit the small x on the right of the text field to clear your search once it has been made. The x will only appear when a search has been made. Scrolling with the mouse is the way to scroll through the recipes. By clicking on any of the categories, it will proceed to the category page with all the recipes that belong to that category page. Searching in the category page will only show the recipes with recipes including the specific keyword that belong to the category page. The user can also switch from one category to another with another keyword, and it will automatically search when using the keyword search.
 
 Home screen:
@@ -28,7 +24,6 @@ The app allows users to create recipes through the create middle tab on the bott
 Profile:
 You can access your favorite recipes, as well as your own recipes to edit.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Error avoidance
 
 As a result of not having a database, and needing to hardcode many features, please follow these steps when wanting to complete a task to avoid any issues with the program. Also certain functionalities do not work as intended due to the lack of database, some odd interactions will be listed below.
@@ -47,11 +42,7 @@ There are few recipes that can be clicked. The list being:
 “Lemon Garlic Salmon”, “Tuna steak”, “French Macaroon” “Tuscan Sausage” “Sugar Cream Pie” “Fluffy Pancakes”. Once one of these recipes have been clicked, it will go back to the category page of where it belongs, instead of where the user has last been.
 
 Recipe View - Viewing through full recipes:
-When viewing through the “clickable recipes”, not all recipes have all the functionalities. One main thing is that the back button of the recipe will redirect to the category page the recipe belongs to, instead of going back to the page the user has last been. Only the “Fluffy Pancakes” recipe allows for comments, as well as viewing the instructions page. The voice icons/buttons on the instruction page do not do anything, even though the functionality is to read out the instruction. None of the pages have a comments viewing page (the arrow button beside the comment). 
-
-rating only on
-Buffalo dip - favorite 
-
+When viewing through the “clickable recipes”, not all recipes have all the functionalities. One main thing is that the back button of the recipe will redirect to the category page the recipe belongs to, instead of going back to the page the user has last been. Only the “Buffalo Chicken Dip” recipe will be saved to favorites. Other recipes will indicate with a heart icon being filled with red, but will not update into the profile page. All the recipes in the list can be commented as well as rated. As for viewing the instructions page, only the “Fluffy Pancake” recipe includes it. The voice icons/buttons on the instruction page do not do anything, even though the functionality is to read out the instruction. None of the pages have a comments viewing page (the arrow button beside the comment). 
 
 Homepage/Category Pages:
 Categories need to be scrolled horizontally. The appetizer category is cut off from the view and can be viewed fully when scrolling (using a mouse). It will still function without being seen fully, but in order for the user to see it fully they will need to scroll (using a mouse).
