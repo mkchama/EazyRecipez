@@ -119,6 +119,12 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new HomePage());
         }
 
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new EditPage());
+        }
+
         private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {
             ScrollViewer scrollViewer = (ScrollViewer)sender;

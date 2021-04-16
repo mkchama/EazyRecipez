@@ -40,7 +40,7 @@
                     <StackPanel>
                         <StackPanel Orientation="Horizontal">
                             <Image Source="Images/APPE3-BUFFALOCHICKENDIP.jpg" Width="175"/>
-
+                            <Image Source="Images/bufdip2.jpg" Width="175"/>
                         </StackPanel>
 
 

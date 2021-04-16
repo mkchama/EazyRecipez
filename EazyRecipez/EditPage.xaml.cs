@@ -69,7 +69,7 @@ namespace EazyRecipez
             mainWindow?.ChangeView(new ProfilePage());
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
+/*        private void Save_Click(object sender, RoutedEventArgs e)
         {
 
             string writerfile = dirParameter;
@@ -80,7 +80,7 @@ namespace EazyRecipez
                 writer.WriteLine(this.ingredientsField.Text);
                 writer.WriteLine(this.instructionsField.Text);
             }
-        }
+        }*/
 
         private void recipeName_MouseDown(object sender, RoutedEventArgs e)
         {
@@ -177,6 +177,88 @@ namespace EazyRecipez
             {
                 instructionsField.Text = "";
             }
+
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + @"\recipes\" + "testing.txt", string.Empty);
+            string fileName = @"\recipes\" + "testing.txt";
+            string path = AppDomain.CurrentDomain.BaseDirectory + fileName;
+
+            
+
+            string min;
+            string hour;
+
+            if (hoursBox.SelectedIndex > -1)
+            {
+                hour = hoursBox.Text;
+            }
+            else
+            {
+                hour = "0";
+            }
+            if (minutesBox.SelectedIndex > -1)
+            {
+                min = minutesBox.Text;
+            }
+            else
+            {
+                min = "0";
+            }
+
+
+            string mainPhoto = "dessert1-sugarcreampie.jpg";
+            string hourFormat;
+            string minFormat;
+            if (int.Parse(hour) > 1)
+            {
+                hourFormat = hour + " hours ";
+            }
+            else if ((int.Parse(hour) == 0))
+            {
+                hourFormat = "";
+            }
+            else
+            {
+                hourFormat = hour + " hour ";
+            }
+            if (int.Parse(min) == 0)
+            {
+                minFormat = "";
+            }
+            else
+            {
+                minFormat = min;
+            }
+            string Title = recipeNameField.Text;
+            string Description = descriptionField.Text;
+            string Category = "Category: " + categoryCombo.Text;
+            string Ingredients = "2 cups all purpose | plain flour \n1 / 4 cup granulated sugar or sweetener \n4 teaspoons baking powder \n1 / 4 teaspoon baking soda \n1 / 2 teaspoon salt \n1 3 / 4 cups milk, (440ml) \n1 / 4 cup butter, (60g | 2 oz)\n2 teaspoons pure vanilla extract\n1 large egg";
+            string Instructions = "Instructions\nCombine together the flour, sugar (or sweetener), baking powder, baking soda and salt in a large-sized bowl. Make a well in the centre and add the milk, slightly cooled melted butter, vanilla and egg.\nUse a wire whisk to whisk the wet ingredients together first before slowly folding them into the dry ingredients.Mix together until smooth(there may be a couple of lumps but that's okay).\nSet the batter aside and allow to rest while heating up your pan or griddle.\nHeat a nonstick pan or griddle over low-medium heat and wipe over with a little butter to lightly grease pan. Pour ¼ cup of batter onto the pan and spread out gently into a round shape with the back of your ladle or measuring cup.\nWhen the underside is golden and bubbles begin to appear on the surface, flip with a spatula and cook until golden. Repeat with remaining batter.\nendInstructions";
+            string hr = "0";
+            string Minute = "Time: " + minFormat;
+            string Author = "Author: Test User";
+            string Fav = "UnChecked";
+            using (FileStream fs = new FileStream(path, FileMode.Append, FileAccess.Write))
+            using (StreamWriter csw = new StreamWriter(fs))
+            {
+                csw.WriteLine(Title);
+                csw.WriteLine(Description);
+                csw.WriteLine(Category);
+                csw.WriteLine(Ingredients);
+                csw.WriteLine(Instructions);
+                csw.WriteLine(hr);
+                csw.WriteLine(Minute);
+                csw.WriteLine(Author);
+                csw.WriteLine(Fav);
+
+
+            }
+
+            var mainWindow = (MainWindow)Application.Current.MainWindow;
+            mainWindow?.ChangeView(new UserRecipePage());
 
         }
 

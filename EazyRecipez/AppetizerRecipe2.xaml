@@ -74,14 +74,14 @@
                 <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
                     <StackPanel HorizontalAlignment="Center">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,0,0,0" FontSize="16"><Bold>Category:</Bold> Appetizer
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,0,0,0" FontSize="16"><Bold>Category: Appetizer</Bold> 
                             </TextBlock>
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,0,0,0" FontSize="16"><Bold>Time:</Bold> 25min
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,0,0,0" FontSize="16"><Bold>Time: 25min</Bold>
                             </TextBlock>
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,5,0,0" FontSize="16"><Bold>Author:</Bold> Kelvin</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,5,0,0" FontSize="16"><Bold>Author: Kelvin</Bold></TextBlock>
                             <TextBlock Text="★★★★☆ (64)" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,5,0,0" FontSize="16" FontWeight="Bold"/>
                         </StackPanel>
                     </StackPanel>
@@ -123,9 +123,9 @@
                 <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
                     <StackPanel>
                         <TextBlock TextWrapping="Wrap" FontSize="14" Margin="10" >
-                            <Bold>1.</Bold> Preheat oven to 375°. In a large skillet, cook sausage, onion and garlic over medium heat until sausage is no longer pink, breaking up sausage into crumbles; drain. Stir in wine, oregano, salt and thyme. Bring to a boil; cook until liquid is almost evaporated. bread. <LineBreak/>
-                            <Bold>3.</Bold> Add cream cheese; stir until melted. Stir in spinach, beans and tomatoes; cook and stir until spinach is wilted. Transfer to a greased 8-in. square baking dish; if using an ovenproof skillet, leave in skillet. Sprinkle with cheeses. <LineBreak/>
-                            <Bold>3.</Bold> Bake until bubbly, 20-25 minutes. Serve with crackers.</TextBlock>
+                            1. Preheat oven to 375°. In a large skillet, cook sausage, onion and garlic over medium heat until sausage is no longer pink, breaking up sausage into crumbles; drain. Stir in wine, oregano, salt and thyme. Bring to a boil; cook until liquid is almost evaporated. bread. <LineBreak/>
+                            2. Add cream cheese; stir until melted. Stir in spinach, beans and tomatoes; cook and stir until spinach is wilted. Transfer to a greased 8-in. square baking dish; if using an ovenproof skillet, leave in skillet. Sprinkle with cheeses. <LineBreak/>
+                            3. Bake until bubbly, 20-25 minutes. Serve with crackers.</TextBlock>
                     </StackPanel>
                 </Border>
 

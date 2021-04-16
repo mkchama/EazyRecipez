@@ -169,6 +169,100 @@ namespace EazyRecipez
             }
         }
 
+        private void View_Load(object sender, RoutedEventArgs e)
+        {
+
+            string name = "testing";
+            string fileName = @"\recipes\" + name + ".txt";
+            string dirParameter = AppDomain.CurrentDomain.BaseDirectory + fileName;
+
+
+
+            System.IO.StreamReader file = new System.IO.StreamReader(dirParameter);
+
+            recipeName.Text = file.ReadLine();
+            subHeaderText.Text = file.ReadLine();
+            string Category = file.ReadLine();
+            categoryText.FontWeight = FontWeights.Bold;
+            categoryText.Text = Category;
+            string next;
+            int ing = 1;
+            while ((next = file.ReadLine()) != "Instructions")
+            {
+                if (ing == 1)
+                {
+                    ingredientsField.Text += "• " + next;
+
+                }
+                else
+                {
+                    ingredientsField.Text += "\n" + "• " + next;
+
+                }
+                ing++;
+
+            }
+            int ind = 1;
+            while ((next = file.ReadLine()) != "endInstructions")
+            {
+                if (ind == 1)
+                {
+                    instructionField.Text += ind.ToString() + ". " + next;
+                }
+                else
+                {
+                    instructionField.Text += "\n" + ind.ToString() + ". " + next;
+
+                }
+                ind++;
+            }
+            timeText.FontWeight = FontWeights.Bold;
+            timeText.Text = Get_Time(file);
+            authorText.FontWeight = FontWeights.Bold;
+            authorText.Text = file.ReadLine();
+
+
+
+
+            if (file.ReadLine() == "Checked")
+            {
+                string TextPath = "/Images/heart2.png";
+                Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+                emp_heart.Source = new BitmapImage(resourceUri);
+            }
+            else
+            {
+                ToggleButton toggle = sender as ToggleButton;
+                string TextPath = "/Images/iheart.png";
+                Uri resourceUri = new Uri(TextPath, UriKind.Relative);
+                emp_heart.Source = new BitmapImage(resourceUri);
+            }
+            file.Close();
+
+        }
+
+        private string Get_Time(System.IO.StreamReader file)
+        {
+            string first = file.ReadLine();
+            string second = file.ReadLine();
+            if (first == "0")
+            {
+                return second + "min";
+            }
+            else
+            {
+                if (second == "0")
+                {
+                    return first + "h";
+                }
+                else
+                {
+                    return first + "h " + second + "min";
+                }
+            }
+
+        }
+
         private void HandleChecked(object sender, RoutedEventArgs e)
         {
             ToggleButton toggle = sender as ToggleButton;

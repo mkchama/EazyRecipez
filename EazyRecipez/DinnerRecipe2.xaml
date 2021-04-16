@@ -73,14 +73,14 @@
                 <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
                     <StackPanel HorizontalAlignment="Center">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,0,0,0" FontSize="16"><Bold>Category:</Bold> Dinner
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,0,0,0" FontSize="16"><Bold>Category: Dinner</Bold> 
                             </TextBlock>
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,0,0,0" FontSize="16"><Bold>Time:</Bold> 25min
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,0,0,0" FontSize="16"><Bold>Time: 25min</Bold> 
                             </TextBlock>
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,5,0,0" FontSize="16"><Bold>Author:</Bold> Vivian</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,5,0,0" FontSize="16"><Bold>Author: Vivian</Bold> </TextBlock>
                             <TextBlock Text="★★★★☆ (64)" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,5,0,0" FontSize="16" FontWeight="Bold"/>
                         </StackPanel>
                     </StackPanel>
@@ -117,9 +117,9 @@
                 <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
                     <StackPanel>
                         <TextBlock TextWrapping="Wrap" FontSize="14" Margin="10" >
-                            <Bold>1.</Bold> In a large non-reactive dish, mix together the orange juice, soy sauce, olive oil, lemon juice, parsley, garlic, oregano, and pepper. Place the tuna steaks in the marinade and turn to coat. Cover, and refrigerate for at least 30 minutes. <LineBreak/>
-                            <Bold>2.</Bold> Preheat grill for high heat.<LineBreak/>
-                            <Bold>3.</Bold> Lightly oil grill grate. Cook the tuna steaks for 5 to 6 minutes, then turn and baste with the marinade. Cook for an additional 5 minutes, or to desired doneness. Discard any remaining marinade.</TextBlock>
+                            1. In a large non-reactive dish, mix together the orange juice, soy sauce, olive oil, lemon juice, parsley, garlic, oregano, and pepper. Place the tuna steaks in the marinade and turn to coat. Cover, and refrigerate for at least 30 minutes. <LineBreak/>
+                            2. Preheat grill for high heat.<LineBreak/>
+                            3. Lightly oil grill grate. Cook the tuna steaks for 5 to 6 minutes, then turn and baste with the marinade. Cook for an additional 5 minutes, or to desired doneness. Discard any remaining marinade.</TextBlock>
                     </StackPanel>
                 </Border>
 
@@ -152,8 +152,8 @@
 
                                         <StackPanel Orientation="Horizontal" Height="50">
                                             <Image Margin="0,0,0,0" Source="Images/icons8-user-50.png" Width="25"/>
-                                            <Label Content="chef101:" FontSize="18" FontWeight="Bold"/>
-                                            <Label Content="Awesome Recipe!" FontSize="15" FontWeight="Normal"/>
+                                            <Label Content="coolio:" FontSize="18" FontWeight="Bold"/>
+                                            <Label Content="I like this!" FontSize="15" FontWeight="Normal"/>
                                         </StackPanel>
 
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
@@ -165,8 +165,8 @@
 
                                         <StackPanel Orientation="Horizontal" Height="50">
                                             <Image Margin="0,0,0,0" Source="Images/icons8-user-50.png" Width="25"/>
-                                            <Label Content="pika-23:" FontSize="18" FontWeight="Bold"/>
-                                            <Label Content="I like it" FontSize="15" FontWeight="Normal"/>
+                                            <Label Content="23-mj:" FontSize="18" FontWeight="Bold"/>
+                                            <Label Content="Gonna try this" FontSize="15" FontWeight="Normal"/>
                                         </StackPanel>
 
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
@@ -176,8 +176,8 @@
 
                                         <StackPanel Orientation="Horizontal" Height="50">
                                             <Image Margin="0,0,0,0" Source="Images/icons8-user-50.png" Width="25"/>
-                                            <Label Content="jimmy_hart:" FontSize="18" FontWeight="Bold"/>
-                                            <Label Content="Incredibly easy" FontSize="15" FontWeight="Normal"/>
+                                            <Label Content="hbk:" FontSize="18" FontWeight="Bold"/>
+                                            <Label Content="Simple and nice" FontSize="15" FontWeight="Normal"/>
                                         </StackPanel>
 
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
@@ -187,8 +187,8 @@
 
                                         <StackPanel Orientation="Horizontal" Height="50">
                                             <Image Margin="0,0,0,0" Source="Images/icons8-user-50.png" Width="25"/>
-                                            <Label Content="recipemaker:" FontSize="18" FontWeight="Bold"/>
-                                            <Label Content="Saved!" FontSize="15" FontWeight="Normal"/>
+                                            <Label Content="tinaloves:" FontSize="18" FontWeight="Bold"/>
+                                            <Label Content="wow it look perfect" FontSize="15" FontWeight="Normal"/>
                                         </StackPanel>
 
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>
@@ -198,8 +198,8 @@
 
                                         <StackPanel Orientation="Horizontal" Height="50">
                                             <Image Margin="0,0,0,0" Source="Images/icons8-user-50.png" Width="25"/>
-                                            <Label Content="sailormoon:" FontSize="18" FontWeight="Bold"/>
-                                            <Label Content="I'll try this out!" FontSize="15" FontWeight="Normal"/>
+                                            <Label Content="foodlover:" FontSize="18" FontWeight="Bold"/>
+                                            <Label Content="Yummy!" FontSize="15" FontWeight="Normal"/>
                                         </StackPanel>
 
                                         <Rectangle  HorizontalAlignment="Stretch"  VerticalAlignment="Center" Fill="#FFBFBFBF" Height="1"/>

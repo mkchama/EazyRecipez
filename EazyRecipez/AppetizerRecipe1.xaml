@@ -74,14 +74,14 @@
                 <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
                     <StackPanel HorizontalAlignment="Center">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,0,0,0" FontSize="16"><Bold>Category:</Bold> Appetizer
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,0,0,0" FontSize="16"><Bold>Category: Appetizer</Bold> 
                             </TextBlock>
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,0,0,0" FontSize="16"><Bold>Time:</Bold> 40min
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,0,0,0" FontSize="16"><Bold>Time: 40min</Bold> 
                             </TextBlock>
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,5,0,0" FontSize="16"><Bold>Author:</Bold> Test User</TextBlock>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="0,5,0,0" FontSize="16"><Bold>Author: Test User</Bold></TextBlock>
                             <TextBlock Text="☆☆☆☆☆ (0)" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Margin="20,5,0,0" FontSize="16" FontWeight="Bold"/>
                         </StackPanel>
                     </StackPanel>
@@ -114,8 +114,8 @@
                 <Border Margin="0,0,0,0"  CornerRadius="6" BorderBrush="Gray" Background="#F8F8F8" BorderThickness="1" DockPanel.Dock="Top" Width="330" Height="Auto">
                     <StackPanel>
                         <TextBlock TextWrapping="Wrap" FontSize="14" Margin="10" >
-                            <Bold>1.</Bold> Preheat oven to 350°. Cut bread widthwise into 1-in. slices to within 1/2 in. of bottom of loaf. Repeat cuts in opposite direction. Cut cheese into 1/4-in. slices; cut slices into small pieces. Place cheese in cuts in bread. <LineBreak/>
-                            <Bold>2.</Bold>  In a small bowl, mix butter, green onions and poppy seeds; drizzle over bread. Wrap in foil; place on a baking sheet. Bake 15 minutes. Unwrap; bake until cheese is melted, about 10 minutes longer.</TextBlock>
+                            1. Preheat oven to 350°. Cut bread widthwise into 1-in. slices to within 1/2 in. of bottom of loaf. Repeat cuts in opposite direction. Cut cheese into 1/4-in. slices; cut slices into small pieces. Place cheese in cuts in bread. <LineBreak/>
+                            2. In a small bowl, mix butter, green onions and poppy seeds; drizzle over bread. Wrap in foil; place on a baking sheet. Bake 15 minutes. Unwrap; bake until cheese is melted, about 10 minutes longer.</TextBlock>
                     </StackPanel>
                 </Border>
 
