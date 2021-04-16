@@ -40,7 +40,7 @@ Only a few recipes once searched actually allow you to click, these are the reci
 
 ###### Clickable recipes:
 There are few recipes that can be clicked. The list being:
-“Lemon Garlic Salmon”, “Tuna steak”, “French Macaroon” “Tuscan Sausage” “Sugar Cream Pie” “Fluffy Pancakes”. Once one of these recipes have been clicked, it will go back to the category page of where it belongs, instead of where the user has last been.
+“Lemon Garlic Salmon”, “Tuna steak”, “French Macaroon”, “Tuscan Sausage”, “Sugar Cream Pie”, “Fluffy Pancakes”, "Buffalo Dip" and "Savory Party Bread". The "Savory Party Bread" can only be clickable after creating the recipe. Once one of these recipes have been clicked, it will go back to the category page of where it belongs, instead of where the user has last been.
 
 ###### Recipe View - Viewing through full recipes:
 When viewing through the “clickable recipes”, not all recipes have all the functionalities. One main thing is that the back button of the recipe will redirect to the category page the recipe belongs to, instead of going back to the page the user has last been. Only the “Buffalo Dip” recipe will be saved to favorites. Other recipes will indicate with a heart icon being filled with red, but will not update into the profile page. All the recipes in the list can be commented as well as rated. As for viewing the instructions page, only the “Fluffy Pancake” recipe includes it. The voice icons/buttons on the instruction page do not do anything, even though the functionality is to read out the instruction. None of the pages have a comments viewing page (the arrow button beside the comment). 
