@@ -12,7 +12,7 @@ A one stop cooking app for all your cooking needs. Allows users to view and crea
 ###### Searching:
 On the top of most screens that list recipes, you can click on the search text field to find your desired recipe. Using keyword(s) will search through the recipes’ names, not the ingredients in the recipe. You can also hit the small x on the right of the text field to clear your search once it has been made. The x will only appear when a search has been made. Scrolling with the mouse is the way to scroll through the recipes. By clicking on any of the categories, it will proceed to the category page with all the recipes that belong to that category page. Searching in the category page will only show the recipes with recipes including the specific keyword that belong to the category page. The user can also switch from one category to another with another keyword, and it will automatically search when using the keyword search.
 
-##### Using categories:
+###### Using categories:
 In the Homepage, there are 5 categories that you can horizontally scroll through to access, clicking one will bring up a page with only recipes in that category. "Breakfast", "Lunch", "Dinner" "Dessert" and "Appetizer" are the options. Clicking on any of them will redirect to the specific category page that only contain recipes from that page. From that category page, clicking on the category will unselect the page, which will redirect them to the Homepage. Clicking on a different category will redirect them to that category page.
 
 ###### Recipe View Page:
